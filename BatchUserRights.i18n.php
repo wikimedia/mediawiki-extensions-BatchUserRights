@@ -22,13 +22,18 @@ Please ask a system administrator if you need to allow batch-adding of other gro
 	'batchuserrights-no-groups' => 'You did not choose any groups.
 This will not accomplish anything.
 The rest of the page will be allowed to run just so that you can easily see if any of the usernames could not be loaded.',
+
+	'right-batchuserrights' => 'Adding one or more users to a group or more groups in one action',
 );
 
 /** Message documentation (Message documentation)
+ * @author SVG
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
 	'batchuserrights-desc' => '{{desc}}',
+
+	'right-batchuserrights' => '{{doc-right|batchuserrights}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -102,6 +107,8 @@ Bitte wende dich an einen Systemadministrator, falls du andere Gruppen für das 
 	'batchuserrights-no-groups' => 'Du hast keine Gruppen ausgewählt.
 Dies wird nichts verändern.
 Der Rest der Seite wird nur geladen, sodass du einfach sehen kannst ob einer der Benutzer nicht geladen werden konnte.',
+
+	'right-batchuserrights' => 'Mehrere Benutzer in einer Aktion einer oder mehrerer Gruppen hinzufügen',
 );
 
 /** Spanish (Español)
@@ -395,4 +402,3 @@ $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许将一个或多个用户添加到一个操作中的一个组',
 );
-

@@ -9,6 +9,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	protected $isself = false;
 
 	// For added security, this array will be the only groups we'll allow to be batch-added to users.
+	// FIXME: Don't use private function to define addable groups, switch to global variable
 	private static $grantableUserGroups = array(
 		'beta',
 		'rollback',
@@ -19,10 +20,6 @@ class SpecialBatchUserRights extends SpecialPage {
 	 */
 	public function __construct() {
 		parent::__construct( 'BatchUserRights', 'batchuserrights' );
-	}
-
-	public function userCanExecute( $user ) {
-		return $this->userCanChangeRights( $user, false );
 	}
 
 	public function userCanChangeRights( $user, $checkIfSelf = true ) {
@@ -47,15 +44,6 @@ class SpecialBatchUserRights extends SpecialPage {
 		// any groups, it's a bit silly to give them the user search prompt.
 		if ( !$wgUser->isAllowed( 'batchuserrights' ) ) {
 			$this->displayRestrictionError();
-			return;
-		}
-
-		if ( !$this->userCanChangeRights( $wgUser, true ) ) {
-			// @todo FIXME: there may be intermediate groups we can mention.
-			$wgOut->showPermissionsErrorPage( array(
-				$wgUser->isAnon()
-					? 'userrights-nologin'
-					: 'userrights-notallowed' ) );
 			return;
 		}
 
