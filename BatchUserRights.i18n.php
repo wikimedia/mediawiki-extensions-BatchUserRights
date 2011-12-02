@@ -31,7 +31,14 @@ The rest of the page will be allowed to run just so that you can easily see if a
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
+	'batchuserrights' => 'Name of Special:BatchUserRights in Special:SpecialPages and title of Special:BatchUserRights page',
 	'batchuserrights-desc' => '{{desc}}',
+	'batchuserrights-names' => 'Names of users which should be added to the selected groups',
+	'batchuserrights-intro' => 'How to use description on Special:BatchUserRights',
+	'batchuserrights-single-progress-update' => 'Success message',
+	'batchuserrights-add-groups' => 'Success message',
+	'batchuserrights-userload-error' => 'Error message if an user could not loaded',
+	'batchuserrights-no-groups' => 'Error message which will be shown if no groups to add has been selected',
 
 	'right-batchuserrights' => '{{doc-right|batchuserrights}}',
 );
