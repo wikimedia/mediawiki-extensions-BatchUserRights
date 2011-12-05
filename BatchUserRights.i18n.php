@@ -409,3 +409,4 @@ $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许将一个或多个用户添加到一个操作中的一个组',
 );
+

@@ -15,8 +15,9 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 // Extension credits that will show up on Special:Version
 $wgExtensionCredits['specialpage'][] = array(
+	'path' => __FILE__,
 	'name' => 'BatchUserRights',
-	'version' => '1.1',
+	'version' => '1.1.1',
 	'author' => '[http://www.seancolombo.com Sean Colombo]',
 	'descriptionmsg' => 'batchuserrights-desc',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:BatchUserRights',
