@@ -39,7 +39,6 @@ $messages['qqq'] = array(
 	'batchuserrights-add-groups' => 'Success message',
 	'batchuserrights-userload-error' => 'Error message if an user could not loaded',
 	'batchuserrights-no-groups' => 'Error message which will be shown if no groups to add has been selected',
-
 	'right-batchuserrights' => '{{doc-right|batchuserrights}}',
 );
 
@@ -114,7 +113,6 @@ Bitte wende dich an einen Systemadministrator, falls du andere Gruppen für das 
 	'batchuserrights-no-groups' => 'Du hast keine Gruppen ausgewählt.
 Dies wird nichts verändern.
 Der Rest der Seite wird nur geladen, sodass du einfach sehen kannst ob einer der Benutzer nicht geladen werden konnte.',
-
 	'right-batchuserrights' => 'Mehrere Benutzer in einer Aktion einer oder mehrerer Gruppen hinzufügen',
 );
 
@@ -171,6 +169,7 @@ Por favor, pregunte a un administrador do sistema se necesita engadir outros gru
 	'batchuserrights-no-groups' => 'Non elixiu ningún grupo.
 Deste modo, non ocorrerá nada.
 Que apareza o resto da páxina só serve para que poida ollar facilmente se non se puido cargar algún dos nomes de usuario.',
+	'right-batchuserrights' => 'Engadir un ou máis usuarios a un ou máis grupos cunha soa acción',
 );
 
 /** Interlingua (Interlingua)
@@ -225,6 +224,7 @@ $messages['mk'] = array(
 	'batchuserrights-no-groups' => 'Не одбравте ниедна група.
 Со ова нема да постигнете ништо.
 Остатокот од страницата ќе работи и понатаму за да можете лесно да видите дали некое корисничко име не можело да се вчита.',
+	'right-batchuserrights' => 'Додавање на еден или повеќе корисници во група/групи наеднаш',
 );
 
 /** Malay (Bahasa Melayu)
@@ -247,6 +247,7 @@ Yang selebihnya dalam laman ini akan dibenarkan berjalan supaya anda mudah melih
 
 /** Dutch (Nederlands)
  * @author McDutchie
+ * @author SPQRobin
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -262,6 +263,7 @@ Vraag hulp van een systeembeheerder als u de beschikbare groepen wilt wijzigen.'
 	'batchuserrights-no-groups' => 'U hebt geen groepen gekozen.
 Nu wordt er niets uitgevoerd.
 De rest van de pagina kan uitgevoerd worden zodat u eenvoudig kunt zien of een van de gebruikersnamen niet geladen kon worden.',
+	'right-batchuserrights' => 'Een of meerdere gebruikers aan een of meerdere groepen toevoegen in één actie',
 );
 
 /** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
