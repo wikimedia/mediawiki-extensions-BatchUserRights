@@ -243,6 +243,7 @@ Sila tanya pentadbir sistem jika anda perlu membenarkan penambahan kumpulan lain
 	'batchuserrights-no-groups' => 'Anda belum memilih mana-mana kumpulan.
 Ini tidak akan mendatangkan sebarang hasil.
 Yang selebihnya dalam laman ini akan dibenarkan berjalan supaya anda mudah melihat sama ada terdapat nama pengguna yang tidak dapat dimuatkan.',
+	'right-batchuserrights' => 'Menambahkan seorang atau berbilang pengguna ke dalam kumpulan atau berbilang kumpulan sekaligus',
 );
 
 /** Dutch (Nederlands)
