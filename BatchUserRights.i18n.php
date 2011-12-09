@@ -136,6 +136,7 @@ El resto de la página será ejecutada solo para que puedas ver fácilmente si a
 );
 
 /** French (Français)
+ * @author Gomoko
  * @author Peter17
  */
 $messages['fr'] = array(
@@ -151,6 +152,7 @@ Si vous voulez autoriser l’ajout par lots pour d’autres groupes, veuillez de
 	'batchuserrights-no-groups' => 'Vous n’avez choisi aucun groupe.
 Aucune action ne sera effectuée.
 Le reste de la page se chargera normalement ce qui vous permettra de voir si certains noms d’utilisateurs ne peuvent pas être chargés.',
+	'right-batchuserrights' => 'Ajouter un ou plusieurs utilisateurs à un groupe ou plusieurs groupes en une action',
 );
 
 /** Galician (Galego)
