@@ -190,6 +190,7 @@ Per favor demanda lo a un administrator de systema si tu ha besonio de permitter
 	'batchuserrights-no-groups' => 'Tu non seligeva alcun gruppo.
 Isto va complir nihil.
 Le resto del pagina essera executate solmente a fin que tu pote vider facilemente si alcun del nomines de usator non poteva esser cargate.',
+	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -199,7 +200,12 @@ $messages['lb'] = array(
 	'batchuserrights' => 'Benotzerrechter automatiséieren',
 	'batchuserrights-desc' => 'Erlaabt et een oder méi Benotzer an enger Aktioun an e Grupp derbäizesetzen',
 	'batchuserrights-names' => 'Benotzernimm fir an dëse Grupp derbäizesetzen (e pro Linn):',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Grupp|Gruppe}} bäi <strong>$2</strong> derbäigesat.',
 	'batchuserrights-userload-error' => "De Benotzer \"'''\$1'''\" konnt net geluede ginn.",
+	'batchuserrights-no-groups' => 'Dir hutt keng Gruppen erausgesicht.
+Et gëtt näischt geännert.
+De Rescht vun der Säit gëtt nei opgebaut esou datt Dir einfach gesi kënnt ob ee vun de Benotzernimm net konnt geluede ginn.',
+	'right-batchuserrights' => 'Een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen',
 );
 
 /** Lithuanian (Lietuvių)
