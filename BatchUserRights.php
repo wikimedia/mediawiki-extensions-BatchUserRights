@@ -20,7 +20,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'version' => '1.1.1',
 	'author' => '[http://www.seancolombo.com Sean Colombo]',
 	'descriptionmsg' => 'batchuserrights-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:BatchUserRights',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:BatchUserRights',
 );
 
 set_time_limit( 0 );
