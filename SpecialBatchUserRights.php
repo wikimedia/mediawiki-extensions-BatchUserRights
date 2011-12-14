@@ -8,13 +8,6 @@
 class SpecialBatchUserRights extends SpecialPage {
 	protected $isself = false;
 
-	// For added security, this array will be the only groups we'll allow to be batch-added to users.
-	// FIXME: Don't use private function to define addable groups, switch to global variable
-	private static $grantableUserGroups = array(
-		'beta',
-		'rollback',
-	);
-
 	/**
 	 * Constructor -- set up the new (restricted) special page
 	 */
@@ -38,7 +31,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @param $par Mixed: string if any subpage provided, else null
 	 */
 	public function execute( $par ) {
-		global $wgUser, $wgRequest, $wgOut;
+		global $wgUser, $wgRequest, $wgOut, $wgBatchUserRightsGrantableGroups;
 
 		// If the visitor doesn't have permissions to assign or remove
 		// any groups, it's a bit silly to give them the user search prompt.
@@ -71,7 +64,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				$reason = $wgRequest->getVal( 'user-reason' );
 				$tok = $wgRequest->getVal( 'wpEditToken' );
 				if ( $wgUser->matchEditToken( $tok ) ) {
-					$allgroups = self::$grantableUserGroups;
+					$allgroups = $wgBatchUserRightsGrantableGroups;
 					$addgroup = array();
 					foreach ( $allgroups as $group ) {
 						// This batch form is only for adding user groups, we don't remove any.
@@ -350,9 +343,10 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @return string XHTML table element with checkboxes
 	 */
 	private function groupCheckboxes() {
+		global $wgBatchUserRightsGrantableGroups;
 		$usergroups = array(); // kinda a hack... this array holds "selected" groups... of which there shouldn't be any for this SpecialPage
 
-		$allgroups = self::$grantableUserGroups;
+		$allgroups = $wgBatchUserRightsGrantableGroups;
 		$ret = '';
 
 		$column = 1;
