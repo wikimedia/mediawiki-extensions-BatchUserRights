@@ -35,5 +35,5 @@ $wgBatchUserRightsGrantableGroups = array();
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['BatchUserRights'] = $dir . 'BatchUserRights.i18n.php';
 $wgExtensionMessagesFiles['BatchUserRightsAliases'] = $dir . 'BatchUserRights.alias.php';
-$wgAutoloadClasses['SpecialBatchUserRights'] = $dir . 'SpecialBatchUserRights.php';
+$wgAutoloadClasses['SpecialBatchUserRights'] = $dir . 'BatchUserRights_body.php';
 $wgSpecialPages['BatchUserRights'] = 'SpecialBatchUserRights';

@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalisation file for the BatchUserRights extension.
+ * Internationalisation file for the BatchUserRights extension
  *
  * @file
  * @ingroup Extensions
@@ -11,7 +11,7 @@ $messages = array();
 /** English */
 $messages['en'] = array(
 	'batchuserrights' => 'Batch user rights',
-	'batchuserrights-desc' => 'Allows adding one or more users to a group in one action',
+	'batchuserrights-desc' => 'Allows adding one or more users to a group or more groups in one action',
 	'batchuserrights-names' => 'Usernames to add this group to (one per line):',
 	'batchuserrights-intro' => 'This page will let you add a group to multiple users at once.
 For security reasons, the list of addable groups is set in the extension configuration and cannot be changed from within the wiki.
@@ -102,7 +102,7 @@ Zbývající část stránky bude možné spustit tak, že lze snadno zobrazit, 
  */
 $messages['de'] = array(
 	'batchuserrights' => 'Massen-Benutzerrechte',
-	'batchuserrights-desc' => 'Einen oder mehrere Benutzer in einer Aktion einer Gruppe hinzufügen',
+	'batchuserrights-desc' => 'Einen oder mehrere Benutzer in einer Aktion einer oder mehrerer Gruppe(n) hinzufügen',
 	'batchuserrights-names' => 'Folgende Benutzer dieser Gruppe hinzufügen (einer pro Zeile):',
 	'batchuserrights-intro' => 'Auf dieser Seite kannst du mehrere Benutzern gleichzeitig einer Gruppe hinzufügen.
 Aus Sicherheitsgründen ist die Liste der hinzufügbaren Gruppen in der Erweiterungs-Konfiguration festgelegt und kann im Wiki nicht verändert werden.
@@ -420,4 +420,3 @@ $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许将一个或多个用户添加到一个操作中的一个组',
 );
-

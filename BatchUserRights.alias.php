@@ -1,15 +1,27 @@
 <?php
 /**
- * Aliases for Special:BatchUserRights.
+ * Aliases for Special:BatchUserRights
  *
  * @file
  */
 
-$aliases = array();
+$specialPageAliases = array();
 
 /** English
  * @author Sean Colombo
  */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'BatchUserRights' => array( 'BatchUserRights' ),
 );
+
+/** German (Deutsch)
+ * @author SVG
+ */
+$specialPageAliases['de'] = array(
+	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
+);
+
+/**
+ * For backwards compatibility with MediaWiki 1.15 and earlier.
+ */
+$aliases =& $specialPageAliases;
