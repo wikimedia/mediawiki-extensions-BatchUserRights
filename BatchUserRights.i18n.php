@@ -96,24 +96,37 @@ Zbývající část stránky bude možné spustit tak, že lze snadno zobrazit, 
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author LWChris
  * @author SVG
  * @author The Evil IP address
  */
 $messages['de'] = array(
-	'batchuserrights' => 'Massen-Benutzerrechte',
-	'batchuserrights-desc' => 'Einen oder mehrere Benutzer in einer Aktion einer oder mehrerer Gruppe(n) hinzufügen',
-	'batchuserrights-names' => 'Folgende Benutzer dieser Gruppe hinzufügen (einer pro Zeile):',
-	'batchuserrights-intro' => 'Auf dieser Seite kannst du mehrere Benutzern gleichzeitig einer Gruppe hinzufügen.
-Aus Sicherheitsgründen ist die Liste der hinzufügbaren Gruppen in der Erweiterungs-Konfiguration festgelegt und kann im Wiki nicht verändert werden.
-Bitte wende dich an einen Systemadministrator, falls du andere Gruppen für das Hinzufügen benötigst.',
-	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Gruppe|Gruppen}} <strong>$2</strong> hinzugefügt.',
-	'batchuserrights-add-groups' => '{{PLURAL:$1|Ein Benutzer|$1 Benutzer}} wird {{PLURAL:$2|der folgenden Gruppe|den folgenden Gruppen}} hinzugefügt: <strong>$3</strong>',
-	'batchuserrights-userload-error' => "Konnte den Benutzer „'''$1'''“ nicht laden.",
-	'batchuserrights-no-groups' => 'Du hast keine Gruppen ausgewählt.
-Dies wird nichts verändern.
-Der Rest der Seite wird nur geladen, sodass du einfach sehen kannst ob einer der Benutzer nicht geladen werden konnte.',
-	'right-batchuserrights' => 'Mehrere Benutzer in einer Aktion einer oder mehrerer Gruppen hinzufügen',
+	'batchuserrights' => 'Sammelbenutzerrechtevergabe',
+	'batchuserrights-desc' => 'Ermöglicht das gesammelte Hinzufügen eines oder mehrerer Benutzer zu einer oder mehreren Benutzergruppen',
+	'batchuserrights-names' => 'Folgende Benutzer dieser Benutzergruppe hinzufügen (einer pro Zeile):',
+	'batchuserrights-intro' => 'Auf dieser Seite kannst du mehrere Benutzer gleichzeitig einer Benutzergruppe hinzufügen.
+Aus Sicherheitsgründen wurde die Liste der zuordenbaren Benutzergruppen in der Konfigurationsdatei der Softwareerweiterung selbst festgelegt und kann daher nicht im Wiki verändert werden.
+Sofern weitere Benutzergruppen hinzugefügt werden sollen, wende dich bitte an einen Systemadministrator.',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Benutzergruppe wurde|Benutzergruppen wurden}} <strong>$2</strong> hinzugefügt.',
+	'batchuserrights-add-groups' => '{{PLURAL:$1|Ein Benutzer wird|$1 Benutzer werden}} {{PLURAL:$2|der folgenden Benutzergruppe|den folgenden Benutzergruppen}} hinzugefügt: <strong>$3</strong>',
+	'batchuserrights-userload-error' => "Der Benutzer „'''$1'''“ konnte nicht geladen werden.",
+	'batchuserrights-no-groups' => 'Du hast keine Benutzergruppe ausgewählt.
+Es wird daher keine Änderung durchgeführt.
+Der Rest der Seite wird nur deshalb geladen, damit du einfach feststellen kannst, ob einer der Benutzernamen nicht geladen werden konnte.',
+	'right-batchuserrights' => 'Mehrere Benutzer gesammelt einer oder mehreren Benutzergruppen hinzufügen',
+);
+
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author Kghbln
+ */
+$messages['de-formal'] = array(
+	'batchuserrights-intro' => 'Auf dieser Seite können Sie mehrere Benutzer gleichzeitig einer Benutzergruppe hinzufügen.
+Aus Sicherheitsgründen wurde die Liste der zuordenbaren Benutzergruppen in der Konfigurationsdatei der Softwareerweiterung selbst festgelegt und kann daher nicht im Wiki verändert werden.
+Sofern weitere Benutzergruppen hinzugefügt werden sollen, wenden Sie sich bitte an einen Systemadministrator.',
+	'batchuserrights-no-groups' => 'Sie haben keine Benutzergruppe ausgewählt.
+Es wird daher keine Änderung durchgeführt.
+Der Rest der Seite wird nur deshalb geladen, damit Sie einfach feststellen können, ob einer der Benutzernamen nicht geladen werden konnte.',
 );
 
 /** Spanish (Español)
@@ -138,10 +151,11 @@ El resto de la página será ejecutada solo para que puedas ver fácilmente si a
 /** French (Français)
  * @author Gomoko
  * @author Peter17
+ * @author Seb35
  */
 $messages['fr'] = array(
 	'batchuserrights' => 'Droits d’utilisateurs par lots',
-	'batchuserrights-desc' => 'Permet d’ajouter un ou plusieurs utilisateur(s) à un groupe en une seule action',
+	'batchuserrights-desc' => 'Permet d’ajouter un ou plusieurs utilisateur(s) à un ou des groupe(s) en une seule action',
 	'batchuserrights-names' => 'Noms d’utilisateurs à ajouter à ce groupe (un par ligne) :',
 	'batchuserrights-intro' => 'Cette page permet d’ajouter un groupe à plusieurs utilisateurs en une fois.
 Pour des raisons de sécurité, la liste des groupes utilisables est définie dans la configuration de l’extension et ne peut pas être changée depuis l’interface du wiki.
@@ -160,7 +174,7 @@ Le reste de la page se chargera normalement ce qui vous permettra de voir si cer
  */
 $messages['gl'] = array(
 	'batchuserrights' => 'Dereitos de usuario en feixe',
-	'batchuserrights-desc' => 'Permite engadir un ou máis usuarios a un grupo cunha soa acción',
+	'batchuserrights-desc' => 'Permite engadir un ou máis usuarios a un ou máis grupos cunha soa acción',
 	'batchuserrights-names' => 'Nomes de usuario a engadir a este grupo (un por liña):',
 	'batchuserrights-intro' => 'Esta páxina permitirá engadir usuarios a un grupo ao mesmo tempo.
 Por razóns de seguridade, a lista dos grupos que se poden engadir está definida na configuración da extensión e non se pode cambiar dentro do wiki.
@@ -221,7 +235,7 @@ $messages['lt'] = array(
  */
 $messages['mk'] = array(
 	'batchuserrights' => 'Групни кориснички права',
-	'batchuserrights-desc' => 'Овозможува додавање на еден или повеќе корисници во група наеднаш',
+	'batchuserrights-desc' => 'Овозможува додавање на еден или повеќе корисници во група/и наеднаш',
 	'batchuserrights-names' => 'Кориснички имиња кон кои треба да се додаде оваа група (по едно во секој ред):',
 	'batchuserrights-intro' => 'Оваа страница ви овозможува да додадете група кон повеќе корисници наеднаш.
 Од безбедносни причини, списокот на групи што може да се додаваат е сместена во поставките на додатокот и не може да се промени од викито.
@@ -261,7 +275,7 @@ Yang selebihnya dalam laman ini akan dibenarkan berjalan supaya anda mudah melih
  */
 $messages['nl'] = array(
 	'batchuserrights' => 'Gebruikersrechtenbeheer (en masse)',
-	'batchuserrights-desc' => 'Maakt het toevoegen van meerdere gebruikers aan een groep in één handeling mogelijk',
+	'batchuserrights-desc' => 'Maakt het toevoegen van één of meerdere gebruikers aan een groep of groepen in één handeling mogelijk',
 	'batchuserrights-names' => 'Gebruikersnamen om deze groep aan toe te voegen (één per regel):',
 	'batchuserrights-intro' => 'Via deze pagina kunt u meerdere gebruikers tegelijkertijd aan een groep toevoegen.
 Om beveiligingsredenen wordt de lijst met beschikbare groepen ingesteld in de instellingen van de uitbreiding en deze groepen kunnen niet vanuit de wiki gewijzigd worden.
