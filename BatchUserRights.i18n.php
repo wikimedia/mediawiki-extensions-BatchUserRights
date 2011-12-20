@@ -212,7 +212,7 @@ Le resto del pagina essera executate solmente a fin que tu pote vider facilement
  */
 $messages['lb'] = array(
 	'batchuserrights' => 'Benotzerrechter automatiséieren',
-	'batchuserrights-desc' => 'Erlaabt et een oder méi Benotzer an enger Aktioun an e Grupp derbäizesetzen',
+	'batchuserrights-desc' => 'Erlaabt et een oder méi Benotzer an enger Aktioun an eng Grupp oder méi Gruppen derbäizesetzen',
 	'batchuserrights-names' => 'Benotzernimm fir an dëse Grupp derbäizesetzen (e pro Linn):',
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Grupp|Gruppe}} bäi <strong>$2</strong> derbäigesat.',
 	'batchuserrights-userload-error' => "De Benotzer \"'''\$1'''\" konnt net geluede ginn.",
