@@ -254,7 +254,7 @@ $messages['mk'] = array(
  */
 $messages['ms'] = array(
 	'batchuserrights' => 'Hak pengguna kelompok',
-	'batchuserrights-desc' => 'Membolehkan penambahan lebih daripada satu pengguna ke dalam sesebuah kumpulan dengan sekali tindakan',
+	'batchuserrights-desc' => 'Membolehkan penambahan satu atau lebih pengguna ke dalam satu atau lebih kumpulan secara serentak',
 	'batchuserrights-names' => 'Nama-nama pengguna untuk disertakan ke dalam kumpulan ini (seorang sebaris):',
 	'batchuserrights-intro' => 'Laman ini akan membolehkan anda menyertakan lebih daripada satu pengguna ke dalam satu kumpulan sekaligus.
 Demi keselamatan, senarai kumpulan yang boleh ditambah itu ditetapkan dalam tatarajah sambungan dan tidak boleh diubah dari dalam wiki.
@@ -433,5 +433,10 @@ $messages['uk'] = array(
 $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许将一个或多个用户添加到一个操作中的一个组',
+);
+
+/** Traditional Chinese (‪中文(繁體)‬) */
+$messages['zh-hant'] = array(
+	'batchuserrights' => '批處理的用戶權限',
 );
 
