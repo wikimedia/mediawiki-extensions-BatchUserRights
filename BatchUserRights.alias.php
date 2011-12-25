@@ -7,21 +7,17 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author Sean Colombo
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'BatchUserRights' => array( 'BatchUserRights' ),
 );
 
-/** German (Deutsch)
- * @author SVG
- */
+/** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
 );
 
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
+);
