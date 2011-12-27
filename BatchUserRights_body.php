@@ -5,7 +5,7 @@
  * @file
  * @ingroup SpecialPage
  */
-class SpecialBatchUserRights extends SpecialPage {
+class BatchUserRights extends SpecialPage {
 	protected $isself = false;
 
 	/**
