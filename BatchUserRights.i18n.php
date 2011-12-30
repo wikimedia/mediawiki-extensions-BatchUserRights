@@ -193,7 +193,7 @@ Que apareza o resto da páxina só serve para que poida ollar facilmente se non 
  */
 $messages['ia'] = array(
 	'batchuserrights' => 'Derectos de usator in lot',
-	'batchuserrights-desc' => 'Permitte adder un o plus usatores a un gruppo in un sol action',
+	'batchuserrights-desc' => 'Permitte adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 	'batchuserrights-names' => 'Nomines de usator al quales adder iste gruppo (un per linea):',
 	'batchuserrights-intro' => 'Iste pagina te permitte adder un gruppo a plure usatores insimul.
 Pro motivos de securitate, le lista de gruppos addibile es definite in le configuration del extension e non pote esser cambiate ab intra le wiki.
