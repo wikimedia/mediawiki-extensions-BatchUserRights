@@ -188,6 +188,16 @@ Que apareza o resto da páxina só serve para que poida ollar facilmente se non 
 	'right-batchuserrights' => 'Engadir un ou máis usuarios a un ou máis grupos cunha soa acción',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'batchuserrights' => 'Prawa zběranskich wužiwarjow',
+	'batchuserrights-desc' => 'Zmóžnja přidawanje jednoho wužiwarja abo wjacorych wužiwarjow skupinje abo wjacorym skupinam naraz',
+	'batchuserrights-names' => 'Wužiwarske mjena, kotrež maja so tutej skupinje přidać (jedne na linku):',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Skupina je|Skupinje stej|Skupiny su|Skupiny su}} so do <strong>$2</strong> {{PLURAL:$1|přidała|přidałoj|přidali|přidali}}.',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
