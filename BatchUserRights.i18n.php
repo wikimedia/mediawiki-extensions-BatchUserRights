@@ -195,7 +195,16 @@ $messages['hsb'] = array(
 	'batchuserrights' => 'Prawa zběranskich wužiwarjow',
 	'batchuserrights-desc' => 'Zmóžnja přidawanje jednoho wužiwarja abo wjacorych wužiwarjow skupinje abo wjacorym skupinam naraz',
 	'batchuserrights-names' => 'Wužiwarske mjena, kotrež maja so tutej skupinje přidać (jedne na linku):',
+	'batchuserrights-intro' => 'Z tutej stronu móžeš wjacorym wužiwarjam naraz skupinu přidać.
+Z přičinow wěstoty lisćina přidawajomnych skupinow nastaja so w konfiguraciji rozšěrjenja a njeda so we wikiju změnić.
+Prošu staj so ze systemowym administratorom do zwiska, jeli dyrbiš dalše skupiny přidać.',
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Skupina je|Skupinje stej|Skupiny su|Skupiny su}} so do <strong>$2</strong> {{PLURAL:$1|přidała|přidałoj|přidali|přidali}}.',
+	'batchuserrights-add-groups' => '{{PLURAL:$1|Jedyn wužiwar|$1 wužiwarjej|$1 wužiwarjo|$1 wužiwarjow}} so {{PLURAL:$2|slědowacej skupinje|slědowacymaj skupinomaj|slědowacym skupinam|slědowacym skupinam}} {{PLURAL:$1|přidawa|přidawataj|přidawaja|přidawa}}: <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Wužiwar \"'''\$1'''\" njeda so začitać.",
+	'batchuserrights-no-groups' => 'Njejsy žanu skupinu wubrał.
+Tohodla so ničo njewukonja.
+Zbytk strony so jenož začituje, zo by móhł lochko widźeć, hač jedne z wužiwarskich mjenow njeda so začitać.',
+	'right-batchuserrights' => 'Jednoho wužiwarja abo wjacorych wužiwarjow jednej skupinje abo wjacorym skupinam naraz přidać',
 );
 
 /** Interlingua (Interlingua)
