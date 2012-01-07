@@ -346,7 +346,7 @@ De rest van de pagina kan uitgevoerd worden zodat je eenvoudig kunt zien of een 
  */
 $messages['pms'] = array(
 	'batchuserrights' => "Drit ëd j'utent për partìe",
-	'batchuserrights-desc' => "A përmët ëd gionté un o pi utent a na partìa con n'assion sola",
+	'batchuserrights-desc' => "A përmët ëd gionté un o pi utent a na partìa o a pi partìe con n'assion sola",
 	'batchuserrights-names' => "Stranòm d'utent da gionté a costa partìa (un për linia):",
 	'batchuserrights-intro' => "Sta pàgina a-j përmëttrà ëd gionté na partìa a vàire utent ant un colp.
 Për rason ëd sicurëssa, la lista ëd partìe giontàbij a l'é ampostà ant la configurassion ëd l'estension e a peul pa esse cangià d'andrinta a la wiki.
@@ -357,6 +357,7 @@ Për piasì, ch'a ciama a n'aministrator ëd sistema s'a l'ha dabzògn ëd giont
 	'batchuserrights-no-groups' => "A l'ha sernù gnun-e partìe.
 A sarà fàit gnente.
 Ël rest ëd la pàgina a podrà giré mach an manera ch'a vëdda facilment se quaidun djë stranòm d'utent a peulo pa esse carià.",
+	'right-batchuserrights' => "Gionté un o pi utent a na partia o a pi partìe con n'assion sola",
 );
 
 /** Portuguese (Português)
