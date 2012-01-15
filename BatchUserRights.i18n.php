@@ -58,11 +58,12 @@ $messages['bg'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fohanno
+ * @author Fulup
  * @author Y-M D
  */
 $messages['br'] = array(
 	'batchuserrights' => 'Gwirioù oberour dre strolladoù',
-	'batchuserrights-desc' => "Aotreañ a ra da ouzhpennañ unan pe meur a implijer d'ur strollad en un obererezh hepken",
+	'batchuserrights-desc' => "Aotren a ra ouzhpennañ unan pe meur a implijer d'ur strollad, pe meur a hini, en un taol hepken",
 	'batchuserrights-names' => "Anvioù implijer da ouzhpennañ d'ar strollad-mañ (unan dre linenn) :",
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Strollad|Strolladoù}} ouzhpennet da <strong>$2</strong>.',
 	'batchuserrights-add-groups' => "Ouzhpennañ {{PLURAL:$1|un implijer|$1 implijer}} d'ar {{PLURAL:$2|strollad|strolladoù}}-mañ : <strong>$3</strong>.",
