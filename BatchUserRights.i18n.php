@@ -130,6 +130,25 @@ Es wird daher keine Änderung durchgeführt.
 Der Rest der Seite wird nur deshalb geladen, damit Sie einfach feststellen können, ob einer der Benutzernamen nicht geladen werden konnte.',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'batchuserrights' => 'Pšawa zběrańskich wužywarjow',
+	'batchuserrights-desc' => 'Zmóžnja pśidawanje jadnogo wužywarja abo někotarych wužywarjow kupce abo někotarym kupkam skupinam naraz',
+	'batchuserrights-names' => 'Wužywarske mjenja, kótarež maju se toś tej kupce pśidaś (jadne na smužku):',
+	'batchuserrights-intro' => 'Z toś tym bokom móžoš někotarym wužywarjam naraz kupku pśidaś.
+Z pśicynow wěstoty lisćina pśidawajobnych kupkow nastaja se w konfiguraciji rozšyrjenja a njedajo se we wikiju změniś.
+Pšosym staj se ze systemowym administratorom do zwiska, jolic musyš dalšne kupki pśidaś.',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Kupka j|Kupce stej|Kupki su|Kupki su}} se do <strong>$2</strong> {{PLURAL:$1|pśidała|pśidałej|pśidali|pśidali}}.',
+	'batchuserrights-add-groups' => '{{PLURAL:$1|Jaden wužywaŕ|$1 wužywarja|$1 wužywarje|$1 wužiwarjow}} {{PLURAL:$1|pśidawa|pśidawataj|pśidawaju|pśidawa}} se {{PLURAL:$2|slědujucej kupce|slědujucyma kupkoma|slědujucym kupkam|slědujucym kupkam}} : <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Wužywaŕ \"'''\$1'''\" njedajo se zacytaś.",
+	'batchuserrights-no-groups' => 'Njejsy žednu kupku wubrał.
+Togodla se nic njewuwjeźo.
+Zbytk boka se jano zacytujo, aby mógał lažko wiźeś, lěc jadne z wužywarskich mjenjow njedajo se zacytaś.',
+	'right-batchuserrights' => 'Jadnogo wužywarja abo někotarych wužywarjow jadnej kupce abo někotarym kupkam naraz pśidaś',
+);
+
 /** Spanish (Español)
  * @author Bola
  * @author Sanbec
@@ -187,6 +206,13 @@ Por favor, pregunte a un administrador do sistema se necesita engadir outros gru
 Deste modo, non ocorrerá nada.
 Que apareza o resto da páxina só serve para que poida ollar facilmente se non se puido cargar algún dos nomes de usuario.',
 	'right-batchuserrights' => 'Engadir un ou máis usuarios a un ou máis grupos cunha soa acción',
+);
+
+/** Hebrew (עברית)
+ * @author Ofekalef
+ */
+$messages['he'] = array(
+	'batchuserrights-names' => 'שמות משתמש להוספה לקבוצה זו (אחד בשורה):',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
