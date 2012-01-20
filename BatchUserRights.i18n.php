@@ -213,6 +213,9 @@ Que apareza o resto da páxina só serve para que poida ollar facilmente se non 
  */
 $messages['he'] = array(
 	'batchuserrights-names' => 'שמות משתמש להוספה לקבוצה זו (אחד בשורה):',
+	'batchuserrights-single-progress-update' => 'נוספה {{PLURAL:$1|קבוצה|קבוצותה}} ל־<strong>$2</strong>.',
+	'batchuserrights-userload-error' => "נכשלה טעינת המשתמש \"'''\$1'''\"",
+	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
