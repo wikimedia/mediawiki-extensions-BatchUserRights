@@ -49,6 +49,21 @@ $messages['af'] = array(
 	'batchuserrights-userload-error' => "Die gebruiker \"'''\$1'''\" kon nie gelaai word nie.",
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author EugeneZelenko
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'batchuserrights' => 'Пакетнае кіраваньне правамі ўдзельнікаў',
+	'batchuserrights-desc' => 'Дазваляе дадаваць аднаго ці болей удзельнікаў у групу ці некалькі групаў за адно дзеяньне',
+	'batchuserrights-names' => 'Імёны ўдзельнікаў, для даданьня ў групу (па аднаму на радок):',
+	'batchuserrights-intro' => 'Гэтая старонка дазволіць Вам дадаваць у групу адразу некалькі ўдзельнікаў.
+Па прычынах бясьпекі, сьпіс апрацоўваемых групаў ўстанаўліваецца ў наладах пашырэньня і ня можа быць зьменены ў {{GRAMMAR:месны|{{SITENAME}}}}.
+Калі ласка, запытайце сыстэмнага адміністратара, калі Вам трэба ўключыць пакетнае даданьне для іншых групаў.',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Група даданая|Групы даданыя}} для <strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'Даданьне $1 {{PLURAL:$1|ўдзельніка|удзельнікаў|удзельнікаў}} ў {{PLURAL:$2|наступную групу|наступныя групы}}: <strong>$3</strong>.',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
