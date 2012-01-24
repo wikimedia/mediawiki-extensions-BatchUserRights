@@ -62,6 +62,11 @@ $messages['be-tarask'] = array(
 Калі ласка, запытайце сыстэмнага адміністратара, калі Вам трэба ўключыць пакетнае даданьне для іншых групаў.',
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Група даданая|Групы даданыя}} для <strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'Даданьне $1 {{PLURAL:$1|ўдзельніка|удзельнікаў|удзельнікаў}} ў {{PLURAL:$2|наступную групу|наступныя групы}}: <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Немагчыма загрузіць удзельніка «'''$1'''».",
+	'batchuserrights-no-groups' => 'Вы не выбралі ніякай групы.
+Нічога ня будзе выканана.
+Астатняя частка старонкі будзе адкрытая для таго, каб Вы ўбачылі, якія імёны ўдзельнікаў ня могуць быць загружаныя.',
+	'right-batchuserrights' => 'даданьне аднаго ці болей удзельнікаў у групу ці некалькі групаў за адно дзеяньне',
 );
 
 /** Bulgarian (Български)
@@ -498,10 +503,12 @@ $messages['uk'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Hydra
+ * @author Hzy980512
  */
 $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许将一个或多个用户添加到一个操作中的一个组',
+	'batchuserrights-names' => '添加至该组的用户（每行一个）：',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
