@@ -504,11 +504,13 @@ $messages['uk'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Hydra
  * @author Hzy980512
+ * @author Linforest
  */
 $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许将一个或多个用户添加到一个操作中的一个组',
 	'batchuserrights-names' => '添加至该组的用户（每行一个）：',
+	'batchuserrights-userload-error' => "无法加载用户\"'''\$1'''\"。",
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
