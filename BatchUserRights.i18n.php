@@ -283,6 +283,9 @@ $messages['lb'] = array(
 	'batchuserrights' => 'Benotzerrechter automatiséieren',
 	'batchuserrights-desc' => 'Erlaabt et een oder méi Benotzer an enger Aktioun an eng Grupp oder méi Gruppen derbäizesetzen',
 	'batchuserrights-names' => 'Benotzernimm fir an dëse Grupp derbäizesetzen (e pro Linn):',
+	'batchuserrights-intro' => "Op dëser Säit kënnt Dir méi Benotzer mateneen bäi eng Benotzergrupp derbäisetzen.
+Aus Sécherheitsgrën ass d'Lëscht vu Benotzergruppen déi derbäigesat kënne ginn am Konfigurationsfichier  vun der Erweiderung festgeluecht a kann net vun dëser Wiki aus geännert ginn.
+Frot w.e.g. e System-Administrateur wann dës Fonctioun fir aner Benotzergruppe gebraucht gëtt.",
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Grupp|Gruppe}} bäi <strong>$2</strong> derbäigesat.',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|Ee Benotzer gëtt|$1 Benotzer gi}} bäi dës {{PLURAL:$2|Benotzergrupp|Benotzergruppen}} derbäigesat: <strong>$3</strong>',
 	'batchuserrights-userload-error' => "De Benotzer \"'''\$1'''\" konnt net geluede ginn.",
