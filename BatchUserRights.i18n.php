@@ -170,12 +170,13 @@ Zbytk boka se jano zacytujo, aby mógał lažko wiźeś, lěc jadne z wužywarsk
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Bola
  * @author Sanbec
  */
 $messages['es'] = array(
 	'batchuserrights' => 'Derechos de usuarios por lotes',
-	'batchuserrights-desc' => 'Permite añadir uno o más usuarios a un grupo en una sola acción',
+	'batchuserrights-desc' => 'Permite añadir uno o más usuarios a uno o más grupos en una sola acción',
 	'batchuserrights-names' => 'Nombres de usuario para añadir a este grupo (uno por línea):',
 	'batchuserrights-intro' => 'Esta página te permitirá añadir a un grupo múltiples usuarios a la vez.
 Por razones de seguridad, la lista de grupos agregables se cambia en la configuración de la extensión y no puede ser cambiada desde dentro del wiki.
@@ -186,6 +187,7 @@ Por favor, pregunta a un administrador del sistema si necesitas añadir otros gr
 	'batchuserrights-no-groups' => 'No elegiste ningún grupo.
 De esta forma no ocurrirá nada.
 El resto de la página será ejecutada solo para que puedas ver fácilmente si algún nombre de usuario no se puede cargar.',
+	'right-batchuserrights' => 'Agregando uno o más usuarios a uno o más grupos en una sola acción',
 );
 
 /** French (Français)
