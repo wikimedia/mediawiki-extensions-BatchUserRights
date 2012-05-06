@@ -278,6 +278,17 @@ Le resto del pagina essera executate solmente a fin que tu pote vider facilement
 	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'batchuserrights' => '利用者の権限を一括処理',
+	'batchuserrights-desc' => '1人以上の利用者を1つ以上のグループに1回の操作で追加できるようにする',
+	'batchuserrights-names' => 'このグループに追加する利用者名（1行に1人）：',
+	'batchuserrights-userload-error' => "利用者 \"'''\$1'''\" を読み込めません。",
+	'right-batchuserrights' => '1人以上の利用者を1つ以上のグループに1回の操作で追加',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
