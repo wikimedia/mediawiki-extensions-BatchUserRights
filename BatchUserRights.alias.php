@@ -17,6 +17,11 @@ $specialPageAliases['de'] = array(
 	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
 );
 
+/** Swiss German (Alemannisch) */
+$specialPageAliases['gsw'] = array(
+	'BatchUserRights' => array( 'Masse-Benutzerrächt' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
