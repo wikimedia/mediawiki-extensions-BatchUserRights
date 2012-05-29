@@ -278,6 +278,18 @@ Le resto del pagina essera executate solmente a fin que tu pote vider facilement
 	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'batchuserrights-desc' => 'Consente di aggiungere uno o più utenti ad un gruppo o più gruppi con una singola azione',
+	'batchuserrights-names' => 'Nomi utente a cui aggiungere questo gruppo (uno per riga):',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Aggiunto un gruppo|Aggiunti i gruppi}} a <strong>$2</strong>.',
+	'batchuserrights-add-groups' => '{{PLURAL:$1|Aggiunto un utente|Aggiunti $1 utenti}} {{PLURAL:$2|al gruppo|ai gruppi}}: <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Impossibile caricare l'utente \"'''\$1'''\".",
+	'right-batchuserrights' => 'Aggiunge uno o più utenti ad un gruppo o più gruppi con una singola azione',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
