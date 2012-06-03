@@ -278,7 +278,7 @@ Le resto del pagina essera executate solmente a fin que tu pote vider facilement
 	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
