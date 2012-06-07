@@ -282,8 +282,12 @@ Le resto del pagina essera executate solmente a fin que tu pote vider facilement
  * @author Beta16
  */
 $messages['it'] = array(
+	'batchuserrights' => 'Aggiunta massiva diritti utente',
 	'batchuserrights-desc' => 'Consente di aggiungere uno o più utenti ad un gruppo o più gruppi con una singola azione',
 	'batchuserrights-names' => 'Nomi utente a cui aggiungere questo gruppo (uno per riga):',
+	'batchuserrights-intro' => "Questa pagina ti permetterà di aggiungere un gruppo a più utenti contemporaneamente.
+Per motivi di sicurezza, l'elenco dei gruppi aggiungibili si trova nella configurazione dell'estensione e non può essere modificato dall'interno del wiki.
+Chiedi ad un amministratore di sistema se occorre consentire l'aggiunta massiva per altri gruppi.",
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Aggiunto un gruppo|Aggiunti i gruppi}} a <strong>$2</strong>.',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|Aggiunto un utente|Aggiunti $1 utenti}} {{PLURAL:$2|al gruppo|ai gruppi}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Impossibile caricare l'utente \"'''\$1'''\".",
