@@ -291,6 +291,9 @@ Chiedi ad un amministratore di sistema se occorre consentire l'aggiunta massiva 
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Aggiunto un gruppo|Aggiunti i gruppi}} a <strong>$2</strong>.',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|Aggiunto un utente|Aggiunti $1 utenti}} {{PLURAL:$2|al gruppo|ai gruppi}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Impossibile caricare l'utente \"'''\$1'''\".",
+	'batchuserrights-no-groups' => 'Non hai scelto alcun gruppo.
+Questo non realizzerà nulla.
+Il resto della pagina sarà eseguito solo perché così puoi facilmente vedere se uno dei nomi utente non può essere caricato.',
 	'right-batchuserrights' => 'Aggiunge uno o più utenti ad un gruppo o più gruppi con una singola azione',
 );
 
