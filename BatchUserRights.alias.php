@@ -12,6 +12,11 @@ $specialPageAliases['en'] = array(
 	'BatchUserRights' => array( 'BatchUserRights' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'BatchUserRights' => array( 'صلاحيات_المستخدم_المجمعة' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
@@ -20,6 +25,11 @@ $specialPageAliases['de'] = array(
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'BatchUserRights' => array( 'Masse-Benutzerrächt' ),
+);
+
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'BatchUserRights' => array( '일괄사용자권한' ),
 );
 
 /** Dutch (Nederlands) */
