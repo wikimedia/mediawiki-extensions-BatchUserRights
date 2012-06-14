@@ -69,14 +69,14 @@ $messages['be-tarask'] = array(
 	'right-batchuserrights' => 'даданьне аднаго ці болей удзельнікаў у групу ці некалькі групаў за адно дзеяньне',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
 	'batchuserrights-add-groups' => 'Добавяне на {{PLURAL:$1|един потребител|$1 потребителя}} в {{PLURAL:$2|следната група|следните групи}}: <strong>$3</strong>.',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -90,7 +90,7 @@ $messages['br'] = array(
 	'batchuserrights-userload-error' => "Dibosupl eo kargañ an implijer \"'''\$1'''\".",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -98,7 +98,7 @@ $messages['bs'] = array(
 	'batchuserrights-userload-error' => "Nisam mogao učitati korisnika \"'''\$1'''\".",
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Dontlietome7
  */
 $messages['cs'] = array(
@@ -169,7 +169,7 @@ Zbytk boka se jano zacytujo, aby mógał lažko wiźeś, lěc jadne z wužywarsk
 	'right-batchuserrights' => 'Jadnogo wužywarja abo někotarych wužywarjow jadnej kupce abo někotarym kupkam naraz pśidaś',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Bola
  * @author Sanbec
@@ -190,7 +190,7 @@ El resto de la página será ejecutada solo para que puedas ver fácilmente si a
 	'right-batchuserrights' => 'Agregando uno o más usuarios a uno o más grupos en una sola acción',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Peter17
  * @author Seb35
@@ -259,7 +259,7 @@ Zbytk strony so jenož začituje, zo by móhł lochko widźeć, hač jedne z wu�
 	'right-batchuserrights' => 'Jednoho wužiwarja abo wjacorych wužiwarjow jednej skupinje abo wjacorym skupinam naraz přidać',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -346,7 +346,7 @@ De Rescht vun der Säit gëtt nei opgebaut esou datt Dir einfach gesi kënnt ob 
 	'right-batchuserrights' => 'Een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -354,7 +354,7 @@ $messages['lt'] = array(
 	'batchuserrights-userload-error' => "Nepavyko įkelti naudotojo \"''' \$1 '''\".",
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -444,7 +444,7 @@ Nu wordt er niets uitgevoerd.
 De rest van de pagina kan uitgevoerd worden zodat je eenvoudig kunt zien of een van de gebruikersnamen niet geladen kon worden.',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
@@ -483,7 +483,7 @@ A sarà fàit gnente.
 	'right-batchuserrights' => "Gionté un o pi utent a na partia o a pi partìe con n'assion sola",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Waldir
  */
@@ -502,7 +502,7 @@ Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que possa verificar se não foi possível carregar algum dos utilizadores.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  */
 $messages['pt-br'] = array(
@@ -520,7 +520,7 @@ Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que você possa verificar se não foi possível carregar algum dos usuários.',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Eleferen
  * @author Александр Сигачёв
  */
@@ -540,7 +540,7 @@ $messages['ru'] = array(
 	'right-batchuserrights' => 'Позволяет добавлять нескольких участников в группу или несколько групп за одно действие',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -567,14 +567,14 @@ Hindi ito makagagawa ng anumang bagay.
 Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong makita kung ang alin man sa mga pangalan ng tagagamit ay hindi maikakarga.',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Тест
  */
 $messages['uk'] = array(
 	'batchuserrights-desc' => 'Дозволяє додавати одного або декількох користувачів в групу за одну дію',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  * @author Hzy980512
  * @author Linforest
@@ -587,7 +587,7 @@ $messages['zh-hans'] = array(
 	'batchuserrights-userload-error' => "无法加载用户\"'''\$1'''\"。",
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $messages['zh-hant'] = array(
 	'batchuserrights' => '批處理的用戶權限',
 );
