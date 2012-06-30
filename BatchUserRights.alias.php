@@ -32,6 +32,11 @@ $specialPageAliases['ko'] = array(
 	'BatchUserRights' => array( '일괄사용자권한' ),
 );
 
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'BatchUserRights' => array( 'АнгроКорисничкиПрава' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
