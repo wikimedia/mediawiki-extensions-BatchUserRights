@@ -49,7 +49,7 @@ $messages['af'] = array(
 	'batchuserrights-userload-error' => "Die gebruiker \"'''\$1'''\" kon nie gelaai word nie.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -150,7 +150,7 @@ Es wird daher keine Änderung durchgeführt.
 Der Rest der Seite wird nur deshalb geladen, damit Sie einfach feststellen können, ob einer der Benutzernamen nicht geladen werden konnte.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -211,7 +211,7 @@ Le reste de la page se chargera normalement ce qui vous permettra de voir si cer
 	'right-batchuserrights' => 'Ajouter un ou plusieurs utilisateurs à un groupe ou plusieurs groupes en une action',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -240,7 +240,7 @@ $messages['he'] = array(
 	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -325,6 +325,18 @@ $messages['ko'] = array(
 이는 아무 것도 수행하지 않습니다.
 문서의 나머지 부분은 사용자 이름 중 하나를 불러올 수 없으면 쉽게 볼 수 있게 실행하도록 허용합니다.',
 	'right-batchuserrights' => '작업 하나의 더 많은 그룹이나 그룹에 하나 이상의 사용자를 더함',
+);
+
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'batchuserrights' => 'Metmaacherrääschde em Pöngel',
+	'batchuserrights-desc' => 'Määd_et müjjelesch, Pöngelle vun Metmaacher en einem Rötsch en Jroppe ze donn.',
+	'batchuserrights-names' => 'Metmaacher för en di Jropp ze donn, eine en jeede Reiih:',
+	'batchuserrights-single-progress-update' => '<strong>$2</strong> es en {{PLURAL:$1|ein Jrop|$12 Jroppe|kein Jropp}} jekumme.',
+	'batchuserrights-userload-error' => "Mer kunnte dä Metmaacher „'''$1'''“ nit laade.",
+	'right-batchuserrights' => 'Ene Pöngel Metmaacher en einem Rötsch en Jroppe donn',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
