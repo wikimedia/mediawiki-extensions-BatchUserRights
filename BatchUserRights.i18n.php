@@ -577,7 +577,7 @@ $messages['sv'] = array(
  */
 $messages['tl'] = array(
 	'batchuserrights' => 'Mga karapatan ng tagagamit ng langkay',
-	'batchuserrights-desc' => 'Nagpapahintulot  ng pagdaragdag ng isa o mas marami pang mga tagagamit sa isang pangkat sa pamamagitan ng isang galaw',
+	'batchuserrights-desc' => 'Nagpapahintulot ng pagdaragdag ng isa o mas marami pang mga tagagamit sa isang pangkat o marami pang mga pangkat sa pamamagitan ng isang galaw',
 	'batchuserrights-names' => 'Mga pangalan ng tagagamit na pagdaragdagan ng pangkat na ito (isa bawat guhit):',
 	'batchuserrights-intro' => 'Ang pahinang ito ay kaagad na magpapahintulot sa iyo na magdagdag ng isang pangkat sa maramihang mga tagagamit.
 Para sa mga kadahilanang pangkaligtasan, ang talaan ng maidaragdag na mga pangkat ay nakatakda sa kaayusan ng dugtong at hindi mababago sa loob ng wiki.
@@ -588,6 +588,7 @@ Mangyaring makipag-ugnayan sa isang tagapangasiwa ng sistema kung kailangan mong
 	'batchuserrights-no-groups' => 'Hindi ka pumili ng alin mang mga pangkat.
 Hindi ito makagagawa ng anumang bagay.
 Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong makita kung ang alin man sa mga pangalan ng tagagamit ay hindi maikakarga.',
+	'right-batchuserrights' => 'Nagdaragdag ng isa o marami pang mga tagagamit sa isang pangkat o marami pang mga pangkat sa pamamagitan ng isang galaw',
 );
 
 /** Ukrainian (українська)
