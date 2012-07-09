@@ -41,3 +41,8 @@ $specialPageAliases['mk'] = array(
 $specialPageAliases['nl'] = array(
 	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
 );
+
+/** Tagalog (Tagalog) */
+$specialPageAliases['tl'] = array(
+	'BatchUserRights' => array( 'Mga_Karapatan_ng_Tagagamit_ng_Pulutong' ),
+);
