@@ -415,7 +415,7 @@ Yang selebihnya dalam laman ini akan dibenarkan berjalan supaya anda mudah melih
 	'right-batchuserrights' => 'Menambahkan seorang atau berbilang pengguna ke dalam kumpulan atau berbilang kumpulan sekaligus',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Audun
  * @author Nghtwlkr
  */
