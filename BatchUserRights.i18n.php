@@ -127,7 +127,7 @@ $messages['de'] = array(
 	'batchuserrights-desc' => 'Ermöglicht das gesammelte Hinzufügen eines oder mehrerer Benutzer zu einer oder mehreren Benutzergruppen',
 	'batchuserrights-names' => 'Folgende Benutzer dieser Benutzergruppe hinzufügen (einer pro Zeile):',
 	'batchuserrights-intro' => 'Auf dieser Seite kannst du mehrere Benutzer gleichzeitig einer Benutzergruppe hinzufügen.
-Aus Sicherheitsgründen wurde die Liste der zuordenbaren Benutzergruppen in der Konfigurationsdatei der Softwareerweiterung selbst festgelegt und kann daher nicht im Wiki verändert werden.
+Aus Sicherheitsgründen wurde die Liste der zuordenbaren Benutzergruppen in der Konfigurationsdatei der Programmerweiterung selbst festgelegt und kann daher nicht im Wiki verändert werden.
 Sofern weitere Benutzergruppen hinzugefügt werden sollen, wende dich bitte an einen Systemadministrator.',
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Benutzergruppe wurde|Benutzergruppen wurden}} <strong>$2</strong> hinzugefügt.',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|Ein Benutzer wird|$1 Benutzer werden}} {{PLURAL:$2|der folgenden Benutzergruppe|den folgenden Benutzergruppen}} hinzugefügt: <strong>$3</strong>',
@@ -143,7 +143,7 @@ Der Rest der Seite wird nur deshalb geladen, damit du einfach feststellen kannst
  */
 $messages['de-formal'] = array(
 	'batchuserrights-intro' => 'Auf dieser Seite können Sie mehrere Benutzer gleichzeitig einer Benutzergruppe hinzufügen.
-Aus Sicherheitsgründen wurde die Liste der zuordenbaren Benutzergruppen in der Konfigurationsdatei der Softwareerweiterung selbst festgelegt und kann daher nicht im Wiki verändert werden.
+Aus Sicherheitsgründen wurde die Liste der zuordenbaren Benutzergruppen in der Konfigurationsdatei der Programmerweiterung selbst festgelegt und kann daher nicht im Wiki verändert werden.
 Sofern weitere Benutzergruppen hinzugefügt werden sollen, wenden Sie sich bitte an einen Systemadministrator.',
 	'batchuserrights-no-groups' => 'Sie haben keine Benutzergruppe ausgewählt.
 Es wird daher keine Änderung durchgeführt.
