@@ -336,10 +336,7 @@ $messages['ksh'] = array(
 	'batchuserrights-names' => 'Metmaacher för en di Jropp ze donn, eine en jeede Reiih:',
 	'batchuserrights-intro' => 'Heh kanns De Pöngele vun Metmaachere en einem Rötsch en Jropp donn.
 Zor Sescherheid es di Leß met Jroppe beschrängk.
-Donn ene 
-
-
-Please ask a system administrator if you need to allow batch-adding of other groups.',
+Donn ene Wiki_Könes froore, wann De mieh Jroppe heh han wells.',
 	'batchuserrights-single-progress-update' => '<strong>$2</strong> es en {{PLURAL:$1|ein Jrop|$12 Jroppe|kein Jropp}} jekumme.',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|Eine Metmaacher|$1 Metmaacher|Keine Metmaacher}} es opjenumme woode en {{PLURAL:$2|de Jropp|de Jroppe|kein Jroppe}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Mer kunnte dä Metmaacher „'''$1'''“ nit laade.",
