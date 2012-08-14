@@ -232,10 +232,17 @@ Que apareza o resto da páxina só serve para que poida ollar facilmente se non 
 
 /** Hebrew (עברית)
  * @author Ofekalef
+ * @author ערן
  */
 $messages['he'] = array(
+	'batchuserrights' => 'שינוי הרשאות מרובה',
+	'batchuserrights-desc' => 'שיוך משתמש אחד או יותר לקבוצה או לקבוצות בפעולה אחת',
 	'batchuserrights-names' => 'שמות משתמש להוספה לקבוצה זו (אחד בשורה):',
+	'batchuserrights-intro' => 'דף זה מאפשר לך להוסיף בבת אחת קבוצה למשתמשים רבים.
+מטעמי אבטחה, רשימת הקבוצות שאותן ניתן להוסיף מוגדרת בהגדרות ההרחבה, ואין אפשרות לשנותה מהוויקי.
+אם ברצונך לאפשר הוספה מרובה של קבוצות אחרות יש לפנות למנהלי המערכת.',
 	'batchuserrights-single-progress-update' => 'נוספה {{PLURAL:$1|קבוצה|קבוצותה}} ל־<strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'הוספת {{PLURAL:$1| משתמש| $1 משתמשים}} ל{{PLURAL:$2|קבוצה הבאה|קבוצות הבאות}}: <strong> $3 </strong>.',
 	'batchuserrights-userload-error' => "נכשלה טעינת המשתמש \"'''\$1'''\"",
 	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת',
 );
