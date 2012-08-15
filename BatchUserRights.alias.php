@@ -22,6 +22,11 @@ $specialPageAliases['de'] = array(
 	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'BatchUserRights' => array( 'HeqêKarberanPêro' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'BatchUserRights' => array( 'Masse-Benutzerrächt' ),
