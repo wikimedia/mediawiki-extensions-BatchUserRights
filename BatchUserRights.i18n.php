@@ -231,6 +231,7 @@ Que apareza o resto da páxina só serve para que poida ollar facilmente se non 
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Ofekalef
  * @author ערן
  */
@@ -244,6 +245,9 @@ $messages['he'] = array(
 	'batchuserrights-single-progress-update' => 'נוספה {{PLURAL:$1|קבוצה|קבוצותה}} ל־<strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'הוספת {{PLURAL:$1| משתמש| $1 משתמשים}} ל{{PLURAL:$2|קבוצה הבאה|קבוצות הבאות}}: <strong> $3 </strong>.',
 	'batchuserrights-userload-error' => "נכשלה טעינת המשתמש \"'''\$1'''\"",
+	'batchuserrights-no-groups' => 'לא בחרת שום קבוצה.
+זה לא ישיג שום דבר.
+שאר הדף הזה יוכל לרוץ רק כדי להראות לך אילו שמות משתמש לא ניתן לבחור.',
 	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת',
 );
 
