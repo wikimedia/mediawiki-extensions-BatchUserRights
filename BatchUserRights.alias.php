@@ -51,3 +51,8 @@ $specialPageAliases['nl'] = array(
 $specialPageAliases['tl'] = array(
 	'BatchUserRights' => array( 'Mga_Karapatan_ng_Tagagamit_ng_Pulutong' ),
 );
+
+/** Turkish (Türkçe) */
+$specialPageAliases['tr'] = array(
+	'BatchUserRights' => array( 'TopluKullanıcıHakları' ),
+);
