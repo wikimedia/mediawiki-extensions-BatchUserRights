@@ -313,15 +313,15 @@ Il resto della pagina sarà eseguito solo perché così puoi facilmente vedere s
  */
 $messages['ja'] = array(
 	'batchuserrights' => '利用者の権限を一括処理',
-	'batchuserrights-desc' => '1人以上の利用者を1つ以上のグループに一度に追加できるようにする',
-	'batchuserrights-names' => 'このグループを追加する利用者名 (1行に1人):',
+	'batchuserrights-desc' => '1 人以上の利用者を 1 つ以上のグループに一度に追加できるようにする',
+	'batchuserrights-names' => 'このグループを追加する利用者名 (各行に 1 人):',
 	'batchuserrights-intro' => 'このページでは、複数の利用者にグループを一度に追加できます。
 セキュリティ上の理由から、追加できるグループの一覧は拡張機能の設定で指定してあり、ウィキ内では変更できません。
 他のグループを一括追加する必要がある場合は、システム管理者にお問い合わせください。',
 	'batchuserrights-single-progress-update' => '<strong>$2</strong> に{{PLURAL:$1|グループ}}を追加しました。',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|利用者|$1 人の利用者}}を以下の{{PLURAL:$2|グループ}}に追加しています: <strong>$3</strong>',
 	'batchuserrights-userload-error' => "利用者「'''$1'''」を読み込めません。",
-	'right-batchuserrights' => '1人以上の利用者を1つ以上のグループに一度に追加',
+	'right-batchuserrights' => '1 人以上の利用者を 1 つ以上のグループに一度に追加',
 );
 
 /** Korean (한국어)
