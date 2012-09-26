@@ -643,8 +643,11 @@ $messages['zh-hans'] = array(
 	'batchuserrights-userload-error' => "无法加载用户\"'''\$1'''\"。",
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $messages['zh-hant'] = array(
 	'batchuserrights' => '批處理的用戶權限',
+	'batchuserrights-desc' => '允許一次將一個或多個用戶添加到一個組或多個組',
+	'batchuserrights-names' => '添加至該組的用戶（每行一個）：',
+	'batchuserrights-userload-error' => "無法加載用戶\"'''\$1'''\"。",
 );
 
