@@ -49,7 +49,7 @@ $messages['af'] = array(
 	'batchuserrights-userload-error' => "Die gebruiker \"'''\$1'''\" kon nie gelaai word nie.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -138,7 +138,7 @@ Der Rest der Seite wird nur deshalb geladen, damit du einfach feststellen kannst
 	'right-batchuserrights' => 'Mehrere Benutzer gesammelt einer oder mehreren Benutzergruppen hinzufügen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -447,7 +447,7 @@ Il-kumplament tal-paġna se tkompli tiġi esegwita sabiex tkun tista' tara jekk 
 	'right-batchuserrights' => "Iżid wieħed jew iktar utenti fi grupp wieħed jew iktar b'azzjoni waħda",
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Audun
  * @author Nghtwlkr
  */
@@ -487,7 +487,7 @@ De rest van de pagina kan uitgevoerd worden zodat u eenvoudig kunt zien of een v
 	'right-batchuserrights' => 'Een of meerdere gebruikers aan een of meerdere groepen toevoegen in één actie',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -630,7 +630,7 @@ $messages['uk'] = array(
 	'batchuserrights-desc' => 'Дозволяє додавати одного або декількох користувачів в групу за одну дію',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  * @author Hzy980512
  * @author Linforest
