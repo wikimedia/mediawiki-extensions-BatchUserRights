@@ -94,7 +94,7 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
-	'batchuserrights-desc' => 'Omogućava dodavanje jednog ili više korisnika u grupu putem jedne akcije',
+	'batchuserrights-desc' => 'Omogućava dodavanje jednog ili više korisnika u grupu putem jedne akcije', # Fuzzy
 	'batchuserrights-userload-error' => "Nisam mogao učitati korisnika \"'''\$1'''\".",
 );
 
@@ -103,7 +103,7 @@ $messages['bs'] = array(
  */
 $messages['cs'] = array(
 	'batchuserrights' => 'Dávkové přidělení uživatelských práv',
-	'batchuserrights-desc' => 'Umožňuje přidání jednoho nebo více uživatelů najednou do skupiny',
+	'batchuserrights-desc' => 'Umožňuje přidání jednoho nebo více uživatelů najednou do skupiny', # Fuzzy
 	'batchuserrights-names' => 'Uživatelská jména k přidání do této skupiny (1 na řádek):',
 	'batchuserrights-intro' => 'Tato stránka vám umožní přidat skupinu pro více uživatelů najednou.
 Z bezpečnostních důvodů seznam přidatelných skupin je nastaven v konfiguraci rozšíření a nelze jej měnit v rámci wiki.
@@ -453,7 +453,7 @@ Il-kumplament tal-paġna se tkompli tiġi esegwita sabiex tkun tista' tara jekk 
  */
 $messages['nb'] = array(
 	'batchuserrights' => 'Puljeoppdater brukerrettigheter',
-	'batchuserrights-desc' => 'Tillater å legge én eller flere brukere til en gruppe i én handling',
+	'batchuserrights-desc' => 'Tillater å legge én eller flere brukere til en gruppe i én handling', # Fuzzy
 	'batchuserrights-names' => 'Brukernavn som skal legges til denne gruppen (ett per linje):',
 	'batchuserrights-intro' => 'Denne siden lar deg legge flere brukere til en gruppe samtidig.
 Av sikkerhetsmessige årsaker, er listen over mulige grupper satt i utvidelseskonfigurasjonen og kan ikke endres fra wikien.
@@ -544,7 +544,7 @@ A sarà fàit gnente.
  */
 $messages['pt'] = array(
 	'batchuserrights' => 'Direitos de utilizador em lote',
-	'batchuserrights-desc' => 'Permite adicionar um ou mais utilizadores a um grupo de uma só vez',
+	'batchuserrights-desc' => 'Permite adicionar um ou mais utilizadores a um grupo de uma só vez', # Fuzzy
 	'batchuserrights-names' => 'Nomes de utilizador a adicionar a este grupo (um por linha):',
 	'batchuserrights-intro' => 'Esta página permite atribuir um grupo a vários utilizadores ao mesmo tempo.
 Por razões de segurança, a lista dos grupos assim atribuíveis é definida na configuração da extensão e não pode ser alterada dentro da wiki.
@@ -562,7 +562,7 @@ Será permitida a execução do resto da página apenas para que possa verificar
  */
 $messages['pt-br'] = array(
 	'batchuserrights' => 'Direitos de usuários em lote',
-	'batchuserrights-desc' => 'Permite adicionar um ou mais usuários a um grupo de uma só vez',
+	'batchuserrights-desc' => 'Permite adicionar um ou mais usuários a um grupo de uma só vez', # Fuzzy
 	'batchuserrights-names' => 'Nomes de usuários a adicionar a este grupo (um por linha):',
 	'batchuserrights-intro' => 'Esta página permite atribuir um grupo a vários usuários ao mesmo tempo.
 Por razões de segurança, a lista dos grupos assim atribuíveis é definida na configuração da extensão e não pode ser alterada dentro da wiki.
@@ -627,7 +627,7 @@ Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong 
  * @author Тест
  */
 $messages['uk'] = array(
-	'batchuserrights-desc' => 'Дозволяє додавати одного або декількох користувачів в групу за одну дію',
+	'batchuserrights-desc' => 'Дозволяє додавати одного або декількох користувачів в групу за одну дію', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
@@ -643,11 +643,11 @@ $messages['zh-hans'] = array(
 	'batchuserrights-userload-error' => "无法加载用户\"'''\$1'''\"。",
 );
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）‎)
+ */
 $messages['zh-hant'] = array(
 	'batchuserrights' => '批處理的用戶權限',
 	'batchuserrights-desc' => '允許一次將一個或多個用戶添加到一個組或多個組',
 	'batchuserrights-names' => '添加至該組的用戶（每行一個）：',
 	'batchuserrights-userload-error' => "無法加載用戶\"'''\$1'''\"。",
 );
-
