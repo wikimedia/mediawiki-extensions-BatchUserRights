@@ -42,8 +42,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 		// check if user is blocked -- see rt#19111
 		if ( $wgUser->isBlocked() ) {
-			$wgOut->blockedPage();
-			return;
+			throw new UserBlockedError( $this->getUser()->mBlock );
 		}
 
 		if ( wfReadOnly() ) {
@@ -64,9 +63,8 @@ class SpecialBatchUserRights extends SpecialPage {
 				$reason = $wgRequest->getVal( 'user-reason' );
 				$tok = $wgRequest->getVal( 'wpEditToken' );
 				if ( $wgUser->matchEditToken( $tok ) ) {
-					$allgroups = $wgBatchUserRightsGrantableGroups;
 					$addgroup = array();
-					foreach ( $allgroups as $group ) {
+					foreach ( $wgBatchUserRightsGrantableGroups as $group ) {
 						// This batch form is only for adding user groups, we don't remove any.
 						if ( $wgRequest->getCheck( "wpGroup-$group" ) ) {
 							$addgroup[] = $group;
@@ -122,7 +120,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @return null
 	 */
 	function saveUserGroups( $username, $addgroup, $reason = '' ) {
-		global $wgRequest, $wgUser;
+		global $wgUser;
 
 		if ( $username == $wgUser->getName() ) {
 			$this->isself = true;
@@ -172,20 +170,19 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		if ( $newGroups != $oldGroups ) {
-			$this->addLogEntry( $user, $oldGroups, $newGroups );
+			$this->addLogEntry( $user, $oldGroups, $newGroups, $reason );
 		}
 	}
 
 	/**
 	 * Add a rights log entry for an action.
 	 */
-	function addLogEntry( $user, $oldGroups, $newGroups ) {
-		global $wgRequest;
+	function addLogEntry( $user, $oldGroups, $newGroups, $reason = '' ) {
 		$log = new LogPage( 'rights' );
 
 		$log->addEntry( 'rights',
 			$user->getUserPage(),
-			$wgRequest->getText( 'user-reason' ),
+			$reason,
 			array(
 				$this->makeGroupNameListForLog( $oldGroups ),
 				$this->makeGroupNameListForLog( $newGroups )
@@ -303,7 +300,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 		$wgOut->addHTML(
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ) ) .
-			Html::hidden( 'wpEditToken', $wgUser->editToken() ) .
+			Html::hidden( 'wpEditToken', $wgUser->getEditToken() ) .
 			Xml::openElement( 'fieldset' ) .
 			Xml::element( 'legend', array(), wfMsg( 'userrights-editusergroup' ) ) .
 			wfMsgExt( 'batchuserrights-intro', array( 'parse' ) ) .
@@ -344,16 +341,14 @@ class SpecialBatchUserRights extends SpecialPage {
 	 */
 	private function groupCheckboxes() {
 		global $wgBatchUserRightsGrantableGroups;
-		$usergroups = array(); // kinda a hack... this array holds "selected" groups... of which there shouldn't be any for this SpecialPage
 
-		$allgroups = $wgBatchUserRightsGrantableGroups;
 		$ret = '';
 
 		$column = 1;
 		$settable_col = '';
 		$unsettable_col = '';
 
-		foreach ( $allgroups as $group ) {
+		foreach ( $wgBatchUserRightsGrantableGroups as $group ) {
 			$set = false;
 			# Should the checkbox be disabled?
 			$disabled = !( !$set && $this->canAdd( $group ) );
