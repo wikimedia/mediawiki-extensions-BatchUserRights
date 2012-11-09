@@ -56,3 +56,8 @@ $specialPageAliases['tl'] = array(
 $specialPageAliases['tr'] = array(
 	'BatchUserRights' => array( 'TopluKullanıcıHakları' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'BatchUserRights' => array( '批量用户权限' ),
+);
