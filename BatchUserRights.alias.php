@@ -32,6 +32,11 @@ $specialPageAliases['gsw'] = array(
 	'BatchUserRights' => array( 'Masse-Benutzerrächt' ),
 );
 
+/** Italian (italiano) */
+$specialPageAliases['it'] = array(
+	'BatchUserRights' => array( 'PermessiUtenteAccorpati' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'BatchUserRights' => array( '일괄사용자권한' ),
