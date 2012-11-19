@@ -150,6 +150,13 @@ Es wird daher keine Änderung durchgeführt.
 Der Rest der Seite wird nur deshalb geladen, damit Sie einfach feststellen können, ob einer der Benutzernamen nicht geladen werden konnte.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'batchuserrights' => 'Pêser heqê karberan',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
@@ -453,7 +460,7 @@ Il-kumplament tal-paġna se tkompli tiġi esegwita sabiex tkun tista' tara jekk 
  */
 $messages['nb'] = array(
 	'batchuserrights' => 'Puljeoppdater brukerrettigheter',
-	'batchuserrights-desc' => 'Tillater å legge én eller flere brukere til en gruppe i én handling', # Fuzzy
+	'batchuserrights-desc' => 'Tillater å legge én eller flere brukere til en eller flere grupper i én handling',
 	'batchuserrights-names' => 'Brukernavn som skal legges til denne gruppen (ett per linje):',
 	'batchuserrights-intro' => 'Denne siden lar deg legge flere brukere til en gruppe samtidig.
 Av sikkerhetsmessige årsaker, er listen over mulige grupper satt i utvidelseskonfigurasjonen og kan ikke endres fra wikien.
