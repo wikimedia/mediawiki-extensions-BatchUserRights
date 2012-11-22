@@ -52,6 +52,11 @@ $specialPageAliases['nl'] = array(
 	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'BatchUserRights' => array( 'PermessiUtenteAccorpati' ),
+);
+
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
 	'BatchUserRights' => array( 'Mga_Karapatan_ng_Tagagamit_ng_Pulutong' ),
