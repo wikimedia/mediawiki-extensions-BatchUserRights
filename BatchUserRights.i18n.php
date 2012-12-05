@@ -546,12 +546,13 @@ A sarà fàit gnente.
 );
 
 /** Portuguese (português)
+ * @author Alchimista
  * @author Hamilton Abreu
  * @author Waldir
  */
 $messages['pt'] = array(
 	'batchuserrights' => 'Direitos de utilizador em lote',
-	'batchuserrights-desc' => 'Permite adicionar um ou mais utilizadores a um grupo de uma só vez', # Fuzzy
+	'batchuserrights-desc' => 'Permite adicionar um ou mais utilizadores a um grupo de uma só vez',
 	'batchuserrights-names' => 'Nomes de utilizador a adicionar a este grupo (um por linha):',
 	'batchuserrights-intro' => 'Esta página permite atribuir um grupo a vários utilizadores ao mesmo tempo.
 Por razões de segurança, a lista dos grupos assim atribuíveis é definida na configuração da extensão e não pode ser alterada dentro da wiki.
@@ -562,6 +563,7 @@ Se precisa de acrescentar mais grupos atribuíveis, peça a um administrador.',
 	'batchuserrights-no-groups' => 'Não escolheu nenhum grupo.
 Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que possa verificar se não foi possível carregar algum dos utilizadores.',
+	'right-batchuserrights' => 'Adicionando um ou mais utilizadores a um grupo ou grupos numa única acção',
 );
 
 /** Brazilian Portuguese (português do Brasil)
