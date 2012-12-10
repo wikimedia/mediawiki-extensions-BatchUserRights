@@ -633,10 +633,13 @@ Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong 
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Тест
  */
 $messages['uk'] = array(
 	'batchuserrights-desc' => 'Дозволяє додавати одного або декількох користувачів в групу за одну дію', # Fuzzy
+	'batchuserrights-names' => 'Імена користувачів, для включення до групи (по одному на рядок):',
+	'batchuserrights-userload-error' => "Не вдалось завантажити користувача «'''$1'''».",
 );
 
 /** Simplified Chinese (中文（简体）‎)
