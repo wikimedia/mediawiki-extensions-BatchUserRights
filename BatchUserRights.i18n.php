@@ -28,11 +28,12 @@ The rest of the page will be allowed to run just so that you can easily see if a
 
 /** Message documentation (Message documentation)
  * @author SVG
+ * @author Shirayuki
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
 	'batchuserrights' => 'Name of Special:BatchUserRights in Special:SpecialPages and title of Special:BatchUserRights page',
-	'batchuserrights-desc' => '{{desc}}',
+	'batchuserrights-desc' => '{{desc|name=Batch User Rights|url=http://www.mediawiki.org/wiki/Extension:BatchUserRights}}',
 	'batchuserrights-names' => 'Names of users which should be added to the selected groups',
 	'batchuserrights-intro' => 'How to use description on Special:BatchUserRights',
 	'batchuserrights-single-progress-update' => 'Success message',
