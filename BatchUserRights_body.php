@@ -74,31 +74,29 @@ class SpecialBatchUserRights extends SpecialPage {
 					if ( count( $addgroup ) == 0 ) {
 						$wgOut->addHTML(
 							'<strong style="background-color:#faa">' .
-							wfMsg( 'batchuserrights-no-groups' ) .
+							$this->msg( 'batchuserrights-no-groups' )->text() .
 							"</strong><br /><br />\n"
 						);
 					} else {
 						global $wgLang;
 
-						$wgOut->addHTML( wfMsgExt(
+						$wgOut->addHTML( $this->msg(
 							'batchuserrights-add-groups',
-							'parseinline',
 							count( $usernames ),
 							count( $addgroup ),
 							$wgLang->listToText( $addgroup )
-						) . "<br /><br />\n" );
+						)->parse() . "<br /><br />\n" );
 					}
 
 					// Loop through each target user and apply the update.
 					foreach ( $usernames as $username ) {
 						$username = trim( $username );
 						if( $username !== '' ) {
-							$wgOut->addHTML( wfMsgExt(
+							$wgOut->addHTML( $this->msg(
 								'batchuserrights-single-progress-update',
-								'parseinline',
 								count( $addgroup ),
 								$username
-							) . "<br />\n" );
+							)->parse() . "<br />\n" );
 							$this->saveUserGroups( $username, $addgroup, $reason );
 						}
 					}
@@ -132,7 +130,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 			$wgOut->addHTML(
 				'<strong style="background-color:#faa">' .
-				wfMsgExt( 'batchuserrights-userload-error', 'parseinline', $username ) .
+				$this->msg( 'batchuserrights-userload-error', $username )->parse() .
 				'</strong><br />'
 			);
 
@@ -255,7 +253,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 	function makeGroupNameList( $ids ) {
 		if ( empty( $ids ) ) {
-			return wfMsgForContent( 'rightsnone' );
+			return $this->msg( 'rightsnone' )->inContentLanguage()->text();
 		} else {
 			return implode( ', ', $ids );
 		}
@@ -302,13 +300,13 @@ class SpecialBatchUserRights extends SpecialPage {
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ) ) .
 			Html::hidden( 'wpEditToken', $wgUser->getEditToken() ) .
 			Xml::openElement( 'fieldset' ) .
-			Xml::element( 'legend', array(), wfMsg( 'userrights-editusergroup' ) ) .
-			wfMsgExt( 'batchuserrights-intro', array( 'parse' ) ) .
+			Xml::element( 'legend', array(), $this->msg( 'userrights-editusergroup' )->text() ) .
+			$this->msg( 'batchuserrights-intro' )->parseAsBlock() .
 			Xml::tags( 'p', null, $this->groupCheckboxes() ) .
 			Xml::openElement( 'table', array( 'border' => '0', 'id' => 'mw-userrights-table-outer' ) ) .
 				'<tr>
 					<td class="mw-label">' .
-						Xml::label( wfMsg( 'batchuserrights-names' ), 'wpUsernames' ) .
+						Xml::label( $this->msg( 'batchuserrights-names' )->text(), 'wpUsernames' ) .
 					'</td>
 					<td class="mw-input">' .
 						Xml::textarea( 'wpUsernames', '' ) .
@@ -316,7 +314,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				</tr>
 				<tr>
 					<td class="mw-label">' .
-						Xml::label( wfMsg( 'userrights-reason' ), 'wpReason' ) .
+						Xml::label( $this->msg( 'userrights-reason' )->text(), 'wpReason' ) .
 					'</td>
 					<td class="mw-input">' .
 						Xml::input( 'user-reason', 60, false, array( 'id' => 'wpReason', 'maxlength' => 255 ) ) .
@@ -325,7 +323,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				<tr>
 					<td></td>
 					<td class="mw-submit">' .
-						Xml::submitButton( wfMsg( 'saveusergroups' ), array( 'name' => 'saveusergroups', 'accesskey' => 's' ) ) .
+						Xml::submitButton( $this->msg( 'saveusergroups' )->text(), array( 'name' => 'saveusergroups', 'accesskey' => 's' ) ) .
 					'</td>
 				</tr>' .
 			Xml::closeElement( 'table' ) . "\n" .
@@ -365,7 +363,7 @@ class SpecialBatchUserRights extends SpecialPage {
 			$attr = $disabled ? array( 'disabled' => 'disabled' ) : array();
 			$attr['title'] = $group;
 			$text = $irreversible
-				? wfMsgHtml( 'userrights-irreversible-marker', User::getGroupMember( $group ) )
+				? $this->msg( 'userrights-irreversible-marker', User::getGroupMember( $group ) )->escaped()
 				: User::getGroupMember( $group );
 			$checkbox = Xml::checkLabel( $text, "wpGroup-$group",
 				"wpGroup-$group", $set, $attr );
@@ -383,10 +381,10 @@ class SpecialBatchUserRights extends SpecialPage {
 				'<tr>
 ';
 			if ( $settable_col !== '' ) {
-				$ret .= Xml::element( 'th', null, wfMsg( 'userrights-changeable-col' ) );
+				$ret .= Xml::element( 'th', null, $this->msg( 'userrights-changeable-col' )->text() );
 			}
 			if ( $unsettable_col !== '' ) {
-				$ret .= Xml::element( 'th', null, wfMsg( 'userrights-unchangeable-col' ) );
+				$ret .= Xml::element( 'th', null, $this->msg( 'userrights-unchangeable-col' )->text() );
 			}
 			$ret .= '</tr>
 				<tr>
