@@ -297,6 +297,13 @@ Le resto del pagina essera executate solmente a fin que tu pote vider facilement
 	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Farras
+ */
+$messages['id'] = array(
+	'batchuserrights-userload-error' => "Tidak bisa memuat pengguna \"'''\$1'''\".",
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -492,7 +499,7 @@ Vraag hulp van een systeembeheerder als u de beschikbare groepen wilt wijzigen.'
 	'batchuserrights-no-groups' => 'U hebt geen groepen gekozen.
 Nu wordt er niets uitgevoerd.
 De rest van de pagina kan uitgevoerd worden zodat u eenvoudig kunt zien of een van de gebruikersnamen niet geladen kon worden.',
-	'right-batchuserrights' => 'Een of meerdere gebruikers aan een of meerdere groepen toevoegen in één actie',
+	'right-batchuserrights' => 'Een of meerdere gebruikers aan een of meerdere groepen toevoegen in één handeling',
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
