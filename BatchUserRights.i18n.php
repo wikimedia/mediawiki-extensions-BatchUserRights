@@ -177,6 +177,13 @@ Zbytk boka se jano zacytujo, aby mógał lažko wiźeś, lěc jadne z wužywarsk
 	'right-batchuserrights' => 'Jadnogo wužywarja abo někotarych wužywarjow jadnej kupce abo někotarym kupkam naraz pśidaś',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'batchuserrights-userload-error' => "Ne eblis ŝargi uzanton \"'''\$1'''\".",
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bola
@@ -620,6 +627,7 @@ $messages['sv'] = array(
 	'batchuserrights-single-progress-update' => 'Lade till {{PLURAL:$1|grupp|grupperna}} till <strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'Lägger till {{PLURAL:$1|en användare|$1 användare}} till följande {{PLURAL:$2|grupp|grupper}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Kunde inte läsa in användaren \"'''\$1'''\".",
+	'right-batchuserrights' => 'Lägger till en eller flera användare i en grupp eller flera grupper i en åtgärd',
 );
 
 /** Tagalog (Tagalog)
