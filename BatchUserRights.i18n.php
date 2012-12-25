@@ -620,6 +620,14 @@ $messages['ru'] = array(
 	'right-batchuserrights' => 'Позволяет добавлять нескольких участников в группу или несколько групп за одно действие',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'batchuserrights' => 'කාණ්ඩ පරිශීලක හිමිකම්',
+	'batchuserrights-userload-error' => "\"'''\$1'''\" පරිශීලක පූරණය කල නොහැක.",
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
