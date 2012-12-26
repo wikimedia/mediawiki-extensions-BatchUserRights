@@ -205,6 +205,23 @@ El resto de la página será ejecutada solo para que puedas ver fácilmente si a
 	'right-batchuserrights' => 'Agregando uno o más usuarios a uno o más grupos en una sola acción',
 );
 
+/** Finnish (suomi)
+ * @author VezonThunder
+ */
+$messages['fi'] = array(
+	'batchuserrights-desc' => 'Mahdollistaa yhden tai useamman käyttäjän lisäämiseen yhteen tai useampaan ryhmään kerralla',
+	'batchuserrights-names' => 'Käyttäjänimet, joille lisätään tämä ryhmä (yksi riviä kohti):',
+	'batchuserrights-intro' => 'Tämä sivu antaa lisätä ryhmän useille käyttäjille kerralla.
+Turvallisuussyistä lisättävien ryhmien luettelo on määritetty laajennuksen asetuksissa eikä sitä voi muuttaa wikistä.
+Kysy järjestelmän ylläpitäjältä, jos sinun tarvitsee sallia muiden ryhmien joukkolisääminen.',
+	'batchuserrights-add-groups' => 'Lisätään {{PLURAL:$1|yksi käyttäjä|$1 käyttäjää}} {{PLURAL:$2|seuraavaan ryhmään|seuraaviin ryhmiin}}: <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Käyttäjää \"'''\$1'''\" ei voitu ladata.",
+	'batchuserrights-no-groups' => 'Et valinnut ryhmiä.
+Tämä ei muuta mitään.
+Loput sivusta suoritetaan vain jotta voisit helposti nähdä, epäonnistuuko joidenkin käyttäjänimien lataaminen.',
+	'right-batchuserrights' => 'Lisätä yksi tai useampia käyttäjiä yhteen tai useampaan ryhmään kerralla',
+);
+
 /** French (français)
  * @author Gomoko
  * @author Peter17
