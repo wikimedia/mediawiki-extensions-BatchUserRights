@@ -50,6 +50,15 @@ $messages['af'] = array(
 	'batchuserrights-userload-error' => "Die gebruiker \"'''\$1'''\" kon nie gelaai word nie.",
 );
 
+/** Bashkir (башҡортса)
+ * @author Sagan
+ */
+$messages['ba'] = array(
+	'batchuserrights' => 'Ҡатнашыуса хоҡуҡтарын идаралау',
+	'batchuserrights-desc' => 'Ҡатнашыусыларҙы бер йәки бер нисә төркөмгә өҫтәргә мөмкилек бирә.',
+	'batchuserrights-names' => 'Төркөмгә берләштереү өсөн иҫәп яҙмалары (һәр юда берәр)',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
