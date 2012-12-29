@@ -52,11 +52,12 @@ $messages['af'] = array(
 
 /** Bashkir (башҡортса)
  * @author Sagan
+ * @author Ләйсән
  */
 $messages['ba'] = array(
 	'batchuserrights' => 'Ҡатнашыуса хоҡуҡтарын идаралау',
 	'batchuserrights-desc' => 'Ҡатнашыусыларҙы бер йәки бер нисә төркөмгә өҫтәргә мөмкилек бирә.',
-	'batchuserrights-names' => 'Төркөмгә берләштереү өсөн иҫәп яҙмалары (һәр юда берәр)',
+	'batchuserrights-names' => 'Төркөмгә берләштереү өсөн иҫәп яҙмалары (һәр юлда берәр)',
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -106,6 +107,13 @@ $messages['br'] = array(
 $messages['bs'] = array(
 	'batchuserrights-desc' => 'Omogućava dodavanje jednog ili više korisnika u grupu putem jedne akcije', # Fuzzy
 	'batchuserrights-userload-error' => "Nisam mogao učitati korisnika \"'''\$1'''\".",
+);
+
+/** Catalan (català)
+ * @author Arnaugir
+ */
+$messages['ca'] = array(
+	'batchuserrights-userload-error' => "No s'ha pogut carregar l'usuari \"'''\$1'''\".",
 );
 
 /** Czech (česky)
