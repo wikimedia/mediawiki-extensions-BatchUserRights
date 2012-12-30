@@ -260,6 +260,13 @@ Le reste de la page se chargera normalement ce qui vous permettra de voir si cer
 	'right-batchuserrights' => 'Ajouter un ou plusieurs utilisateurs à un groupe ou plusieurs groupes en une action',
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'batchuserrights-userload-error' => "Empossiblo de chargiér l’utilisator « '''$1''' ».",
+);
+
 /** Galician (galego)
  * @author Toliño
  */
