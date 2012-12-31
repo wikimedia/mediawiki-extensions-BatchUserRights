@@ -666,6 +666,7 @@ $messages['ru'] = array(
  */
 $messages['si'] = array(
 	'batchuserrights' => 'කාණ්ඩ පරිශීලක හිමිකම්',
+	'batchuserrights-names' => 'මෙම සමූහය වෙත එක් කල යුතු පරිශීලක නාම (පෙළකට එක බැගින්):',
 	'batchuserrights-userload-error' => "\"'''\$1'''\" පරිශීලක පූරණය කල නොහැක.",
 );
 
