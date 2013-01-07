@@ -176,16 +176,16 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * Add a rights log entry for an action.
 	 */
 	function addLogEntry( $user, $oldGroups, $newGroups, $reason = '' ) {
-		$log = new LogPage( 'rights' );
-
-		$log->addEntry( 'rights',
-			$user->getUserPage(),
-			$reason,
-			array(
-				$this->makeGroupNameListForLog( $oldGroups ),
-				$this->makeGroupNameListForLog( $newGroups )
-			)
-		);
+		$logEntry = new ManualLogEntry( 'rights', 'rights' );
+		$logEntry->setPerformer( $this->getUser() );
+		$logEntry->setTarget( $user->getUserPage() );
+		$logEntry->setComment( $reason );
+		$logEntry->setParameters( array(
+			'4::oldgroups' => $oldGroups,
+			'5::newgroups' => $newGroups,
+		) );
+		$logid = $logEntry->insert();
+		$logEntry->publish( $logid );
 	}
 
 	/**
@@ -249,22 +249,6 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		return $user;
-	}
-
-	function makeGroupNameList( $ids ) {
-		if ( empty( $ids ) ) {
-			return $this->msg( 'rightsnone' )->inContentLanguage()->text();
-		} else {
-			return implode( ', ', $ids );
-		}
-	}
-
-	function makeGroupNameListForLog( $ids ) {
-		if ( empty( $ids ) ) {
-			return '';
-		} else {
-			return $this->makeGroupNameList( $ids );
-		}
 	}
 
 	/**
