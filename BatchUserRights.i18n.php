@@ -69,7 +69,7 @@ $messages['azb'] = array(
 	'batchuserrights-no-groups' => 'سیز هئچ بیر قروپ سئچمه‌دینیز.
 بو بیر ایش گؤرمیه‌جکدیر.
 صحیفه‌نین قالانی ایشلیه‌جک فقط بونا گؤره کی گؤره‌سیز بعضی ایستیفاده‌چیلر یوکلنه بیلیر یا یوخ.',
-	'right-batchuserrights' => 'بیر حرکت‌ده بیر یا نئچه ایستیفاده‌چینی بیر یا چوخ قروپا آرتیرماق',
+	'right-batchuserrights' => 'بیر حرکت‌ده بیر یا نئچه ایستیفاده‌چینی بیر یا چوخ قروپا آرتیرماق', # Fuzzy
 );
 
 /** Bashkir (башҡортса)
@@ -159,6 +159,7 @@ Zbývající část stránky bude možné spustit tak, že lze snadno zobrazit, 
 /** German (Deutsch)
  * @author Kghbln
  * @author LWChris
+ * @author Metalhead64
  * @author SVG
  * @author The Evil IP address
  */
@@ -176,6 +177,7 @@ Sofern weitere Benutzergruppen hinzugefügt werden sollen, wende dich bitte an e
 Es wird daher keine Änderung durchgeführt.
 Der Rest der Seite wird nur deshalb geladen, damit du einfach feststellen kannst, ob einer der Benutzernamen nicht geladen werden konnte.',
 	'right-batchuserrights' => 'Mehrere Benutzer gesammelt einer oder mehreren Benutzergruppen hinzufügen',
+	'action-batchuserrights' => 'mehrere Benutzer gesammelt einer oder mehreren Benutzergruppen hinzuzufügen',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -279,7 +281,8 @@ Si vous voulez autoriser l’ajout par lots pour d’autres groupes, veuillez de
 	'batchuserrights-no-groups' => 'Vous n’avez choisi aucun groupe.
 Aucune action ne sera effectuée.
 Le reste de la page se chargera normalement ce qui vous permettra de voir si certains noms d’utilisateurs ne peuvent pas être chargés.',
-	'right-batchuserrights' => 'Ajouter un ou plusieurs utilisateurs à un groupe ou plusieurs groupes en une action',
+	'right-batchuserrights' => 'Ajouter un ou plusieurs utilisateurs à un groupe ou plus en une action',
+	'action-batchuserrights' => 'ajouter un ou plusieurs utilisateurs à un ou plusieurs groupes en une action',
 );
 
 /** Franco-Provençal (arpetan)
@@ -305,7 +308,8 @@ Por favor, pregunte a un administrador do sistema se necesita engadir outros gru
 	'batchuserrights-no-groups' => 'Non elixiu ningún grupo.
 Deste modo, non ocorrerá nada.
 Que apareza o resto da páxina só serve para que poida ollar facilmente se non se puido cargar algún dos nomes de usuario.',
-	'right-batchuserrights' => 'Engadir un ou máis usuarios a un ou máis grupos cunha soa acción',
+	'right-batchuserrights' => 'Engadir un ou máis usuarios a un ou varios grupos cunha soa acción',
+	'action-batchuserrights' => 'engadir un ou máis usuarios a un ou varios grupos cunha soa acción',
 );
 
 /** Hebrew (עברית)
@@ -346,6 +350,7 @@ Prošu staj so ze systemowym administratorom do zwiska, jeli dyrbiš dalše skup
 Tohodla so ničo njewukonja.
 Zbytk strony so jenož začituje, zo by móhł lochko widźeć, hač jedne z wužiwarskich mjenow njeda so začitać.',
 	'right-batchuserrights' => 'Jednoho wužiwarja abo wjacorych wužiwarjow jednej skupinje abo wjacorym skupinam naraz přidać',
+	'action-batchuserrights' => 'jednoho wužiwarja abo wjacorych wužiwarjow jednej skupinje abo wjacorym skupinam naraz přidać',
 );
 
 /** Interlingua (interlingua)
@@ -406,7 +411,8 @@ $messages['ja'] = array(
 	'batchuserrights-single-progress-update' => '<strong>$2</strong> に{{PLURAL:$1|グループ}}を追加しました。',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|利用者|$1 人の利用者}}を以下の{{PLURAL:$2|グループ}}に追加しています: <strong>$3</strong>',
 	'batchuserrights-userload-error' => "利用者「'''$1'''」を読み込めません。",
-	'right-batchuserrights' => '1 人以上の利用者を 1 つ以上のグループに一度に追加',
+	'right-batchuserrights' => '1 人以上の利用者を複数のグループに一度に追加',
+	'action-batchuserrights' => '1 人以上の利用者を複数のグループに一度に追加',
 );
 
 /** Korean (한국어)
@@ -491,7 +497,8 @@ $messages['mk'] = array(
 	'batchuserrights-no-groups' => 'Не одбравте ниедна група.
 Со ова нема да постигнете ништо.
 Остатокот од страницата ќе работи и понатаму за да можете лесно да видите дали некое корисничко име не можело да се вчита.',
-	'right-batchuserrights' => 'Додавање на еден или повеќе корисници во група/групи наеднаш',
+	'right-batchuserrights' => 'Додавање на еден или повеќе корисници во група повеќе групи наеднаш',
+	'action-batchuserrights' => 'додавање на еден или повеќе корисници во група или повеќе групи наеднаш',
 );
 
 /** Malay (Bahasa Melayu)
