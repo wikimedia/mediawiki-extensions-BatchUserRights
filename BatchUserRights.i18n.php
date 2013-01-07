@@ -23,7 +23,8 @@ Please ask a system administrator if you need to allow batch-adding of other gro
 This will not accomplish anything.
 The rest of the page will be allowed to run just so that you can easily see if any of the usernames could not be loaded.',
 
-	'right-batchuserrights' => 'Adding one or more users to a group or more groups in one action',
+	'right-batchuserrights' => 'Add one or more users to a group or multiple groups in one action',
+	'action-batchuserrights' => 'add one or more users to a group or multiple groups in one action',
 );
 
 /** Message documentation (Message documentation)
@@ -41,6 +42,7 @@ $messages['qqq'] = array(
 	'batchuserrights-userload-error' => 'Error message if an user could not loaded',
 	'batchuserrights-no-groups' => 'Error message which will be shown if no groups to add has been selected',
 	'right-batchuserrights' => '{{doc-right|batchuserrights}}',
+	'action-batchuserrights' => '{{doc-action|batchuserrights}}',
 );
 
 /** Afrikaans (Afrikaans)
