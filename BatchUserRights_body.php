@@ -15,15 +15,6 @@ class SpecialBatchUserRights extends SpecialPage {
 		parent::__construct( 'BatchUserRights', 'batchuserrights' );
 	}
 
-	public function userCanChangeRights( $user, $checkIfSelf = true ) {
-		$available = $this->changeableGroups();
-		return !empty( $available['add'] ) ||
-			!empty( $available['remove'] ) ||
-			( ( $this->isself || !$checkIfSelf ) &&
-				( !empty( $available['add-self'] ) ||
-				!empty( $available['remove-self'] ) ) );
-	}
-
 	/**
 	 * Manage forms to be shown according to posted data.
 	 * Depending on the submit button used, call a form or a save function.
@@ -31,22 +22,26 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @param $par Mixed: string if any subpage provided, else null
 	 */
 	public function execute( $par ) {
-		global $wgUser, $wgRequest, $wgOut, $wgBatchUserRightsGrantableGroups;
+		global $wgBatchUserRightsGrantableGroups;
+
+		$user = $this->getUser();
+		$request = $this->getRequest();
+		$out = $this->getOutput();
 
 		// If the visitor doesn't have permissions to assign or remove
 		// any groups, it's a bit silly to give them the user search prompt.
-		if ( !$wgUser->isAllowed( 'batchuserrights' ) ) {
+		if ( !$user->isAllowed( 'batchuserrights' ) ) {
 			$this->displayRestrictionError();
 			return;
 		}
 
 		// check if user is blocked -- see rt#19111
-		if ( $wgUser->isBlocked() ) {
+		if ( $user->isBlocked() ) {
 			throw new UserBlockedError( $this->getUser()->mBlock );
 		}
 
 		if ( wfReadOnly() ) {
-			$wgOut->readOnlyPage();
+			$out->readOnlyPage();
 			return;
 		}
 
@@ -54,37 +49,35 @@ class SpecialBatchUserRights extends SpecialPage {
 
 		$this->setHeaders();
 
-		if ( $wgRequest->wasPosted() ) {
+		if ( $request->wasPosted() ) {
 			// Get the array of posted usernames (line-break delimited).
-			$usernames = explode( "\n", $wgRequest->getVal( 'wpUsernames', '' ) );
+			$usernames = explode( "\n", $request->getVal( 'wpUsernames', '' ) );
 
 			// save settings
-			if ( $wgRequest->getCheck( 'saveusergroups' ) ) {
-				$reason = $wgRequest->getVal( 'user-reason' );
-				$tok = $wgRequest->getVal( 'wpEditToken' );
-				if ( $wgUser->matchEditToken( $tok ) ) {
+			if ( $request->getCheck( 'saveusergroups' ) ) {
+				$reason = $request->getVal( 'user-reason' );
+				$tok = $request->getVal( 'wpEditToken' );
+				if ( $user->matchEditToken( $tok ) ) {
 					$addgroup = array();
 					foreach ( $wgBatchUserRightsGrantableGroups as $group ) {
 						// This batch form is only for adding user groups, we don't remove any.
-						if ( $wgRequest->getCheck( "wpGroup-$group" ) ) {
+						if ( $request->getCheck( "wpGroup-$group" ) ) {
 							$addgroup[] = $group;
 						}
 					}
 
 					if ( count( $addgroup ) == 0 ) {
-						$wgOut->addHTML(
+						$out->addHTML(
 							'<strong style="background-color:#faa">' .
 							$this->msg( 'batchuserrights-no-groups' )->text() .
 							"</strong><br /><br />\n"
 						);
 					} else {
-						global $wgLang;
-
-						$wgOut->addHTML( $this->msg(
+						$out->addHTML( $this->msg(
 							'batchuserrights-add-groups',
 							count( $usernames ),
 							count( $addgroup ),
-							$wgLang->listToText( $addgroup )
+							$this->getLanguage()->listToText( $addgroup )
 						)->parse() . "<br /><br />\n" );
 					}
 
@@ -92,7 +85,7 @@ class SpecialBatchUserRights extends SpecialPage {
 					foreach ( $usernames as $username ) {
 						$username = trim( $username );
 						if( $username !== '' ) {
-							$wgOut->addHTML( $this->msg(
+							$out->addHTML( $this->msg(
 								'batchuserrights-single-progress-update',
 								count( $addgroup ),
 								$username
@@ -118,17 +111,13 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @return null
 	 */
 	function saveUserGroups( $username, $addgroup, $reason = '' ) {
-		global $wgUser;
-
-		if ( $username == $wgUser->getName() ) {
+		if ( $username == $this->getUser()->getName() ) {
 			$this->isself = true;
 		}
 
 		$user = $this->fetchUser( $username );
 		if ( !$user ) {
-			global $wgOut;
-
-			$wgOut->addHTML(
+			$this->getOutput()->addHTML(
 				'<strong style="background-color:#faa">' .
 				$this->msg( 'batchuserrights-userload-error', $username )->parse() .
 				'</strong><br />'
@@ -196,7 +185,8 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @return mixed User, UserRightsProxy, or null
 	 */
 	function fetchUser( $username ) {
-		global $wgOut, $wgUser, $wgUserrightsInterwikiDelimiter;
+		global $wgUserrightsInterwikiDelimiter;
+		$out = $this->getOutput();
 
 		$parts = explode( $wgUserrightsInterwikiDelimiter, $username );
 		if ( count( $parts ) < 2 ) {
@@ -205,18 +195,18 @@ class SpecialBatchUserRights extends SpecialPage {
 		} else {
 			list( $name, $database ) = array_map( 'trim', $parts );
 
-			if ( !$wgUser->isAllowed( 'userrights-interwiki' ) ) {
-				$wgOut->addWikiMsg( 'userrights-no-interwiki' );
+			if ( !$this->getUser()->isAllowed( 'userrights-interwiki' ) ) {
+				$out->addWikiMsg( 'userrights-no-interwiki' );
 				return null;
 			}
 			if ( !UserRightsProxy::validDatabase( $database ) ) {
-				$wgOut->addWikiMsg( 'userrights-nodatabase', $database );
+				$out->addWikiMsg( 'userrights-nodatabase', $database );
 				return null;
 			}
 		}
 
 		if ( $name == '' ) {
-			$wgOut->addWikiMsg( 'nouserspecified' );
+			$out->addWikiMsg( 'nouserspecified' );
 			return false;
 		}
 
@@ -232,7 +222,7 @@ class SpecialBatchUserRights extends SpecialPage {
 			}
 
 			if ( !$name ) {
-				$wgOut->addWikiMsg( 'noname' );
+				$out->addWikiMsg( 'noname' );
 				return null;
 			}
 		}
@@ -244,7 +234,7 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		if ( !$user || $user->isAnon() ) {
-			$wgOut->addWikiMsg( 'nosuchusershort', $username );
+			$out->addWikiMsg( 'nosuchusershort', $username );
 			return null;
 		}
 
@@ -252,37 +242,12 @@ class SpecialBatchUserRights extends SpecialPage {
 	}
 
 	/**
-	 * Go through used and available groups and return the ones that this
-	 * form will be able to manipulate based on the current user's system
-	 * permissions.
-	 *
-	 * @param $groups Array: list of groups the given user is in
-	 * @return Array:  Tuple of addable, then removable groups
-	 */
-	protected function splitGroups( $groups ) {
-		list( $addable, $removable, $addself, $removeself ) = array_values( $this->changeableGroups() );
-
-		$removable = array_intersect(
-			array_merge( $this->isself ? $removeself : array(), $removable ),
-			$groups
-		); // Can't remove groups the user doesn't have
-		$addable = array_diff(
-			array_merge( $this->isself ? $addself : array(), $addable ),
-			$groups
-		); // Can't add groups the user does have
-
-		return array( $addable, $removable );
-	}
-
-	/**
 	 * Show the form to add group memberships to one or more users at once.
 	 */
 	protected function showEditUserGroupsForm() {
-		global $wgOut, $wgUser;
-
-		$wgOut->addHTML(
+		$this->getOutput()->addHTML(
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ) ) .
-			Html::hidden( 'wpEditToken', $wgUser->getEditToken() ) .
+			Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
 			Xml::openElement( 'fieldset' ) .
 			Xml::element( 'legend', array(), $this->msg( 'userrights-editusergroup' )->text() ) .
 			$this->msg( 'batchuserrights-intro' )->parseAsBlock() .
@@ -419,112 +384,6 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @return Array array( 'add' => array( addablegroups ), 'remove' => array( removablegroups ) , 'add-self' => array( addablegroups to self), 'remove-self' => array( removable groups from self) )
 	 */
 	function changeableGroups() {
-		global $wgUser;
-
-		if ( $wgUser->isAllowed( 'userrights' ) ) {
-			// This group gives the right to modify everything (reverse-
-			// compatibility with old "userrights lets you change
-			// everything")
-			// Using array_merge to make the groups reindexed
-			$all = array_merge( User::getAllGroups() );
-			return array(
-				'add' => $all,
-				'remove' => $all,
-				'add-self' => array(),
-				'remove-self' => array()
-			);
-		}
-
-		// Okay, it's not so simple, we will have to go through the arrays
-		$groups = array(
-			'add' => array(),
-			'remove' => array(),
-			'add-self' => array(),
-			'remove-self' => array()
-		);
-		$addergroups = $wgUser->getEffectiveGroups();
-
-		foreach ( $addergroups as $addergroup ) {
-			$groups = array_merge_recursive(
-				$groups, $this->changeableByGroup( $addergroup )
-			);
-			$groups['add'] = array_unique( $groups['add'] );
-			$groups['remove'] = array_unique( $groups['remove'] );
-			$groups['add-self'] = array_unique( $groups['add-self'] );
-			$groups['remove-self'] = array_unique( $groups['remove-self'] );
-		}
-
-		// Run a hook because we can
-		wfRunHooks( 'UserrightsChangeableGroups', array( $this, $wgUser, $addergroups, &$groups ) );
-
-		return $groups;
-	}
-
-	/**
-	 * Returns an array of the groups that a particular group can add/remove.
-	 *
-	 * @param $group String: the group to check for whether it can add/remove
-	 * @return Array array( 'add' => array( addablegroups ), 'remove' => array( removablegroups ) , 'add-self' => array( addablegroups to self), 'remove-self' => array( removable groups from self) )
-	 */
-	private function changeableByGroup( $group ) {
-		global $wgAddGroups, $wgRemoveGroups, $wgGroupsAddToSelf, $wgGroupsRemoveFromSelf;
-
-		$groups = array(
-			'add' => array(),
-			'remove' => array(),
-			'add-self' => array(),
-			'remove-self' => array()
-		);
-		if ( empty( $wgAddGroups[$group] ) ) {
-			// Don't add anything to $groups
-		} elseif ( $wgAddGroups[$group] === true ) {
-			// You get everything
-			$groups['add'] = User::getAllGroups();
-		} elseif ( is_array( $wgAddGroups[$group] ) ) {
-			$groups['add'] = $wgAddGroups[$group];
-		}
-
-		// Same thing for remove
-		if ( empty( $wgRemoveGroups[$group] ) ) {
-		} elseif ( $wgRemoveGroups[$group] === true ) {
-			$groups['remove'] = User::getAllGroups();
-		} elseif ( is_array( $wgRemoveGroups[$group] ) ) {
-			$groups['remove'] = $wgRemoveGroups[$group];
-		}
-
-		// Re-map numeric keys of AddToSelf/RemoveFromSelf to the 'user' key for backwards compatibility
-		if ( empty( $wgGroupsAddToSelf['user'] ) || $wgGroupsAddToSelf['user'] !== true ) {
-			foreach ( $wgGroupsAddToSelf as $key => $value ) {
-				if ( is_int( $key ) ) {
-					$wgGroupsAddToSelf['user'][] = $value;
-				}
-			}
-		}
-
-		if ( empty( $wgGroupsRemoveFromSelf['user'] ) || $wgGroupsRemoveFromSelf['user'] !== true ) {
-			foreach ( $wgGroupsRemoveFromSelf as $key => $value ) {
-				if ( is_int( $key ) ) {
-					$wgGroupsRemoveFromSelf['user'][] = $value;
-				}
-			}
-		}
-
-		// Now figure out what groups the user can add to him/herself
-		if ( empty( $wgGroupsAddToSelf[$group] ) ) {
-		} elseif ( $wgGroupsAddToSelf[$group] === true ) {
-			// No idea WHY this would be used, but it's there
-			$groups['add-self'] = User::getAllGroups();
-		} elseif ( is_array( $wgGroupsAddToSelf[$group] ) ) {
-			$groups['add-self'] = $wgGroupsAddToSelf[$group];
-		}
-
-		if ( empty( $wgGroupsRemoveFromSelf[$group] ) ) {
-		} elseif ( $wgGroupsRemoveFromSelf[$group] === true ) {
-			$groups['remove-self'] = User::getAllGroups();
-		} elseif ( is_array( $wgGroupsRemoveFromSelf[$group] ) ) {
-			$groups['remove-self'] = $wgGroupsRemoveFromSelf[$group];
-		}
-
-		return $groups;
+		return $this->getUser()->changeableGroups();
 	}
 }
