@@ -627,7 +627,8 @@ Për piasì, ch'a ciama a n'aministrator ëd sistema s'a l'ha dabzògn ëd giont
 	'batchuserrights-no-groups' => "A l'ha sernù gnun-e partìe.
 A sarà fàit gnente.
 Ël rest ëd la pàgina a podrà giré mach an manera ch'a vëdda facilment se quaidun djë stranòm d'utent a peulo pa esse carià.",
-	'right-batchuserrights' => "Gionté un o pi utent a na partia o a pi partìe con n'assion sola",
+	'right-batchuserrights' => "Gionta un o pi utent a na partia o a partìe mùltiple con n'assion sola",
+	'action-batchuserrights' => "gionta un o pi utent a na partia o a partìe mùltiple con n'assion sola",
 );
 
 /** Portuguese (português)
