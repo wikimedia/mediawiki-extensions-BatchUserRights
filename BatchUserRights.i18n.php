@@ -396,6 +396,7 @@ Chiedi ad un amministratore di sistema se occorre consentire l'aggiunta massiva 
 Questo non realizzerà nulla.
 Il resto della pagina sarà eseguito solo perché così puoi facilmente vedere se uno dei nomi utente non può essere caricato.',
 	'right-batchuserrights' => 'Aggiunge uno o più utenti ad un gruppo o più gruppi con una singola azione',
+	'action-batchuserrights' => 'aggiungere uno o più utenti ad un gruppo o più gruppi con una singola azione',
 );
 
 /** Japanese (日本語)
@@ -420,18 +421,19 @@ $messages['ja'] = array(
  */
 $messages['ko'] = array(
 	'batchuserrights' => '일괄 사용자 권한',
-	'batchuserrights-desc' => '작업 하나의 더 많은 그룹이나 그룹에 하나 이상의 사용자를 추가하는 것을 허용',
+	'batchuserrights-desc' => '작업 하나의 그룹이나 더 많은 그룹에 하나 이상의 사용자를 추가하는 것을 허용',
 	'batchuserrights-names' => '이 그룹에 추가할 사용자 이름 (줄마다 하나):',
 	'batchuserrights-intro' => '이 문서는 한 번에 여러 사용자에게 그룹을 추가하도록 합니다.
 보안상의 이유로 추가할 수 있는 그룹의 목록은 확장 기능 설정에서 위키 안에서 바꿀 수 없도록 설정합니다.
 다른 그룹을 일괄 추가하는 것을 허용하려면 시스템 관리자한테 부탁하세요.',
 	'batchuserrights-single-progress-update' => '<strong>$2</strong> {{PLURAL:$1|그룹}}에 추가함.',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|사용자 1명|사용자 $1명}}을 다음 {{PLURAL:$2|그룹}}에 추가함: <strong>$3</strong>.',
-	'batchuserrights-userload-error' => "\"'''\$1'''\" 사용자를 불러올 수 없음.",
+	'batchuserrights-userload-error' => "\"'''\$1'''\" 사용자를 불러올 수 없습니다.",
 	'batchuserrights-no-groups' => '그룹을 선택하지 않았습니다.
-이는 아무 것도 수행하지 않습니다.
+아무 것도 수행하지 않습니다.
 문서의 나머지 부분은 사용자 이름 중 하나를 불러올 수 없으면 쉽게 볼 수 있게 실행하도록 허용합니다.',
-	'right-batchuserrights' => '작업 하나의 더 많은 그룹이나 그룹에 하나 이상의 사용자를 추가함',
+	'right-batchuserrights' => '작업 하나의 그룹이나 여러 그룹에 하나 이상의 사용자를 추가',
+	'action-batchuserrights' => '작업 하나의 그룹이나 여러 그룹에 하나 이상의 사용자를 추가',
 );
 
 /** Colognian (Ripoarisch)
