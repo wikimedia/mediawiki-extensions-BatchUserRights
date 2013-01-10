@@ -216,6 +216,7 @@ Pšosym staj se ze systemowym administratorom do zwiska, jolic musyš dalšne ku
 Togodla se nic njewuwjeźo.
 Zbytk boka se jano zacytujo, aby mógał lažko wiźeś, lěc jadne z wužywarskich mjenjow njedajo se zacytaś.',
 	'right-batchuserrights' => 'Jadnogo wužywarja abo někotarych wužywarjow jadnej kupce abo někotarym kupkam naraz pśidaś',
+	'action-batchuserrights' => 'Jadnogo wužywarja abo někotarych wužywarjow jadnej kupce abo někotarym kupkam naraz pśidaś',
 );
 
 /** Esperanto (Esperanto)
