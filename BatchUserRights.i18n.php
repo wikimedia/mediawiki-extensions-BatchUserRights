@@ -229,6 +229,7 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Armando-Martin
  * @author Bola
+ * @author Dferg
  * @author Sanbec
  */
 $messages['es'] = array(
@@ -244,7 +245,8 @@ Por favor, pregunta a un administrador del sistema si necesitas añadir otros gr
 	'batchuserrights-no-groups' => 'No elegiste ningún grupo.
 De esta forma no ocurrirá nada.
 El resto de la página será ejecutada solo para que puedas ver fácilmente si algún nombre de usuario no se puede cargar.',
-	'right-batchuserrights' => 'Agregando uno o más usuarios a uno o más grupos en una sola acción',
+	'right-batchuserrights' => 'Agregar a uno o a más usuarios a un grupo o a múltiples grupos en una sola acción',
+	'action-batchuserrights' => 'añadir a uno o a más usuarios a un grupo o a múltiples grupos en una sola acción',
 );
 
 /** Finnish (suomi)
@@ -474,6 +476,7 @@ Frot w.e.g. e System-Administrateur wann dës Fonctioun fir aner Benotzergruppe 
 Et gëtt näischt geännert.
 De Rescht vun der Säit gëtt nei opgebaut esou datt Dir einfach gesi kënnt ob ee vun de Benotzernimm net konnt geluede ginn.',
 	'right-batchuserrights' => 'Een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen',
+	'action-batchuserrights' => 'een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen',
 );
 
 /** Lithuanian (lietuvių)
@@ -579,7 +582,8 @@ Vraag hulp van een systeembeheerder als u de beschikbare groepen wilt wijzigen.'
 	'batchuserrights-no-groups' => 'U hebt geen groepen gekozen.
 Nu wordt er niets uitgevoerd.
 De rest van de pagina kan uitgevoerd worden zodat u eenvoudig kunt zien of een van de gebruikersnamen niet geladen kon worden.',
-	'right-batchuserrights' => 'Een of meerdere gebruikers aan een of meerdere groepen toevoegen in één handeling',
+	'right-batchuserrights' => 'Een of meerdere gebruikers aan meerdere groepen toevoegen in één handeling',
+	'action-batchuserrights' => 'een of meerdere gebruikers aan meerdere groepen toe te voegen in één handeling',
 );
 
 /** Nederlands (informeel)‎ (Nederlands (informeel)‎)
