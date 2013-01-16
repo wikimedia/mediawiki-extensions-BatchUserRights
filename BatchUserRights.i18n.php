@@ -600,6 +600,7 @@ De rest van de pagina kan uitgevoerd worden zodat je eenvoudig kunt zien of een 
 
 /** Polish (polski)
  * @author BeginaFelicysym
+ * @author WTM
  */
 $messages['pl'] = array(
 	'batchuserrights' => 'Wsadowe uprawnienia użytkowników',
@@ -614,7 +615,8 @@ Poproś administratora systemu jeśli należy zezwolić na dodawanie wsadowe inn
 	'batchuserrights-no-groups' => 'Nie wybrano żadnych grup.
 Wykonanie nie spowoduje żadnych zmian.
 Pozostałą część strony będzie można uruchomić tylko po to, by dało się zobaczyć, czy wszystkie nazwy uzytkownikow mogą być załadowane.',
-	'right-batchuserrights' => 'Dodawanie jednego lub więcej użytkowników do grupy lub kilku grup w ramach jednej akcji',
+	'right-batchuserrights' => 'Dodawanie użytkownika lub kilku użytkowników do grupy lub do wielu grup w ramach jednej akcji',
+	'action-batchuserrights' => 'dodawanie użytkownika lub kilku użytkowników do grupy lub do wielu grup w ramach jednej akcji',
 );
 
 /** Piedmontese (Piemontèis)
