@@ -777,7 +777,17 @@ $messages['zh-hans'] = array(
 	'batchuserrights' => '批处理的用户权限',
 	'batchuserrights-desc' => '允许一次将一个或多个用户添加到一个组或多个组',
 	'batchuserrights-names' => '添加至该组的用户（每行一个）：',
+	'batchuserrights-intro' => '本页让您能一次将一个或多个用户添加到一个或多个用户组。
+出于安全原因，可添加的组是在扩展配置中设定，且无法在本wiki内更改。
+如果您要批量添加其他用户组，请询问系统管理员。',
+	'batchuserrights-single-progress-update' => '已添加用户组到<strong>$2</strong>。', # Fuzzy
+	'batchuserrights-add-groups' => '添加$1个用户到如下用户组：<strong>$3</strong>。', # Fuzzy
 	'batchuserrights-userload-error' => "无法加载用户\"'''\$1'''\"。",
+	'batchuserrights-no-groups' => '您没有选择任何用户组。
+这将什么都不做。
+页面的剩余部分将继续运行，以便让您能看到是否有任何用户名不能被加载。',
+	'right-batchuserrights' => '一次将一个或多个用户添加到一个或多个用户组',
+	'action-batchuserrights' => '一次将一个或多个用户添加到一个或多个用户组',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
