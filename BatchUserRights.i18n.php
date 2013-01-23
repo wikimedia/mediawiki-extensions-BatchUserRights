@@ -684,6 +684,7 @@ Será permitida a execução do resto da página apenas para que você possa ver
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'batchuserrights-single-progress-update' => "Aggiunde {{PLURAL:$1|gruppe}} jndr'à <strong>$2</strong>.",
 	'batchuserrights-userload-error' => "Non ge pozze carecà l'utende \"'''\$1'''\".",
 );
 
