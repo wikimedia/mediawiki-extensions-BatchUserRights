@@ -99,7 +99,7 @@ $messages['be-tarask'] = array(
 	'batchuserrights-no-groups' => 'Вы не выбралі ніякай групы.
 Нічога ня будзе выканана.
 Астатняя частка старонкі будзе адкрытая для таго, каб Вы ўбачылі, якія імёны ўдзельнікаў ня могуць быць загружаныя.',
-	'right-batchuserrights' => 'даданьне аднаго ці болей удзельнікаў у групу ці некалькі групаў за адно дзеяньне',
+	'right-batchuserrights' => 'даданьне аднаго ці болей удзельнікаў у групу ці некалькі групаў за адно дзеяньне', # Fuzzy
 );
 
 /** Bulgarian (български)
@@ -263,7 +263,7 @@ Kysy järjestelmän ylläpitäjältä, jos sinun tarvitsee sallia muiden ryhmien
 	'batchuserrights-no-groups' => 'Et valinnut ryhmiä.
 Tämä ei muuta mitään.
 Loput sivusta suoritetaan vain jotta voisit helposti nähdä, epäonnistuuko joidenkin käyttäjänimien lataaminen.',
-	'right-batchuserrights' => 'Lisätä yksi tai useampia käyttäjiä yhteen tai useampaan ryhmään kerralla',
+	'right-batchuserrights' => 'Lisätä yksi tai useampia käyttäjiä yhteen tai useampaan ryhmään kerralla', # Fuzzy
 );
 
 /** French (français)
@@ -333,7 +333,7 @@ $messages['he'] = array(
 	'batchuserrights-no-groups' => 'לא בחרת שום קבוצה.
 זה לא ישיג שום דבר.
 שאר הדף הזה יוכל לרוץ רק כדי להראות לך אילו שמות משתמש לא ניתן לבחור.',
-	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת',
+	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת', # Fuzzy
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -372,7 +372,7 @@ Per favor demanda lo a un administrator de systema si tu ha besonio de permitter
 	'batchuserrights-no-groups' => 'Tu non seligeva alcun gruppo.
 Isto va complir nihil.
 Le resto del pagina essera executate solmente a fin que tu pote vider facilemente si alcun del nomines de usator non poteva esser cargate.',
-	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
+	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action', # Fuzzy
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -456,7 +456,7 @@ Donn ene Wiki_Könes froore, wann De mieh Jroppe heh han wells.',
 Dat heh weet nx bränge.
 Et läuf ävver bes_aan et Ängk.
 Esu kanns De flögg eruß fenge, ov_ene Name vun enem Metmaacher nit laade kunnte.',
-	'right-batchuserrights' => 'Ene Pöngel Metmaacher en einem Rötsch en Jroppe donn',
+	'right-batchuserrights' => 'Ene Pöngel Metmaacher en einem Rötsch en Jroppe donn', # Fuzzy
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -523,7 +523,7 @@ Sila tanya pentadbir sistem jika anda perlu membenarkan penambahan kumpulan lain
 	'batchuserrights-no-groups' => 'Anda belum memilih mana-mana kumpulan.
 Ini tidak akan mendatangkan sebarang hasil.
 Yang selebihnya dalam laman ini akan dibenarkan berjalan supaya anda mudah melihat sama ada terdapat nama pengguna yang tidak dapat dimuatkan.',
-	'right-batchuserrights' => 'Menambahkan seorang atau berbilang pengguna ke dalam kumpulan atau berbilang kumpulan sekaligus',
+	'right-batchuserrights' => 'Menambahkan seorang atau berbilang pengguna ke dalam kumpulan atau berbilang kumpulan sekaligus', # Fuzzy
 );
 
 /** Maltese (Malti)
@@ -542,7 +542,7 @@ Jekk jogħġbok staqsi amministratur tas-sistema jekk għandek bżonn iż-żieda
 	'batchuserrights-no-groups' => "Int m'għażilt l-ebda grupp.
 Dan mhu se jagħmel xejn.
 Il-kumplament tal-paġna se tkompli tiġi esegwita sabiex tkun tista' tara jekk kwalunkwe wieħed mill-ismijiet tal-utent ma jistgħux jiġu mtella'.",
-	'right-batchuserrights' => "Iżid wieħed jew iktar utenti fi grupp wieħed jew iktar b'azzjoni waħda",
+	'right-batchuserrights' => "Iżid wieħed jew iktar utenti fi grupp wieħed jew iktar b'azzjoni waħda", # Fuzzy
 );
 
 /** Norwegian Bokmål (norsk (bokmål)‎)
@@ -658,7 +658,7 @@ Se precisa de acrescentar mais grupos atribuíveis, peça a um administrador.',
 	'batchuserrights-no-groups' => 'Não escolheu nenhum grupo.
 Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que possa verificar se não foi possível carregar algum dos utilizadores.',
-	'right-batchuserrights' => 'Adicionando um ou mais utilizadores a um grupo ou grupos numa única acção',
+	'right-batchuserrights' => 'Adicionando um ou mais utilizadores a um grupo ou grupos numa única acção', # Fuzzy
 );
 
 /** Brazilian Portuguese (português do Brasil)
@@ -726,7 +726,7 @@ $messages['sv'] = array(
 	'batchuserrights-single-progress-update' => 'Lade till {{PLURAL:$1|grupp|grupperna}} till <strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'Lägger till {{PLURAL:$1|en användare|$1 användare}} till följande {{PLURAL:$2|grupp|grupper}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Kunde inte läsa in användaren \"'''\$1'''\".",
-	'right-batchuserrights' => 'Lägger till en eller flera användare i en grupp eller flera grupper i en åtgärd',
+	'right-batchuserrights' => 'Lägger till en eller flera användare i en grupp eller flera grupper i en åtgärd', # Fuzzy
 );
 
 /** Tagalog (Tagalog)
@@ -745,7 +745,7 @@ Mangyaring makipag-ugnayan sa isang tagapangasiwa ng sistema kung kailangan mong
 	'batchuserrights-no-groups' => 'Hindi ka pumili ng alin mang mga pangkat.
 Hindi ito makagagawa ng anumang bagay.
 Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong makita kung ang alin man sa mga pangalan ng tagagamit ay hindi maikakarga.',
-	'right-batchuserrights' => 'Nagdaragdag ng isa o marami pang mga tagagamit sa isang pangkat o marami pang mga pangkat sa pamamagitan ng isang galaw',
+	'right-batchuserrights' => 'Nagdaragdag ng isa o marami pang mga tagagamit sa isang pangkat o marami pang mga pangkat sa pamamagitan ng isang galaw', # Fuzzy
 );
 
 /** Ukrainian (українська)
