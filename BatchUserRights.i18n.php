@@ -784,8 +784,8 @@ $messages['zh-hans'] = array(
 	'batchuserrights-intro' => '本页让您能一次将一个或多个用户添加到一个或多个用户组。
 出于安全原因，可添加的组是在扩展配置中设定，且无法在本wiki内更改。
 如果您要批量添加其他用户组，请询问系统管理员。',
-	'batchuserrights-single-progress-update' => '已添加用户组到<strong>$2</strong>。', # Fuzzy
-	'batchuserrights-add-groups' => '添加$1个用户到如下用户组：<strong>$3</strong>。', # Fuzzy
+	'batchuserrights-single-progress-update' => '已添加{{PLURAL:$1|用户组|用户组}}到<strong>$2</strong>。',
+	'batchuserrights-add-groups' => '添加$1个用户到如下{{PLURAL:$2|用户组|用户组}}：<strong>$3</strong>。',
 	'batchuserrights-userload-error' => "无法加载用户\"'''\$1'''\"。",
 	'batchuserrights-no-groups' => '您没有选择任何用户组。
 这将什么都不做。
