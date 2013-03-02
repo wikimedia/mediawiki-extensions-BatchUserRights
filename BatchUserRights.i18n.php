@@ -403,6 +403,7 @@ Il resto della pagina sarà eseguito solo perché così puoi facilmente vedere s
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  */
 $messages['ja'] = array(
@@ -415,6 +416,9 @@ $messages['ja'] = array(
 	'batchuserrights-single-progress-update' => '<strong>$2</strong> に{{PLURAL:$1|グループ}}を追加しました。',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|利用者|$1 人の利用者}}を以下の{{PLURAL:$2|グループ}}に追加しています: <strong>$3</strong>',
 	'batchuserrights-userload-error' => "利用者「'''$1'''」を読み込めません。",
+	'batchuserrights-no-groups' => 'グループが1つも選択されていません。
+これでは何も実際には行われません。
+以下はただ、利用者名の中に読み込めないものがあるかどうか簡単に確認できるように実行可能となっています。',
 	'right-batchuserrights' => '1 人以上の利用者を複数のグループに一度に追加',
 	'action-batchuserrights' => '1 人以上の利用者を複数のグループに一度に追加',
 );
