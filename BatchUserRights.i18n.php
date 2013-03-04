@@ -800,10 +800,12 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'batchuserrights' => '批處理的用戶權限',
 	'batchuserrights-desc' => '允許一次將一個或多個用戶添加到一個組或多個組',
 	'batchuserrights-names' => '添加至該組的用戶（每行一個）：',
+	'batchuserrights-single-progress-update' => '已添加{{PLURAL:$1|用戶組|用戶組}}到<strong>$2 <／strong>。',
 	'batchuserrights-userload-error' => "無法加載用戶\"'''\$1'''\"。",
 );
