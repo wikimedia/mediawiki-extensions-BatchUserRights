@@ -318,6 +318,7 @@ Que apareza o resto da páxina só serve para que poida ollar facilmente se non 
 /** Hebrew (עברית)
  * @author Amire80
  * @author Ofekalef
+ * @author חיים
  * @author ערן
  */
 $messages['he'] = array(
@@ -333,7 +334,8 @@ $messages['he'] = array(
 	'batchuserrights-no-groups' => 'לא בחרת שום קבוצה.
 זה לא ישיג שום דבר.
 שאר הדף הזה יוכל לרוץ רק כדי להראות לך אילו שמות משתמש לא ניתן לבחור.',
-	'right-batchuserrights' => 'הוספת משתמש אחד או יותר לקבוצה או יותר בפעולה אחת', # Fuzzy
+	'right-batchuserrights' => 'הוספת משתמש או משתמשים לקבוצה אחת או יותר בפעולה אחת',
+	'action-batchuserrights' => 'הוספת משתמש או משתמשים לקבוצה אחת או יותר בפעולה אחת',
 );
 
 /** Upper Sorbian (hornjoserbsce)
