@@ -462,7 +462,8 @@ Donn ene Wiki_Könes froore, wann De mieh Jroppe heh han wells.',
 Dat heh weet nx bränge.
 Et läuf ävver bes_aan et Ängk.
 Esu kanns De flögg eruß fenge, ov_ene Name vun enem Metmaacher nit laade kunnte.',
-	'right-batchuserrights' => 'Ene Pöngel Metmaacher en einem Rötsch en Jroppe donn', # Fuzzy
+	'right-batchuserrights' => 'Ene Pöngel Metmaacher en einem Rötsch en Jroppe donn',
+	'action-batchuserrights' => 'donn eine udder ene Pöngel Metmaacher en einem Rötsch en Jroppe',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
