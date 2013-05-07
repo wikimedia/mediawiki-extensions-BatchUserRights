@@ -76,3 +76,8 @@ $specialPageAliases['tr'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'BatchUserRights' => array( '批量用户权限' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'BatchUserRights' => array( '批量用戶權限' ),
+);
