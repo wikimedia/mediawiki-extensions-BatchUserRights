@@ -230,6 +230,7 @@ $messages['eo'] = array(
  * @author Armando-Martin
  * @author Bola
  * @author Dferg
+ * @author MarcoAurelio
  * @author Sanbec
  */
 $messages['es'] = array(
@@ -263,7 +264,7 @@ Kysy järjestelmän ylläpitäjältä, jos sinun tarvitsee sallia muiden ryhmien
 	'batchuserrights-no-groups' => 'Et valinnut ryhmiä.
 Tämä ei muuta mitään.
 Loput sivusta suoritetaan vain jotta voisit helposti nähdä, epäonnistuuko joidenkin käyttäjänimien lataaminen.',
-	'right-batchuserrights' => 'Lisätä yksi tai useampia käyttäjiä yhteen tai useampaan ryhmään kerralla', # Fuzzy
+	'right-batchuserrights' => 'Lisätä yksi tai useampia käyttäjiä yhteen tai useampaan ryhmään kerralla',
 );
 
 /** French (français)
@@ -553,7 +554,7 @@ Il-kumplament tal-paġna se tkompli tiġi esegwita sabiex tkun tista' tara jekk 
 	'right-batchuserrights' => "Iżid wieħed jew iktar utenti fi grupp wieħed jew iktar b'azzjoni waħda", # Fuzzy
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Audun
  * @author Nghtwlkr
  */
