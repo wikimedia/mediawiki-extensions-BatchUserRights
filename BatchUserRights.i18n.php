@@ -52,6 +52,26 @@ $messages['af'] = array(
 	'batchuserrights-userload-error' => "Die gebruiker \"'''\$1'''\" kon nie gelaai word nie.",
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'batchuserrights' => "Permisos d'usuariu por llotes",
+	'batchuserrights-desc' => 'Permite amestar unu o más usuarios a unu o más grupos con una sola aición',
+	'batchuserrights-names' => "Nomes d'usuarios p'amestar a esti grupu (unu por llinia):",
+	'batchuserrights-intro' => 'Esta páxina permitirá-y amestar un grupu a múltiples usuarios al mesmu tiempu.
+Por motivos de seguridá, la llista de grupos que puen amestase definese na configuración de la estensión y nun pue cambiase dende dientro de la wiki.
+Por favor, pidalo a un alministrador del sistema si necesita añadir otros grupos.',
+	'batchuserrights-single-progress-update' => 'Amestó {{PLURAL:$1|un grupu|grupos}} a <strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'Amestando {{PLURAL:$1|un usuariu|$1 usuarios}} {{PLURAL:$2|al siguiente grupu|a los siguientes grupos}}: <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Nun pudo cargase l'usuariu \"'''\$1'''\".",
+	'batchuserrights-no-groups' => "Nun elixó dengún grupu.
+D'esta manera nun asocederá nada.
+El restu de la páxina va executase solo para que pueda ver fácilmente si dalgún nome d'usuariu nun pue cargase.",
+	'right-batchuserrights' => 'Agregar unu o más usuarios a un grupu o múltiples grupos con una sola aición',
+	'action-batchuserrights' => 'agregar unu o más usuarios a un grupu o múltiples grupos con una sola aición',
+);
+
 /** South Azerbaijani (تورکجه)
  * @author Mousa
  */
