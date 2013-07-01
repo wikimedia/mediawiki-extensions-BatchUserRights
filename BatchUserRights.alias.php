@@ -24,7 +24,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'BatchUserRights' => array( 'HeqêKarberanPêro' ),
+	'BatchUserRights' => array( 'HeqéKarberanPéro' ),
 );
 
 /** Swiss German (Alemannisch) */
