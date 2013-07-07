@@ -52,6 +52,11 @@ $specialPageAliases['mk'] = array(
 	'BatchUserRights' => array( 'АнгроКорисничкиПрава' ),
 );
 
+/** Low Saxon (Netherlands) (Nedersaksies) */
+$specialPageAliases['nds-nl'] = array(
+	'BatchUserRights' => array( 'Batch_gebrukersrechten' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
