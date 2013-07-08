@@ -395,7 +395,8 @@ Per favor demanda lo a un administrator de systema si tu ha besonio de permitter
 	'batchuserrights-no-groups' => 'Tu non seligeva alcun gruppo.
 Isto va complir nihil.
 Le resto del pagina essera executate solmente a fin que tu pote vider facilemente si alcun del nomines de usator non poteva esser cargate.',
-	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action', # Fuzzy
+	'right-batchuserrights' => 'Adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
+	'action-batchuserrights' => 'adder un o plure usatores a un gruppo o a plure gruppos in un sol action',
 );
 
 /** Indonesian (Bahasa Indonesia)
