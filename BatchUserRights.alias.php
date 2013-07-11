@@ -27,6 +27,11 @@ $specialPageAliases['diq'] = array(
 	'BatchUserRights' => array( 'HeqéKarberanPéro' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'BatchUserRights' => array( 'اختیارات_کاربری_دسته‌ای' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'BatchUserRights' => array( 'Masse-Benutzerrächt' ),
