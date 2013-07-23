@@ -39,7 +39,7 @@ $messages['qqq'] = array(
 	'batchuserrights-intro' => 'How to use description on Special:BatchUserRights',
 	'batchuserrights-single-progress-update' => 'Success message',
 	'batchuserrights-add-groups' => 'Success message',
-	'batchuserrights-userload-error' => 'Error message if an user could not loaded',
+	'batchuserrights-userload-error' => 'Error message if a user could not loaded',
 	'batchuserrights-no-groups' => 'Error message which will be shown if no groups to add has been selected',
 	'right-batchuserrights' => '{{doc-right|batchuserrights}}',
 	'action-batchuserrights' => '{{doc-action|batchuserrights}}',
@@ -673,6 +673,7 @@ A sarà fàit gnente.
 /** Portuguese (português)
  * @author Alchimista
  * @author Hamilton Abreu
+ * @author Luckas
  * @author Waldir
  */
 $messages['pt'] = array(
@@ -688,7 +689,7 @@ Se precisa de acrescentar mais grupos atribuíveis, peça a um administrador.',
 	'batchuserrights-no-groups' => 'Não escolheu nenhum grupo.
 Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que possa verificar se não foi possível carregar algum dos utilizadores.',
-	'right-batchuserrights' => 'Adicionando um ou mais utilizadores a um grupo ou grupos numa única acção', # Fuzzy
+	'right-batchuserrights' => 'Adicionar um ou mais utilizadores a um grupo ou vários grupos em uma única ação',
 );
 
 /** Brazilian Portuguese (português do Brasil)
@@ -762,9 +763,11 @@ $messages['si'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Hangsna
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
+	'batchuserrights-desc' => 'Gör det möjligt att lägga till en eller flera användare till en grupp i en och samma åtgärd',
 	'batchuserrights-single-progress-update' => 'Lade till {{PLURAL:$1|grupp|grupperna}} till <strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'Lägger till {{PLURAL:$1|en användare|$1 användare}} till följande {{PLURAL:$2|grupp|grupper}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Kunde inte läsa in användaren \"'''\$1'''\".",
