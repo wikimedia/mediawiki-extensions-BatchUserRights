@@ -764,10 +764,11 @@ $messages['si'] = array(
 
 /** Swedish (svenska)
  * @author Hangsna
+ * @author Jopparn
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
-	'batchuserrights-desc' => 'Gör det möjligt att lägga till en eller flera användare till en grupp i en och samma åtgärd',
+	'batchuserrights-desc' => 'Gör det möjligt att lägga till en eller flera användare till en grupp eller flera grupper i en och samma åtgärd',
 	'batchuserrights-single-progress-update' => 'Lade till {{PLURAL:$1|grupp|grupperna}} till <strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'Lägger till {{PLURAL:$1|en användare|$1 användare}} till följande {{PLURAL:$2|grupp|grupper}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Kunde inte läsa in användaren \"'''\$1'''\".",
