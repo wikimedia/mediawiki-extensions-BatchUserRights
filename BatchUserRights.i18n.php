@@ -452,13 +452,13 @@ $messages['ja'] = array(
  */
 $messages['ko'] = array(
 	'batchuserrights' => '일괄 사용자 권한',
-	'batchuserrights-desc' => '작업 하나의 그룹이나 더 많은 그룹에 하나 이상의 사용자를 추가하는 것을 허용',
+	'batchuserrights-desc' => '작업 하나에서 하나 이상의 그룹에 하나 이상의 사용자를 추가할 수 있습니다',
 	'batchuserrights-names' => '이 그룹에 추가할 사용자 이름 (줄마다 하나):',
 	'batchuserrights-intro' => '이 문서는 한 번에 여러 사용자에게 그룹을 추가하도록 합니다.
 보안상의 이유로 추가할 수 있는 그룹의 목록은 확장 기능 설정에서 위키 안에서 바꿀 수 없도록 설정합니다.
 다른 그룹을 일괄 추가하는 것을 허용하려면 시스템 관리자한테 부탁하세요.',
-	'batchuserrights-single-progress-update' => '<strong>$2</strong> {{PLURAL:$1|그룹}}에 추가함.',
-	'batchuserrights-add-groups' => '{{PLURAL:$1|사용자 1명|사용자 $1명}}을 다음 {{PLURAL:$2|그룹}}에 추가함: <strong>$3</strong>.',
+	'batchuserrights-single-progress-update' => '<strong>$2</strong>에 {{PLURAL:$1|그룹}}에 추가했습니다.',
+	'batchuserrights-add-groups' => '{{PLURAL:$1|사용자 한 명|사용자 $1명}}을 다음 {{PLURAL:$2|그룹}}에 추가했습니다: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "\"'''\$1'''\" 사용자를 불러올 수 없습니다.",
 	'batchuserrights-no-groups' => '그룹을 선택하지 않았습니다.
 아무 것도 수행하지 않습니다.
