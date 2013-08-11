@@ -17,6 +17,11 @@ $specialPageAliases['ar'] = array(
 	'BatchUserRights' => array( 'صلاحيات_المستخدم_المجمعة' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'BatchUserRights' => array( '批量用戶權限' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
