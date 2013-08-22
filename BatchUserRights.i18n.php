@@ -287,6 +287,20 @@ Loput sivusta suoritetaan vain jotta voisit helposti nähdä, epäonnistuuko joi
 	'right-batchuserrights' => 'Lisätä yksi tai useampia käyttäjiä yhteen tai useampaan ryhmään kerralla',
 );
 
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'batchuserrights-desc' => 'Loyvir tær at leggja ein ella fleiri brúkarar til ein bólk ella fleiri bólkar í einari handling',
+	'batchuserrights-names' => 'Brúkaranøvn sum skulu leggjast til henda bólkin (eitt navn pr. rað):',
+	'batchuserrights-userload-error' => "Tað bar ikki til at innlesa brúkara \"'''\$1'''\".",
+	'batchuserrights-no-groups' => 'Tú valdi ongar bólkar.
+Hetta fer ikki at føra til nakað.
+Restin av síðuni fær loyvi til at koyra, bert fyri at tú lættliga kanst síggja, um summi av brúkaranøvnunum ikki kundu innlesast.',
+	'right-batchuserrights' => 'Legg ein ella fleiri brúkarar til ein bólk ella fleiri bólkar í einari handling',
+	'action-batchuserrights' => 'legg ein ella fleiri brúkarar til ein bólk ella fleiri bólkar í einari handling',
+);
+
 /** French (français)
  * @author Gomoko
  * @author Peter17
