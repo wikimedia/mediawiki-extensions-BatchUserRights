@@ -37,9 +37,15 @@ $messages['qqq'] = array(
 	'batchuserrights-desc' => '{{desc|name=Batch User Rights|url=http://www.mediawiki.org/wiki/Extension:BatchUserRights}}',
 	'batchuserrights-names' => 'Names of users which should be added to the selected groups',
 	'batchuserrights-intro' => 'How to use description on Special:BatchUserRights',
-	'batchuserrights-single-progress-update' => 'Success message',
-	'batchuserrights-add-groups' => 'Success message',
-	'batchuserrights-userload-error' => 'Error message if a user could not loaded',
+	'batchuserrights-single-progress-update' => 'Used as success message. Parameters:
+* $1 - number of groups
+* $2 - username',
+	'batchuserrights-add-groups' => 'Used as success message. Parameters:
+* $1 - number of users
+* $2 - number of groups
+* $3 - list of groups',
+	'batchuserrights-userload-error' => 'Error message if a user could not loaded. Parameters:
+* $1 - username',
 	'batchuserrights-no-groups' => 'Error message which will be shown if no groups to add has been selected',
 	'right-batchuserrights' => '{{doc-right|batchuserrights}}',
 	'action-batchuserrights' => '{{doc-action|batchuserrights}}',
@@ -453,7 +459,7 @@ $messages['ja'] = array(
 他のグループを一括追加する必要がある場合は、システム管理者にお問い合わせください。',
 	'batchuserrights-single-progress-update' => '<strong>$2</strong> に{{PLURAL:$1|グループ}}を追加しました。',
 	'batchuserrights-add-groups' => '{{PLURAL:$1|利用者|$1 人の利用者}}を以下の{{PLURAL:$2|グループ}}に追加しています: <strong>$3</strong>',
-	'batchuserrights-userload-error' => "利用者「'''$1'''」を読み込めません。",
+	'batchuserrights-userload-error' => "利用者「'''$1'''」を読み込めませんでした。",
 	'batchuserrights-no-groups' => 'グループが1つも選択されていません。
 これでは何も実際には行われません。
 以下はただ、利用者名の中に読み込めないものがあるかどうか簡単に確認できるように実行可能となっています。',
