@@ -108,6 +108,26 @@ $messages['ba'] = array(
 	'batchuserrights-names' => 'Төркөмгә берләштереү өсөн иҫәп яҙмалары (һәр юлда берәр)',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'batchuserrights' => 'Mga katanosan kan grupo nin paragamit',
+	'batchuserrights-desc' => 'Minatugot na magdudugang nin saro o dakol na mga paragamit sa sarong grupo o dakol na mga grupo sa laog nin sarong aksyon',
+	'batchuserrights-names' => 'Mga pangaran nin paragamit tanganing idugang ining grupo sa (saro kada linya):',
+	'batchuserrights-intro' => 'Ining pahina minatugot saimo na magdugang nin sarong grupo sa kadakulon na mga paragamit na sararoan.
+Para sa rason nin seguridad, an lista kan maidudugang na mga grupo ibinugtak sa laog kan konpigurasyon nin ekstensyon asin dae maliliwat gikan sa laog kan wiki.
+Tabi man maghapot sa sarong administrador nin sistema kun ika kaipuhan na magtutugot na magdudugang kan ibang mga grupo.',
+	'batchuserrights-single-progress-update' => 'Nagdugang nin {{PLURAL:$1|grupo|mga grupo}} sa <strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'Nagdudugang nin {{PLURAL:$1|sarong paragamit|$1 mga paragamit}} sa minasunod na {{PLURAL:$2|grupo|mga grupo}}: <strong>$3</strong>.',
+	'batchuserrights-userload-error' => "Dae maikakarga an paragamit na si \"'''\$1'''\".",
+	'batchuserrights-no-groups' => 'Ika dae tabi nagpili nin arinman na mga grupo.
+Ini dae nanggad makakapagtapos nin anuman na bagay.
+An tada kan pahina pagtutugutan na magdalagan na tangani baya na saimong sayon na mahiling kun arin sa mga pangaran nin paragamit an dae maipagkakarga.',
+	'right-batchuserrights' => 'Magdugang in saro o dakol na mga paragamit sa sarong grupo o dagmang na mga grupo sa laog nin sarong aksyon',
+	'action-batchuserrights' => 'Magdugang in saro o dakol na mga paragamit sa sarong grupo o dagmang na mga grupo sa laog nin sarong aksyon',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
@@ -862,6 +882,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Justincheng12345
+ * @author Shirayuki
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
@@ -871,7 +892,7 @@ $messages['zh-hant'] = array(
 	'batchuserrights-intro' => '本頁讓您能一次將數名用戶添加至一個用戶權限組。
 出於安全原因，可供添加的用戶權限組由擴展中設置，而且無法於維基內作出更改。
 如果您要批量添加其他用戶權限組，請詢問系統管理員。',
-	'batchuserrights-single-progress-update' => '已添加{{PLURAL:$1|用戶組|用戶組}}到<strong>$2 <／strong>。',
+	'batchuserrights-single-progress-update' => '已添加{{PLURAL:$1|用戶組}}到<strong>$2 </strong>。',
 	'batchuserrights-add-groups' => '添加$1名用戶至以下{{PLURAL:$2|用戶權限組}}：<strong>$3</strong>。',
 	'batchuserrights-userload-error' => "無法加載用戶\"'''\$1'''\"。",
 	'batchuserrights-no-groups' => '您沒有選擇任何用戶權限組。
