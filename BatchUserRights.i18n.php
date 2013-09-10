@@ -712,6 +712,7 @@ A sarà fàit gnente.
 
 /** Portuguese (português)
  * @author Alchimista
+ * @author Cainamarques
  * @author Hamilton Abreu
  * @author Luckas
  * @author Waldir
@@ -730,9 +731,11 @@ Se precisa de acrescentar mais grupos atribuíveis, peça a um administrador.',
 Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que possa verificar se não foi possível carregar algum dos utilizadores.',
 	'right-batchuserrights' => 'Adicionar um ou mais utilizadores a um grupo ou vários grupos em uma única ação',
+	'action-batchuserrights' => 'adicionar um ou mais utilizadores a um grupo ou vários grupos em uma única ação',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Giro720
  * @author 555
  */
@@ -749,6 +752,8 @@ Se você precisar acrescentar mais grupos atribuíveis, peça a um administrador
 	'batchuserrights-no-groups' => 'Você não escolheu nenhum grupo.
 Isto não terá qualquer efeito.
 Será permitida a execução do resto da página apenas para que você possa verificar se não foi possível carregar algum dos usuários.',
+	'right-batchuserrights' => 'Adicionar um ou mais usuários a um grupo ou múltiplos grupos em uma única ação',
+	'action-batchuserrights' => 'adicionar um ou mais usuários a um grupo ou múltiplos grupos em uma única ação',
 );
 
 /** tarandíne (tarandíne)
