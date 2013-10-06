@@ -4,6 +4,7 @@
  *
  * @file
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
