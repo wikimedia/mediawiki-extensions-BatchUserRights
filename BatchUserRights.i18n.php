@@ -843,6 +843,7 @@ Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong 
 /** Ukrainian (українська)
  * @author Base
  * @author Steve.rusyn
+ * @author SteveR
  * @author Ата
  * @author Тест
  */
