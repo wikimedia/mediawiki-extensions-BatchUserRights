@@ -808,6 +808,13 @@ $messages['si'] = array(
 	'batchuserrights-userload-error' => "\"'''\$1'''\" පරිශීලක පූරණය කල නොහැක.",
 );
 
+/** Slovak (slovenčina)
+ * @author Sudo77(new)
+ */
+$messages['sk'] = array(
+	'batchuserrights' => 'Dávkové pridelenie používateľských práv',
+);
+
 /** Swedish (svenska)
  * @author Hangsna
  * @author Jopparn
