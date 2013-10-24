@@ -818,14 +818,23 @@ $messages['sk'] = array(
 /** Swedish (svenska)
  * @author Hangsna
  * @author Jopparn
+ * @author LittleGun
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'batchuserrights-desc' => 'Gör det möjligt att lägga till en eller flera användare till en grupp eller flera grupper i en och samma åtgärd',
+	'batchuserrights-names' => 'Användarnamn som ska läggas till gruppen (en per rad):',
+	'batchuserrights-intro' => 'På den här sidan kan du lägga till flera användare i en grupp samtidigt.
+Av säkerhetsskäl är listan över möjliga grupper bestämd av tilläggskonfigurationen från wikin.
+Fråga en system administratör om har behov av att lägga till flera användare samtidigt till en annan grupp.',
 	'batchuserrights-single-progress-update' => 'Lade till {{PLURAL:$1|grupp|grupperna}} till <strong>$2</strong>.',
 	'batchuserrights-add-groups' => 'Lägger till {{PLURAL:$1|en användare|$1 användare}} till följande {{PLURAL:$2|grupp|grupper}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Kunde inte läsa in användaren \"'''\$1'''\".",
+	'batchuserrights-no-groups' => 'Du valde inte några grupper.
+Detta kommer inte att göra någonting.
+Resten av sidan kommer tillåtas köra så att du enkelt kan se om något av användarnamnen inte kunde laddas.',
 	'right-batchuserrights' => 'Lägg till en eller flera användare till en grupp eller flera grupper i en åtgärd',
+	'action-batchuserrights' => 'lägga till en eller fler användare i en grupp eller i multipla grupper samtidigt',
 );
 
 /** Tagalog (Tagalog)
