@@ -544,7 +544,7 @@ Frot w.e.g. e System-Administrateur wann dës Funktioun fir aner Benotzergruppe 
 	'batchuserrights-userload-error' => "De Benotzer \"'''\$1'''\" konnt net geluede ginn.",
 	'batchuserrights-no-groups' => 'Dir hutt keng Gruppen erausgesicht.
 Et gëtt näischt geännert.
-De Rescht vun der Säit gëtt nei opgebaut esou datt Dir einfach gesi kënnt ob ee vun de Benotzernimm net konnt geluede ginn.',
+De Rescht vun der Säit gëtt nei opgebaut sou datt Dir einfach gesi kënnt ob ee vun de Benotzernimm net konnt geluede ginn.',
 	'right-batchuserrights' => 'Een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen',
 	'action-batchuserrights' => 'een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen',
 );
