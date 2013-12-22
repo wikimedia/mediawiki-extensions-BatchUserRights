@@ -186,10 +186,11 @@ $messages['ca'] = array(
 
 /** Czech (čeština)
  * @author Dontlietome7
+ * @author Matěj Grabovský
  */
 $messages['cs'] = array(
 	'batchuserrights' => 'Dávkové přidělení uživatelských práv',
-	'batchuserrights-desc' => 'Umožňuje přidání jednoho nebo více uživatelů najednou do skupiny', # Fuzzy
+	'batchuserrights-desc' => 'Umožňuje najednou přidat jednoho nebo více uživatelů do skupiny',
 	'batchuserrights-names' => 'Uživatelská jména k přidání do této skupiny (1 na řádek):',
 	'batchuserrights-intro' => 'Tato stránka vám umožní přidat skupinu pro více uživatelů najednou.
 Z bezpečnostních důvodů seznam přidatelných skupin je nastaven v konfiguraci rozšíření a nelze jej měnit v rámci wiki.
