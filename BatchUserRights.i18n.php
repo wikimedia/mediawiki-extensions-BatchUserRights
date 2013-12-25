@@ -297,6 +297,20 @@ El resto de la página será ejecutada solo para que puedas ver fácilmente si a
 	'action-batchuserrights' => 'añadir a uno o a más usuarios a un grupo o a múltiples grupos en una sola acción',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'batchuserrights' => 'مجموعهٔ حقوق کاربر',
+	'batchuserrights-desc' => 'اجازهٔ اضافه کردن یک کاربر یا بیشتر به یک گروه یا گروه‌های بیشتر در یک عمل',
+	'batchuserrights-names' => 'نام‌های کاربری برای اضافه کردن این گروه به (یکی در هر خط)',
+	'batchuserrights-single-progress-update' => 'اضافه کردن {{PLURAL:$1|group|groups}} به <strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'اضافه کردن {{PLURAL:$1|one user|$1 users}} به {{PLURAL:$2|group|groups}}: <strong>$3</strong> زیر.',
+	'batchuserrights-userload-error' => "کاربر \"'''\$1'''\" نمی‌تواند بارگذاری شود.",
+	'right-batchuserrights' => 'اضافه کردن یک کاربر یا بیشتر برای یک گروه یا چند گروه در یک عمل',
+	'action-batchuserrights' => 'اضافه کردن یک کاربر یا بیشتر برای یک گروه یا چند گروه در یک عمل',
+);
+
 /** Finnish (suomi)
  * @author VezonThunder
  */
