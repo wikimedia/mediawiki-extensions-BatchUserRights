@@ -246,7 +246,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	 */
 	protected function showEditUserGroupsForm() {
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ) ) .
+			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getPageTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ) ) .
 			Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
 			Xml::openElement( 'fieldset' ) .
 			Xml::element( 'legend', array(), $this->msg( 'userrights-editusergroup' )->text() ) .
