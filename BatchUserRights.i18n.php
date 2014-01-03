@@ -139,8 +139,8 @@ $messages['be-tarask'] = array(
 	'batchuserrights-intro' => 'Гэтая старонка дазволіць Вам дадаваць у групу адразу некалькі ўдзельнікаў.
 Па прычынах бясьпекі, сьпіс апрацоўваемых групаў ўстанаўліваецца ў наладах пашырэньня і ня можа быць зьменены ў {{GRAMMAR:месны|{{SITENAME}}}}.
 Калі ласка, запытайце сыстэмнага адміністратара, калі Вам трэба ўключыць пакетнае даданьне для іншых групаў.',
-	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Група даданая|Групы даданыя}} для <strong>$2</strong>.',
-	'batchuserrights-add-groups' => 'Даданьне $1 {{PLURAL:$1|ўдзельніка|удзельнікаў|удзельнікаў}} ў {{PLURAL:$2|наступную групу|наступныя групы}}: <strong>$3</strong>.',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|1=Група даданая|Групы даданыя}} для <strong>$2</strong>.', # Fuzzy
+	'batchuserrights-add-groups' => 'Даданьне $1 {{PLURAL:$1|ўдзельніка|удзельнікаў|удзельнікаў}} ў {{PLURAL:$2|1=наступную групу|наступныя групы}}: <strong>$3</strong>.', # Fuzzy
 	'batchuserrights-userload-error' => "Немагчыма загрузіць удзельніка «'''$1'''».",
 	'batchuserrights-no-groups' => 'Вы не выбралі ніякай групы.
 Нічога ня будзе выканана.
@@ -810,8 +810,8 @@ $messages['ru'] = array(
 	'batchuserrights-intro' => 'Эта страница позволяет добавить группу в сразу несколько участников.
 По соображениям безопасности, список обрабатываемых групп устанавливается в настройках расширения и не может быть изменён в вики.
 Пожалуйста, обратитесь к системному администратору, если вы хотите включить пакетное добавление для других групп.',
-	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Добавлена группа|Добавлены группы}} для <strong>$2</strong>.',
-	'batchuserrights-add-groups' => 'Добавление {{PLURAL:$1|$1 участника|$1 участников|$1 участников}} в {{PLURAL:$2|следующую группу|следующие группы}}: <strong>$3</strong>.',
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|1=Добавлена группа|Добавлены группы}} для <strong>$2</strong>.', # Fuzzy
+	'batchuserrights-add-groups' => 'Добавление {{PLURAL:$1|$1 участника|$1 участников|$1 участников}} в {{PLURAL:$2|1=следующую группу|следующие группы}}: <strong>$3</strong>.', # Fuzzy
 	'batchuserrights-userload-error' => "Не удалось загрузить участника '''«$1»'''.",
 	'batchuserrights-no-groups' => 'Вы не выбрали группы.
 Ничего не будет выполнено.
@@ -878,6 +878,7 @@ Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong 
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Base
  * @author Steve.rusyn
  * @author SteveR
@@ -891,8 +892,8 @@ $messages['uk'] = array(
 	'batchuserrights-intro' => 'На цій сторінці Ви можете додати до групи декількох користувачів одразу.
 З міркувань безпеки список доступних груп встановлений у налаштуваннях розширення і не може бути змінений у вікі.
 Зверніться до системного адміністратора, якщо вам потрібно ввімкнути пакетне додавання для інших груп.',
-	'batchuserrights-single-progress-update' => 'Додано {{PLURAL:$1|групу|групи}} для <strong>$2</strong>.',
-	'batchuserrights-add-groups' => 'Додавання {{PLURAL:$1|користувача|$1 користувачів}} до {{PLURAL:$2|наступної групи|наступних груп}}: <strong>$3</strong>.',
+	'batchuserrights-single-progress-update' => 'Додано {{PLURAL:$1|1=групу|групи}} для <strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'Додавання {{PLURAL:$1|1=користувача|$1 користувачів}} до {{PLURAL:$2|1=наступної групи|наступних груп}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Не вдалось завантажити користувача «'''$1'''».",
 	'batchuserrights-no-groups' => 'Ви не вибрали ніяких груп.
 Нічого не буде виконано.
