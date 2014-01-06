@@ -801,6 +801,7 @@ Quiste non ge porte a ninde.
 /** Russian (русский)
  * @author DCamer
  * @author Eleferen
+ * @author Lockal
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -810,8 +811,8 @@ $messages['ru'] = array(
 	'batchuserrights-intro' => 'Эта страница позволяет добавить группу в сразу несколько участников.
 По соображениям безопасности, список обрабатываемых групп устанавливается в настройках расширения и не может быть изменён в вики.
 Пожалуйста, обратитесь к системному администратору, если вы хотите включить пакетное добавление для других групп.',
-	'batchuserrights-single-progress-update' => '{{PLURAL:$1|1=Добавлена группа|Добавлены группы}} для <strong>$2</strong>.', # Fuzzy
-	'batchuserrights-add-groups' => 'Добавление {{PLURAL:$1|$1 участника|$1 участников|$1 участников}} в {{PLURAL:$2|1=следующую группу|следующие группы}}: <strong>$3</strong>.', # Fuzzy
+	'batchuserrights-single-progress-update' => '{{PLURAL:$1|1=Добавлена группа|Добавлены группы}} для <strong>$2</strong>.',
+	'batchuserrights-add-groups' => 'Добавление {{PLURAL:$1|$1 участника|$1 участников}} в {{PLURAL:$2|1=следующую группу|следующие группы}}: <strong>$3</strong>.',
 	'batchuserrights-userload-error' => "Не удалось загрузить участника '''«$1»'''.",
 	'batchuserrights-no-groups' => 'Вы не выбрали группы.
 Ничего не будет выполнено.
