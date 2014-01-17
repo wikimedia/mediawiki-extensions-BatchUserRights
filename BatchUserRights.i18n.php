@@ -598,6 +598,13 @@ $messages['mk'] = array(
 	'action-batchuserrights' => 'додавање на еден или повеќе корисници во група или повеќе групи наеднаш',
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'batchuserrights-userload-error' => "सदस्य '''''$1''''' चे प्रभारण करु शकलो नाही",
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
