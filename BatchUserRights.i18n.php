@@ -167,6 +167,7 @@ $messages['br'] = array(
 	'batchuserrights-single-progress-update' => '{{PLURAL:$1|Strollad|Strolladoù}} ouzhpennet da <strong>$2</strong>.',
 	'batchuserrights-add-groups' => "Ouzhpennañ {{PLURAL:$1|un implijer|$1 implijer}} d'ar {{PLURAL:$2|strollad|strolladoù}}-mañ : <strong>$3</strong>.",
 	'batchuserrights-userload-error' => "Dibosupl eo kargañ an implijer \"'''\$1'''\".",
+	'action-batchuserrights' => "ouzhpennañ un implijer pe meur a hini d'ar strollad pe da lies strollad en un oberiadenn hepken",
 );
 
 /** Bosnian (bosanski)
@@ -864,6 +865,14 @@ Detta kommer inte att göra någonting.
 Resten av sidan kommer tillåtas köra så att du enkelt kan se om något av användarnamnen inte kunde laddas.',
 	'right-batchuserrights' => 'Lägg till en eller flera användare till en grupp eller flera grupper i en åtgärd',
 	'action-batchuserrights' => 'lägga till en eller fler användare i en grupp eller i multipla grupper samtidigt',
+);
+
+/** Telugu (తెలుగు)
+ * @author Ravichandra
+ */
+$messages['te'] = array(
+	'batchuserrights' => 'వాడుకరి హక్కుల సముదాయం',
+	'batchuserrights-userload-error' => "\"'''\$1'''\" వాడుకరిని తేలేకున్నాం",
 );
 
 /** Tagalog (Tagalog)

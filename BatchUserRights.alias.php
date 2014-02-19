@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'BatchUserRights' => array( 'صلاحيات_المستخدم_المجمعة' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'BatchUserRights' => array( 'صلاحيات_اليوزر_المتجمعه' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'BatchUserRights' => array( '批量用戶權限' ),
