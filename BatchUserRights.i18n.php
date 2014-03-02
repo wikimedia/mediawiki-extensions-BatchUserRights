@@ -868,10 +868,12 @@ Resten av sidan kommer tillåtas köra så att du enkelt kan se om något av anv
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Ravichandra
  */
 $messages['te'] = array(
 	'batchuserrights' => 'వాడుకరి హక్కుల సముదాయం',
+	'batchuserrights-names' => 'ఈ గుంపుకు చేర్చాల్సిన వాడుకరులు (వరుసకొకటి):',
 	'batchuserrights-userload-error' => "\"'''\$1'''\" వాడుకరిని తేలేకున్నాం",
 );
 
