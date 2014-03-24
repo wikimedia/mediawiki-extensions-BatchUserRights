@@ -913,6 +913,13 @@ Ang natitirang bahagi ng pahina ay papahintulutang tumakbo upang maginhawa mong 
 	'right-batchuserrights' => 'Nagdaragdag ng isa o marami pang mga tagagamit sa isang pangkat o marami pang mga pangkat sa pamamagitan ng isang galaw', # Fuzzy
 );
 
+/** Turkish (Türkçe)
+ * @author SiLveRLeaD
+ */
+$messages['tr'] = array(
+	'batchuserrights' => 'Toplu kullanıcı hakları',
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  * @author Base
