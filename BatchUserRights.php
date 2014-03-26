@@ -17,7 +17,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'BatchUserRights',
-	'version' => '1.1.2',
+	'version' => '1.2.0',
 	'author' => '[http://www.seancolombo.com Sean Colombo]',
 	'descriptionmsg' => 'batchuserrights-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:BatchUserRights',
@@ -32,8 +32,8 @@ $wgGroupPermissions['bureaucrat']['batchuserrights'] = true;
 $wgBatchUserRightsGrantableGroups = array();
 
 // Set up the new special page
-$dir = dirname( __FILE__ ) . '/';
-$wgExtensionMessagesFiles['BatchUserRights'] = $dir . 'BatchUserRights.i18n.php';
-$wgExtensionMessagesFiles['BatchUserRightsAliases'] = $dir . 'BatchUserRights.alias.php';
-$wgAutoloadClasses['SpecialBatchUserRights'] = $dir . 'BatchUserRights_body.php';
+$wgMessagesDirs['BatchUserRights'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['BatchUserRights'] = __DIR__ . '/BatchUserRights.i18n.php';
+$wgExtensionMessagesFiles['BatchUserRightsAliases'] = __DIR__ . '/BatchUserRights.alias.php';
+$wgAutoloadClasses['SpecialBatchUserRights'] = __DIR__ . '/BatchUserRights_body.php';
 $wgSpecialPages['BatchUserRights'] = 'SpecialBatchUserRights';

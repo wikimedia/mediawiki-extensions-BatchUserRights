@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Farras"
+        ]
+    },
+    "batchuserrights-userload-error": "Tidak bisa memuat pengguna \"'''$1'''\"."
+}

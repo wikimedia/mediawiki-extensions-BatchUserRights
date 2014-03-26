@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "CERminator"
+        ]
+    },
+    "batchuserrights-desc": "Omogućava dodavanje jednog ili više korisnika u grupu putem jedne akcije",
+    "batchuserrights-userload-error": "Nisam mogao učitati korisnika \"'''$1'''\"."
+}

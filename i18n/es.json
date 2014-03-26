@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Armando-Martin",
+            "Bola",
+            "Dferg",
+            "MarcoAurelio",
+            "Sanbec"
+        ]
+    },
+    "batchuserrights": "Derechos de usuarios por lotes",
+    "batchuserrights-desc": "Permite añadir uno o más usuarios a uno o más grupos en una sola acción",
+    "batchuserrights-names": "Nombres de usuario para añadir a este grupo (uno por línea):",
+    "batchuserrights-intro": "Esta página te permitirá añadir a un grupo múltiples usuarios a la vez.\nPor razones de seguridad, la lista de grupos agregables se cambia en la configuración de la extensión y no puede ser cambiada desde dentro del wiki.\nPor favor, pregunta a un administrador del sistema si necesitas añadir otros grupos.",
+    "batchuserrights-single-progress-update": "Añadido {{PLURAL:$1|grupo|grupos}} a <strong>$2</strong>.",
+    "batchuserrights-add-groups": "Añadiendo {{PLURAL:$1|un usuario|$1 usuarios}} {{PLURAL:$2|al siguiente grupo|a los siguientes grupos}}: <strong>$3</strong>.",
+    "batchuserrights-userload-error": "No se pudo cargar el usuario \"'''$1'''\".",
+    "batchuserrights-no-groups": "No elegiste ningún grupo.\nDe esta forma no ocurrirá nada.\nEl resto de la página será ejecutada solo para que puedas ver fácilmente si algún nombre de usuario no se puede cargar.",
+    "right-batchuserrights": "Agregar a uno o a más usuarios a un grupo o a múltiples grupos en una sola acción",
+    "action-batchuserrights": "añadir a uno o a más usuarios a un grupo o a múltiples grupos en una sola acción"
+}
