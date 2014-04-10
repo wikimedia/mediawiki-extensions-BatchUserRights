@@ -95,7 +95,7 @@ $specialPageAliases['tr'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'BatchUserRights' => array( '批量用户权限' ),
+	'BatchUserRights' => array( '批处理用户权限' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
