@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chaduvari",
-            "Ravichandra"
-        ]
-    },
-    "batchuserrights": "వాడుకరి హక్కుల సముదాయం",
-    "batchuserrights-names": "ఈ గుంపుకు చేర్చాల్సిన వాడుకరులు (వరుసకొకటి):",
-    "batchuserrights-userload-error": "\"'''$1'''\" వాడుకరిని తేలేకున్నాం"
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Ravichandra"
+		]
+	},
+	"batchuserrights": "వాడుకరి హక్కుల సముదాయం",
+	"batchuserrights-names": "ఈ గుంపుకు చేర్చాల్సిన వాడుకరులు (వరుసకొకటి):",
+	"batchuserrights-userload-error": "\"'''$1'''\" వాడుకరిని తేలేకున్నాం"
 }

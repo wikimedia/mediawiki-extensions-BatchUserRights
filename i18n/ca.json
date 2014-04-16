@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Arnaugir"
-        ]
-    },
-    "batchuserrights-userload-error": "No s'ha pogut carregar l'usuari \"'''$1'''\"."
+	"@metadata": {
+		"authors": [
+			"Arnaugir"
+		]
+	},
+	"batchuserrights-userload-error": "No s'ha pogut carregar l'usuari \"'''$1'''\"."
 }

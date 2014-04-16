@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yekrats"
-        ]
-    },
-    "batchuserrights-userload-error": "Ne eblis ŝargi uzanton \"'''$1'''\"."
+	"@metadata": {
+		"authors": [
+			"Yekrats"
+		]
+	},
+	"batchuserrights-userload-error": "Ne eblis ŝargi uzanton \"'''$1'''\"."
 }
