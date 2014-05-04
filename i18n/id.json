@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Farras"
+			"Farras",
+			"C5st4wr6ch"
 		]
 	},
-	"batchuserrights-userload-error": "Tidak bisa memuat pengguna \"'''$1'''\"."
+	"batchuserrights-names": "Nama-nama pengguna untuk ditambahkan ke kelompok ini (satu per baris):",
+	"batchuserrights-intro": "Halaman ini mengizinkan Anda menambahkan sebuah grup ke banyak pengguna sekaligus.\nUntuk alasan keamanan, daftar grup yang dapat ditambahkan telah diatur dalam pengaturan ekstensi dan tidak dapat diubah dari dalam wiki.\nSilakan minta ke seorang pengurus sistem jika Anda butuh mengizinkan penambahan-massal dari grup-grup lain.",
+	"batchuserrights-userload-error": "Tidak bisa memuat pengguna \"'''$1'''\".",
+	"batchuserrights-no-groups": "Anda tidak memilih kelompok manapun.\nIni tidak akan menghasilkan apa-apa.\nSisa halaman akan diizinkan untuk dimuat agar Anda dapat dengan mudah melihat jika ada nama pengguna yang tidak dapat dimuat."
 }
