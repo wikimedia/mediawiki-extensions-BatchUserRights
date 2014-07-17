@@ -4,12 +4,14 @@
 			"Hangsna",
 			"Jopparn",
 			"LittleGun",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil"
 		]
 	},
+	"batchuserrights": "Masshantering av användarbehörigheter",
 	"batchuserrights-desc": "Gör det möjligt att lägga till en eller flera användare till en grupp eller flera grupper i en och samma åtgärd",
 	"batchuserrights-names": "Användarnamn som ska läggas till gruppen (en per rad):",
-	"batchuserrights-intro": "På den här sidan kan du lägga till flera användare i en grupp samtidigt.\nAv säkerhetsskäl är listan över möjliga grupper bestämd av tilläggskonfigurationen från wikin.\nFråga en system administratör om har behov av att lägga till flera användare samtidigt till en annan grupp.",
+	"batchuserrights-intro": "På den här sidan kan du lägga till flera användare i en grupp samtidigt.\nAv säkerhetsskäl är listan över möjliga grupper bestämd av tilläggskonfigurationen från wikin.\nFråga en systemadministratör om du har behov av att lägga till flera användare samtidigt till en annan grupp.",
 	"batchuserrights-single-progress-update": "Lade till {{PLURAL:$1|grupp|grupperna}} till <strong>$2</strong>.",
 	"batchuserrights-add-groups": "Lägger till {{PLURAL:$1|en användare|$1 användare}} till följande {{PLURAL:$2|grupp|grupper}}: <strong>$3</strong>.",
 	"batchuserrights-userload-error": "Kunde inte läsa in användaren \"'''$1'''\".",
