@@ -100,5 +100,5 @@ $specialPageAliases['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
-	'BatchUserRights' => array( '批量用戶權限' ),
+	'BatchUserRights' => array( '批量使用者權限' ),
 );
