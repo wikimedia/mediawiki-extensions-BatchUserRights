@@ -35,7 +35,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'BatchUserRights' => array( 'HeqéKarberanPéro' ),
+	'BatchUserRights' => array( 'HeqêKarberanPêro' ),
 );
 
 /** Persian (فارسی) */
