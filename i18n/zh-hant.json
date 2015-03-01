@@ -15,6 +15,6 @@
 	"batchuserrights-add-groups": "添加$1位使用者至以下{{PLURAL:$2|使用者群組}}：<strong>$3</strong>。",
 	"batchuserrights-userload-error": "無法加載用戶\"'''$1'''\"。",
 	"batchuserrights-no-groups": "您沒有選擇任何用戶權限組。\n這將會使甚麼也不會做。\n頁面的剩餘部分將繼續運行，以便讓您看到是否有任何用戶名無法加载。",
-	"right-batchuserrights": "一次過將一個或多個用戶添加到一個或多個用戶權限組",
-	"action-batchuserrights": "一次過將一個或多個用戶添加到一個或多個用戶權限組"
+	"right-batchuserrights": "一次過將一個或多個使用者增加到一個或多個使用者權限群組",
+	"action-batchuserrights": "一次過將一個或多個使用者增加到一個或多個使用者權限群組"
 }
