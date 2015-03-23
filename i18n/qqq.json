@@ -3,11 +3,12 @@
 		"authors": [
 			"SVG",
 			"Shirayuki",
-			"The Evil IP address"
+			"The Evil IP address",
+			"Umherirrender"
 		]
 	},
 	"batchuserrights": "{{doc-special|BatchUserRights|unlisted=1}}",
-	"batchuserrights-desc": "{{desc|name=Batch User Rights|url=http://www.mediawiki.org/wiki/Extension:BatchUserRights}}",
+	"batchuserrights-desc": "{{desc|name=Batch User Rights|url=https://www.mediawiki.org/wiki/Extension:BatchUserRights}}",
 	"batchuserrights-names": "Names of users which should be added to the selected groups",
 	"batchuserrights-intro": "How to use description on Special:BatchUserRights",
 	"batchuserrights-single-progress-update": "Used as success message. Parameters:\n* $1 - number of groups\n* $2 - username",
