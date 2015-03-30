@@ -78,6 +78,11 @@ $specialPageAliases['nl'] = array(
 	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
 );
 
+/** Brazilian Portuguese (português do Brasil) */
+$specialPageAliases['pt-br'] = array(
+	'BatchUserRights' => array( 'Direitos_de_usuário_em_lote' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'BatchUserRights' => array( 'PermessiUtenteAccorpati' ),
