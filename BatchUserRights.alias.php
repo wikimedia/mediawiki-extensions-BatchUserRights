@@ -63,6 +63,11 @@ $specialPageAliases['kw'] = array(
 	'BatchUserRights' => array( 'BagasGwiryowDevnydhyoryon' ),
 );
 
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'BatchUserRights' => array( 'حقوق_کلی_کاریار' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'BatchUserRights' => array( 'АнгроКорисничкиПрава' ),
