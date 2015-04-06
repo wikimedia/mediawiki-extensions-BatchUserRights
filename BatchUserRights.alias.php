@@ -23,6 +23,11 @@ $specialPageAliases['arz'] = array(
 	'BatchUserRights' => array( 'صلاحيات_اليوزر_المتجمعه' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'BatchUserRights' => array( 'دسته_ئین_کارمرزوکی_اختیار_ئان' ),
+);
+
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
 $specialPageAliases['cdo'] = array(
 	'BatchUserRights' => array( '批量用戶權限' ),
