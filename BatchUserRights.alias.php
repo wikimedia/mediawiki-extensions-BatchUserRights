@@ -18,7 +18,7 @@ $specialPageAliases['ar'] = array(
 	'BatchUserRights' => array( 'صلاحيات_المستخدم_المجمعة' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'BatchUserRights' => array( 'صلاحيات_اليوزر_المتجمعه' ),
 );
@@ -68,7 +68,7 @@ $specialPageAliases['kw'] = array(
 	'BatchUserRights' => array( 'BagasGwiryowDevnydhyoryon' ),
 );
 
-/** لوری (لوری) */
+/** لوری مینجایی (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'BatchUserRights' => array( 'حقوق_کلی_کاریار' ),
 );
