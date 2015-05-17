@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Audun",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Chameleon222"
 		]
 	},
 	"batchuserrights": "Puljeoppdater brukerrettigheter",
@@ -12,5 +13,7 @@
 	"batchuserrights-single-progress-update": "Lagt {{PLURAL:$1|gruppe|grupper}} til <strong>$2</strong>.",
 	"batchuserrights-add-groups": "Legger {{PLURAL:$1|én bruker|$1 brukere}} til {{PLURAL:$2|den|de}} følgende {{PLURAL:$2|gruppen|gruppene}}: <strong>$3</strong>.",
 	"batchuserrights-userload-error": "Kunne ikke laste brukeren «'''$1'''».",
-	"batchuserrights-no-groups": "Du valgte ingen grupper.\nDette vil ikke oppnå noe.\nResten av siden vil få lov til å kjøre slik at du enkelt kan se om noen av brukernavnene ikke kunnes lastes."
+	"batchuserrights-no-groups": "Du valgte ingen grupper.\nDette vil ikke oppnå noe.\nResten av siden vil få lov til å kjøre slik at du enkelt kan se om noen av brukernavnene ikke kunnes lastes.",
+	"right-batchuserrights": "Legg en eller flere brukere til en eller flere grupper i en handling",
+	"action-batchuserrights": "legg en eller flere brukere til en eller flere grupper i en handling"
 }
