@@ -70,7 +70,7 @@ $specialPageAliases['kw'] = array(
 
 /** Northern Luri (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
-	'BatchUserRights' => array( 'حقوق_کلی_کاریار' ),
+	'BatchUserRights' => array( 'حقوق_کولی_کاریار' ),
 );
 
 /** Macedonian (македонски) */
