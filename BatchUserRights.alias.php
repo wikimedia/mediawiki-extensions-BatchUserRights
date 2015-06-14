@@ -68,7 +68,7 @@ $specialPageAliases['kw'] = array(
 	'BatchUserRights' => array( 'BagasGwiryowDevnydhyoryon' ),
 );
 
-/** Northern Luri (لوری مینجایی) */
+/** Northern Luri (لۊری شومالی) */
 $specialPageAliases['lrc'] = array(
 	'BatchUserRights' => array( 'حقوق_کولی_کاریار' ),
 );
