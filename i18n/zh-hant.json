@@ -4,7 +4,8 @@
 			"Justincheng12345",
 			"Shirayuki",
 			"Simon Shek",
-			"LNDDYL"
+			"LNDDYL",
+			"Cwlin0416"
 		]
 	},
 	"batchuserrights": "分批處理的使用者權限",
@@ -14,7 +15,7 @@
 	"batchuserrights-single-progress-update": "已新增{{PLURAL:$1|群組}}至 <strong>$2</strong> 。",
 	"batchuserrights-add-groups": "添加$1位使用者至以下{{PLURAL:$2|使用者群組}}：<strong>$3</strong>。",
 	"batchuserrights-userload-error": "無法載入使用者 \"'''$1'''\"。",
-	"batchuserrights-no-groups": "您沒有選擇任何群組。\n這將會使甚麼也不會做。\n頁面的剩餘部分將繼續運行，以便讓您看到是否有任何使用者無法載入。",
+	"batchuserrights-no-groups": "您沒有選擇任何群組。\n這將會使甚麼也不會做。\n頁面的剩餘部分將繼續執行，以便讓您看到是否有任何使用者無法載入。",
 	"right-batchuserrights": "一次過將一個或多個使用者增加到一個或多個使用者權限群組",
 	"action-batchuserrights": "一次過將一個或多個使用者增加到一個或多個使用者權限群組"
 }
