@@ -153,7 +153,7 @@ class SpecialBatchUserRights extends SpecialPage {
 		if ( $user instanceof User ) {
 			$removegroup = array();
 			// hmmm
-			wfRunHooks( 'UserRights', array( &$user, $addgroup, $removegroup ) );
+			Hooks::run( 'UserRights', array( &$user, $addgroup, $removegroup ) );
 		}
 
 		if ( $newGroups != $oldGroups ) {
@@ -306,7 +306,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 			/* Wikia change begin - @author: Marooned */
 			/* Because of "return all" in changeableGroups() hook UserrightsChangeableGroups is not invoked - this hook is to fill this gap */
-			wfRunHooks( 'UserRights::groupCheckboxes', array( $group, &$disabled, &$irreversible ) );
+			Hooks::run( 'UserRights::groupCheckboxes', array( $group, &$disabled, &$irreversible ) );
 			/* Wikia change end */
 
 			$attr = $disabled ? array( 'disabled' => 'disabled' ) : array();
