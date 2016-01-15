@@ -15,6 +15,10 @@ class SpecialBatchUserRights extends SpecialPage {
 		parent::__construct( 'BatchUserRights', 'batchuserrights' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * Manage forms to be shown according to posted data.
 	 * Depending on the submit button used, call a form or a save function.
