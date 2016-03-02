@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Macofe"
 		]
 	},
 	"batchuserrights-desc": "Omogućava dodavanje jednog ili više korisnika u grupu putem jedne akcije",
-	"batchuserrights-userload-error": "Nisam mogao učitati korisnika \"'''$1'''\"."
+	"batchuserrights-userload-error": "Nisam mogao učitati korisnika '''$1'''."
 }

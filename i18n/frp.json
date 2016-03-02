@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"ChrisPtDe"
+			"ChrisPtDe",
+			"Macofe"
 		]
 	},
-	"batchuserrights-userload-error": "Empossiblo de chargiér l’utilisator « '''$1''' »."
+	"batchuserrights-userload-error": "Empossiblo de chargiér l’utilisator '''$1'''."
 }

@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Caliburn"
+			"Caliburn",
+			"Macofe"
 		]
 	},
 	"batchuserrights": "Batch user rights",
-	"batchuserrights-userload-error": "Could not load the user \"'''$1'''\"."
+	"batchuserrights-userload-error": "Could not load the user '''$1'''."
 }

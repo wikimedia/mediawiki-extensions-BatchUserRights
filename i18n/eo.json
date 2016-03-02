@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Macofe"
 		]
 	},
-	"batchuserrights-userload-error": "Ne eblis ŝargi uzanton \"'''$1'''\"."
+	"batchuserrights-userload-error": "Ne eblis ŝargi uzanton '''$1'''."
 }

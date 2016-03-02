@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Naudefj"
+			"Naudefj",
+			"Macofe"
 		]
 	},
-	"batchuserrights-userload-error": "Die gebruiker \"'''$1'''\" kon nie gelaai word nie."
+	"batchuserrights-userload-error": "Die gebruiker '''$1''' kon nie gelaai word nie."
 }
