@@ -5,7 +5,8 @@
 			"Ofekalef",
 			"חיים",
 			"ערן",
-			"Macofe"
+			"Macofe",
+			"Guycn2"
 		]
 	},
 	"batchuserrights": "שינוי הרשאות מרובה",
@@ -17,5 +18,5 @@
 	"batchuserrights-userload-error": "נכשלה טעינת המשתמש '''$1'''",
 	"batchuserrights-no-groups": "לא בחרת שום קבוצה.\nזה לא ישיג שום דבר.\nשאר הדף הזה יוכל לרוץ רק כדי להראות לך אילו שמות משתמש לא ניתן לבחור.",
 	"right-batchuserrights": "הוספת משתמש או משתמשים לקבוצה אחת או יותר בפעולה אחת",
-	"action-batchuserrights": "הוספת משתמש או משתמשים לקבוצה אחת או יותר בפעולה אחת"
+	"action-batchuserrights": "להוסיף משתמש או משתמשים לקבוצה אחת או יותר בפעולה אחת"
 }
