@@ -62,7 +62,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				$reason = $request->getVal( 'user-reason' );
 				$tok = $request->getVal( 'wpEditToken' );
 				if ( $user->matchEditToken( $tok ) ) {
-					$addgroup = array();
+					$addgroup = [];
 					foreach ( $wgBatchUserRightsGrantableGroups as $group ) {
 						// This batch form is only for adding user groups, we don't remove any.
 						if ( $request->getCheck( "wpGroup-$group" ) ) {
@@ -88,7 +88,7 @@ class SpecialBatchUserRights extends SpecialPage {
 					// Loop through each target user and apply the update.
 					foreach ( $usernames as $username ) {
 						$username = trim( $username );
-						if( $username !== '' ) {
+						if ( $username !== '' ) {
 							$out->addHTML( $this->msg(
 								'batchuserrights-single-progress-update',
 								count( $addgroup ),
@@ -132,7 +132,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 		// Validate input set...
 		$changeable = $this->changeableGroups();
-		$addable = array_merge( $changeable['add'], $this->isself ? $changeable['add-self'] : array() );
+		$addable = array_merge( $changeable['add'], $this->isself ? $changeable['add-self'] : [] );
 
 		$addgroup = array_unique(
 			array_intersect( (array)$addgroup, $addable )
@@ -155,9 +155,9 @@ class SpecialBatchUserRights extends SpecialPage {
 		wfDebug( 'oldGroups: ' . print_r( $oldGroups, true ) );
 		wfDebug( 'newGroups: ' . print_r( $newGroups, true ) );
 		if ( $user instanceof User ) {
-			$removegroup = array();
+			$removegroup = [];
 			// hmmm
-			Hooks::run( 'UserRights', array( &$user, $addgroup, $removegroup ) );
+			Hooks::run( 'UserRights', [ &$user, $addgroup, $removegroup ] );
 		}
 
 		if ( $newGroups != $oldGroups ) {
@@ -173,10 +173,10 @@ class SpecialBatchUserRights extends SpecialPage {
 		$logEntry->setPerformer( $this->getUser() );
 		$logEntry->setTarget( $user->getUserPage() );
 		$logEntry->setComment( $reason );
-		$logEntry->setParameters( array(
+		$logEntry->setParameters( [
 			'4::oldgroups' => $oldGroups,
 			'5::newgroups' => $newGroups,
-		) );
+		] );
 		$logid = $logEntry->insert();
 		$logEntry->publish( $logid );
 	}
@@ -250,13 +250,13 @@ class SpecialBatchUserRights extends SpecialPage {
 	 */
 	protected function showEditUserGroupsForm() {
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getPageTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ) ) .
+			Xml::openElement( 'form', [ 'method' => 'post', 'action' => $this->getPageTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ] ) .
 			Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
 			Xml::openElement( 'fieldset' ) .
-			Xml::element( 'legend', array(), $this->msg( 'userrights-editusergroup' )->text() ) .
+			Xml::element( 'legend', [], $this->msg( 'userrights-editusergroup' )->text() ) .
 			$this->msg( 'batchuserrights-intro' )->parseAsBlock() .
 			Xml::tags( 'p', null, $this->groupCheckboxes() ) .
-			Xml::openElement( 'table', array( 'border' => '0', 'id' => 'mw-userrights-table-outer' ) ) .
+			Xml::openElement( 'table', [ 'border' => '0', 'id' => 'mw-userrights-table-outer' ] ) .
 				'<tr>
 					<td class="mw-label">' .
 						Xml::label( $this->msg( 'batchuserrights-names' )->text(), 'wpUsernames' ) .
@@ -270,13 +270,13 @@ class SpecialBatchUserRights extends SpecialPage {
 						Xml::label( $this->msg( 'userrights-reason' )->text(), 'wpReason' ) .
 					'</td>
 					<td class="mw-input">' .
-						Xml::input( 'user-reason', 60, false, array( 'id' => 'wpReason', 'maxlength' => 255 ) ) .
+						Xml::input( 'user-reason', 60, false, [ 'id' => 'wpReason', 'maxlength' => 255 ] ) .
 					'</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td class="mw-submit">' .
-						Xml::submitButton( $this->msg( 'saveusergroups' )->text(), array( 'name' => 'saveusergroups', 'accesskey' => 's' ) ) .
+						Xml::submitButton( $this->msg( 'saveusergroups' )->text(), [ 'name' => 'saveusergroups', 'accesskey' => 's' ] ) .
 					'</td>
 				</tr>' .
 			Xml::closeElement( 'table' ) . "\n" .
@@ -310,17 +310,17 @@ class SpecialBatchUserRights extends SpecialPage {
 
 			/* Wikia change begin - @author: Marooned */
 			/* Because of "return all" in changeableGroups() hook UserrightsChangeableGroups is not invoked - this hook is to fill this gap */
-			Hooks::run( 'UserRights::groupCheckboxes', array( $group, &$disabled, &$irreversible ) );
+			Hooks::run( 'UserRights::groupCheckboxes', [ $group, &$disabled, &$irreversible ] );
 			/* Wikia change end */
 
-			$attr = $disabled ? array( 'disabled' => 'disabled' ) : array();
+			$attr = $disabled ? [ 'disabled' => 'disabled' ] : [];
 			$attr['title'] = $group;
 			$text = $irreversible
 				? $this->msg( 'userrights-irreversible-marker', User::getGroupMember( $group ) )->escaped()
 				: User::getGroupMember( $group );
 			$checkbox = Xml::checkLabel( $text, "wpGroup-$group",
 				"wpGroup-$group", $set, $attr );
-			$checkbox = $disabled ? Xml::tags( 'span', array( 'class' => 'mw-userrights-disabled' ), $checkbox ) : $checkbox;
+			$checkbox = $disabled ? Xml::tags( 'span', [ 'class' => 'mw-userrights-disabled' ], $checkbox ) : $checkbox;
 
 			if ( $disabled ) {
 				$unsettable_col .= "$checkbox<br />\n";
@@ -330,7 +330,7 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		if ( $column ) {
-			$ret .=	Xml::openElement( 'table', array( 'border' => '0', 'class' => 'mw-userrights-groups' ) ) .
+			$ret .=	Xml::openElement( 'table', [ 'border' => '0', 'class' => 'mw-userrights-groups' ] ) .
 				'<tr>
 ';
 			if ( $settable_col !== '' ) {

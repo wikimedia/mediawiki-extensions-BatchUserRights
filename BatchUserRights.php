@@ -14,14 +14,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // Extension credits that will show up on Special:Version
-$wgExtensionCredits['specialpage'][] = array(
+$wgExtensionCredits['specialpage'][] = [
 	'path' => __FILE__,
 	'name' => 'BatchUserRights',
 	'version' => '1.2.0',
 	'author' => '[http://www.seancolombo.com Sean Colombo]',
 	'descriptionmsg' => 'batchuserrights-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:BatchUserRights',
-);
+];
 
 set_time_limit( 0 );
 // New user right, required to access Special:BatchUserRights
@@ -29,7 +29,7 @@ $wgAvailableRights[] = 'batchuserrights';
 $wgGroupPermissions['bureaucrat']['batchuserrights'] = true;
 
 // User groups which can be added through Special:BatchUserRights
-$wgBatchUserRightsGrantableGroups = array();
+$wgBatchUserRightsGrantableGroups = [];
 
 // Set up the new special page
 $wgMessagesDirs['BatchUserRights'] = __DIR__ . '/i18n';
