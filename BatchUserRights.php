@@ -9,30 +9,18 @@
  * @author Sean Colombo
  * @link http://www.mediawiki.org/wiki/Extension:BatchUserRights Documentation
  */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die();
+
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'BatchUserRights' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['BatchUserRights'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['BatchUserRightsAlias'] = __DIR__ . '/BatchUserRights.alias.php';
+	wfWarn(
+		'Deprecated PHP entry point used for the BatchUserRights extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the BatchUserRights extension requires MediaWiki 1.29+' );
 }
-
-// Extension credits that will show up on Special:Version
-$wgExtensionCredits['specialpage'][] = [
-	'path' => __FILE__,
-	'name' => 'BatchUserRights',
-	'version' => '1.2.0',
-	'author' => '[http://www.seancolombo.com Sean Colombo]',
-	'descriptionmsg' => 'batchuserrights-desc',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:BatchUserRights',
-];
-
-set_time_limit( 0 );
-// New user right, required to access Special:BatchUserRights
-$wgAvailableRights[] = 'batchuserrights';
-$wgGroupPermissions['bureaucrat']['batchuserrights'] = true;
-
-// User groups which can be added through Special:BatchUserRights
-$wgBatchUserRightsGrantableGroups = [];
-
-// Set up the new special page
-$wgMessagesDirs['BatchUserRights'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['BatchUserRightsAliases'] = __DIR__ . '/BatchUserRights.alias.php';
-$wgAutoloadClasses['SpecialBatchUserRights'] = __DIR__ . '/BatchUserRights_body.php';
-$wgSpecialPages['BatchUserRights'] = 'SpecialBatchUserRights';
