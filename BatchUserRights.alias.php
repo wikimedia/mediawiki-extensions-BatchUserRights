@@ -4,116 +4,115 @@
  *
  * @file
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'BatchUserRights' => array( 'BatchUserRights' ),
-);
+$specialPageAliases['en'] = [
+	'BatchUserRights' => [ 'BatchUserRights' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'BatchUserRights' => array( 'صلاحيات_المستخدم_المجمعة' ),
-);
+$specialPageAliases['ar'] = [
+	'BatchUserRights' => [ 'صلاحيات_المستخدم_المجمعة' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'BatchUserRights' => array( 'صلاحيات_اليوزر_المتجمعه' ),
-);
+$specialPageAliases['arz'] = [
+	'BatchUserRights' => [ 'صلاحيات_اليوزر_المتجمعه' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'BatchUserRights' => array( 'دسته_ئین_کارمرزوکی_اختیار_ئان' ),
-);
+$specialPageAliases['bgn'] = [
+	'BatchUserRights' => [ 'دسته_ئین_کارمرزوکی_اختیار_ئان' ],
+];
 
 /** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
-$specialPageAliases['cdo'] = array(
-	'BatchUserRights' => array( '批量用戶權限' ),
-);
+$specialPageAliases['cdo'] = [
+	'BatchUserRights' => [ '批量用戶權限' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'BatchUserRights' => array( 'Massen-Benutzerrechte' ),
-);
+$specialPageAliases['de'] = [
+	'BatchUserRights' => [ 'Massen-Benutzerrechte' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'BatchUserRights' => array( 'HeqêKarberanPêro' ),
-);
+$specialPageAliases['diq'] = [
+	'BatchUserRights' => [ 'HeqêKarberanPêro' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'BatchUserRights' => array( 'اختیارات_کاربری_دسته‌ای' ),
-);
+$specialPageAliases['fa'] = [
+	'BatchUserRights' => [ 'اختیارات_کاربری_دسته‌ای' ],
+];
 
 /** Swiss German (Alemannisch) */
-$specialPageAliases['gsw'] = array(
-	'BatchUserRights' => array( 'Masse-Benutzerrächt' ),
-);
+$specialPageAliases['gsw'] = [
+	'BatchUserRights' => [ 'Masse-Benutzerrächt' ],
+];
 
 /** Italian (italiano) */
-$specialPageAliases['it'] = array(
-	'BatchUserRights' => array( 'PermessiUtenteAccorpati' ),
-);
+$specialPageAliases['it'] = [
+	'BatchUserRights' => [ 'PermessiUtenteAccorpati' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'BatchUserRights' => array( '일괄사용자권한' ),
-);
+$specialPageAliases['ko'] = [
+	'BatchUserRights' => [ '일괄사용자권한' ],
+];
 
 /** Cornish (kernowek) */
-$specialPageAliases['kw'] = array(
-	'BatchUserRights' => array( 'BagasGwiryowDevnydhyoryon' ),
-);
+$specialPageAliases['kw'] = [
+	'BatchUserRights' => [ 'BagasGwiryowDevnydhyoryon' ],
+];
 
 /** Northern Luri (لۊری شومالی) */
-$specialPageAliases['lrc'] = array(
-	'BatchUserRights' => array( 'حقوق_کولی_کاریار' ),
-);
+$specialPageAliases['lrc'] = [
+	'BatchUserRights' => [ 'حقوق_کولی_کاریار' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'BatchUserRights' => array( 'АнгроКорисничкиПрава' ),
-);
+$specialPageAliases['mk'] = [
+	'BatchUserRights' => [ 'АнгроКорисничкиПрава' ],
+];
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
-$specialPageAliases['nds-nl'] = array(
-	'BatchUserRights' => array( 'Batch_gebrukersrechten' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'BatchUserRights' => [ 'Batch_gebrukersrechten' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'BatchUserRights' => array( 'BatchGebruikersrechten' ),
-);
+$specialPageAliases['nl'] = [
+	'BatchUserRights' => [ 'BatchGebruikersrechten' ],
+];
 
 /** Brazilian Portuguese (português do Brasil) */
-$specialPageAliases['pt-br'] = array(
-	'BatchUserRights' => array( 'Direitos_de_usuário_em_lote' ),
-);
+$specialPageAliases['pt-br'] = [
+	'BatchUserRights' => [ 'Direitos_de_usuário_em_lote' ],
+];
 
 /** Sicilian (sicilianu) */
-$specialPageAliases['scn'] = array(
-	'BatchUserRights' => array( 'PermessiUtenteAccorpati' ),
-);
+$specialPageAliases['scn'] = [
+	'BatchUserRights' => [ 'PermessiUtenteAccorpati' ],
+];
 
 /** Tagalog (Tagalog) */
-$specialPageAliases['tl'] = array(
-	'BatchUserRights' => array( 'Mga_Karapatan_ng_Tagagamit_ng_Pulutong' ),
-);
+$specialPageAliases['tl'] = [
+	'BatchUserRights' => [ 'Mga_Karapatan_ng_Tagagamit_ng_Pulutong' ],
+];
 
 /** Turkish (Türkçe) */
-$specialPageAliases['tr'] = array(
-	'BatchUserRights' => array( 'TopluKullanıcıHakları' ),
-);
+$specialPageAliases['tr'] = [
+	'BatchUserRights' => [ 'TopluKullanıcıHakları' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'BatchUserRights' => array( '批处理用户权限' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'BatchUserRights' => [ '批处理用户权限' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'BatchUserRights' => array( '批次使用者權限' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'BatchUserRights' => [ '批次使用者權限' ],
+];
