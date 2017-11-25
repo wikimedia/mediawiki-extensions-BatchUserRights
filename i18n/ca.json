@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Arnaugir",
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
-	"batchuserrights-userload-error": "No s'ha pogut carregar l'usuari '''$1'''."
+	"batchuserrights-userload-error": "No s’ha pogut carregar {{GENDER:$1|l’usuari|la usuària}} '''$1'''."
 }
