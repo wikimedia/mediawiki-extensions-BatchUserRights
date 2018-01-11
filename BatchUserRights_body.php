@@ -42,7 +42,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * Manage forms to be shown according to posted data.
 	 * Depending on the submit button used, call a form or a save function.
 	 *
-	 * @param $par Mixed: string if any subpage provided, else null
+	 * @param string|null $par string if any subpage provided, else null
 	 */
 	public function execute( $par ) {
 		global $wgBatchUserRightsGrantableGroups;
@@ -128,10 +128,9 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * Save user groups changes in the database.
 	 * Data comes from the showEditUserGroupsForm() form function
 	 *
-	 * @param $username String: username to apply changes to.
-	 * @param $addgroup Array: group names which the user should be added to.
-	 * @param $reason String: reason for group change
-	 * @return null
+	 * @param string $username username to apply changes to.
+	 * @param array $addgroup group names which the user should be added to.
+	 * @param string $reason reason for group change
 	 */
 	function saveUserGroups( $username, $addgroup, $reason = '' ) {
 		if ( $username == $this->getUser()->getName() ) {
@@ -186,6 +185,10 @@ class SpecialBatchUserRights extends SpecialPage {
 
 	/**
 	 * Add a rights log entry for an action.
+	 * @param User $user
+	 * @param array $oldGroups
+	 * @param array $newGroups
+	 * @param string $reason
 	 */
 	function addLogEntry( $user, $oldGroups, $newGroups, $reason = '' ) {
 		$logEntry = new ManualLogEntry( 'rights', 'rights' );
@@ -205,7 +208,8 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * return a user (or proxy) object for manipulating it.
 	 *
 	 * Side effects: error output for invalid access
-	 * @return mixed User, UserRightsProxy, or null
+	 * @param string $username
+	 * @return User|UserRightsProxy|null
 	 */
 	function fetchUser( $username ) {
 		global $wgUserrightsInterwikiDelimiter;
@@ -382,7 +386,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	}
 
 	/**
-	 * @param  $group String: the name of the group to check
+	 * @param string $group the name of the group to check
 	 * @return bool Can we remove the group?
 	 */
 	private function canRemove( $group ) {
@@ -393,7 +397,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	}
 
 	/**
-	 * @param $group string: the name of the group to check
+	 * @param string $group the name of the group to check
 	 * @return bool Can we add the group?
 	 */
 	private function canAdd( $group ) {
