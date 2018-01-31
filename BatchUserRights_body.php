@@ -64,8 +64,7 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		if ( wfReadOnly() ) {
-			$out->readOnlyPage();
-			return;
+			throw new ReadOnlyError;
 		}
 
 		$this->outputHeader();
