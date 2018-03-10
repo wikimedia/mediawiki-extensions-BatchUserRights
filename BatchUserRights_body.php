@@ -338,8 +338,8 @@ class SpecialBatchUserRights extends SpecialPage {
 			$attr = $disabled ? [ 'disabled' => 'disabled' ] : [];
 			$attr['title'] = $group;
 			$text = $irreversible
-				? $this->msg( 'userrights-irreversible-marker', User::getGroupMember( $group ) )->escaped()
-				: User::getGroupMember( $group );
+				? $this->msg( 'userrights-irreversible-marker', UserGroupMembership::getGroupMemberName( $group ) )->escaped()
+				: UserGroupMembership::getGroupMemberName( $group );
 			$checkbox = Xml::checkLabel( $text, "wpGroup-$group",
 				"wpGroup-$group", $set, $attr );
 			$checkbox = $disabled ? Xml::tags( 'span', [ 'class' => 'mw-userrights-disabled' ], $checkbox ) : $checkbox;
