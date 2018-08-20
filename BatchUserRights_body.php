@@ -91,7 +91,7 @@ class SpecialBatchUserRights extends SpecialPage {
 					if ( count( $addgroup ) == 0 ) {
 						$out->addHTML(
 							'<strong style="background-color:#faa">' .
-							$this->msg( 'batchuserrights-no-groups' )->text() .
+							$this->msg( 'batchuserrights-no-groups' )->escaped() .
 							"</strong><br /><br />\n"
 						);
 					} else {
