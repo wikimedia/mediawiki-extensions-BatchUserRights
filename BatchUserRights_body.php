@@ -59,8 +59,8 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		// check if user is blocked -- see rt#19111
-		if ( $user->isBlocked() ) {
-			throw new UserBlockedError( $this->getUser()->mBlock );
+		if ( $user->getBlock() ) {
+			throw new UserBlockedError( $user->getBlock() );
 		}
 
 		if ( wfReadOnly() ) {
