@@ -61,6 +61,11 @@ $specialPageAliases['diq'] = [
 	'BatchUserRights' => [ 'HeqêKarberanPêro' ],
 ];
 
+/** Spanish (Español) */
+$specialPageAliases['es'] = [
+	'BatchUserRights' => [ 'Permisos_de_usuario_por_lotes' ],
+];
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = [
 	'BatchUserRights' => [ 'اختیارات_کاربری_دسته‌ای' ],
