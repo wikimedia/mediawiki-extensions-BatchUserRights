@@ -63,9 +63,7 @@ class SpecialBatchUserRights extends SpecialPage {
 			throw new UserBlockedError( $user->getBlock() );
 		}
 
-		if ( wfReadOnly() ) {
-			throw new ReadOnlyError;
-		}
+		$this->checkReadOnly();
 
 		$this->outputHeader();
 
