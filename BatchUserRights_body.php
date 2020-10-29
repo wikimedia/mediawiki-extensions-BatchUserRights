@@ -405,7 +405,7 @@ class SpecialBatchUserRights extends SpecialPage {
 	/**
 	 * Returns an array of the groups that the user can add/remove.
 	 *
-	 * @return Array array( 'add' => array( addablegroups ), 'remove' => array( removablegroups ) , 'add-self' => array( addablegroups to self), 'remove-self' => array( removable groups from self) )
+	 * @return array array( 'add' => array( addablegroups ), 'remove' => array( removablegroups ) , 'add-self' => array( addablegroups to self), 'remove-self' => array( removable groups from self) )
 	 */
 	function changeableGroups() {
 		return $this->getUser()->changeableGroups();
