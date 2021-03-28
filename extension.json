@@ -29,7 +29,7 @@
 		"BatchUserRightsAliases": "BatchUserRights.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialBatchUserRights": "BatchUserRights_body.php"
+		"SpecialBatchUserRights": "src/SpecialBatchUserRights.php"
 	},
 	"config": {
 		"BatchUserRightsGrantableGroups": {
