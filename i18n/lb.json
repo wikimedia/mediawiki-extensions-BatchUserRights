@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Les Meloures",
 			"Robby",
 			"Soued031"
 		]
@@ -13,6 +14,6 @@
 	"batchuserrights-add-groups": "{{PLURAL:$1|Ee Benotzer gëtt|$1 Benotzer gi}} bei dës {{PLURAL:$2|Benotzergrupp|Benotzergruppen}} dobäigesat: <strong>$3</strong>",
 	"batchuserrights-userload-error": "De {{GENDER:$1|Benotzer}} '''$1''' konnt net geluede ginn.",
 	"batchuserrights-no-groups": "Dir hutt keng Gruppen erausgesicht.\nEt gëtt näischt geännert.\nDe Rescht vun der Säit gëtt nei opgebaut sou datt Dir einfach gesi kënnt ob ee vun de Benotzernimm net konnt geluede ginn.",
-	"right-batchuserrights": "Een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen dobäisetzen",
-	"action-batchuserrights": "een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen dobäisetzen"
+	"right-batchuserrights": "Een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen derbäisetzen",
+	"action-batchuserrights": "een oder méi Benotzer an enger Aktioun an eng oder méi Gruppen deräisetzen"
 }
