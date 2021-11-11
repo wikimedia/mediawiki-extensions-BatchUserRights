@@ -18,6 +18,8 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * A class to manage user levels rights.
  *
@@ -153,13 +155,27 @@ class SpecialBatchUserRights extends SpecialPage {
 			array_intersect( (array)$addgroup, $addable )
 		);
 
-		$oldGroups = $user->getGroups();
+		if ( method_exists( MediaWikiServices::class, 'getUserGroupManager' ) ) {
+			// MW 1.35+
+			$oldGroups = MediaWikiServices::getInstance()->getUserGroupManager()
+				->getUserGroups( $user );
+		} else {
+			$oldGroups = $user->getGroups();
+		}
 		$newGroups = $oldGroups;
 
 		if ( $addgroup ) {
 			$newGroups = array_merge( $newGroups, $addgroup );
-			foreach ( $addgroup as $group ) {
-				$user->addGroup( $group );
+			if ( method_exists( MediaWikiServices::class, 'getUserGroupManager' ) ) {
+				// MW 1.35+
+				$userGroupManager = MediaWikiServices::getInstance()->getUserGroupManager();
+				foreach ( $addgroup as $group ) {
+					$userGroupManager->addUserToGroup( $user, $group );
+				}
+			} else {
+				foreach ( $addgroup as $group ) {
+					$user->addGroup( $group );
+				}
 			}
 		}
 		$newGroups = array_unique( $newGroups );
