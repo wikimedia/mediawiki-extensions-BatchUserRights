@@ -6,9 +6,11 @@
 			"Diki Ananta",
 			"Farras",
 			"Macofe",
-			"Sumbukompor"
+			"Sumbukompor",
+			"Daud I.F. Argana"
 		]
 	},
+	"batchuserrights": "Hak pengguna massal",
 	"batchuserrights-desc": "Memungkinkan menambahkan satu atau lebih pengguna untuk kelompok atau lebih kelompok dalam satu tindakan",
 	"batchuserrights-names": "Nama-nama pengguna untuk ditambahkan ke kelompok ini (satu per baris):",
 	"batchuserrights-intro": "Halaman ini mengizinkan Anda menambahkan sebuah grup ke banyak pengguna sekaligus.\nUntuk alasan keamanan, daftar grup yang dapat ditambahkan telah diatur dalam pengaturan ekstensi dan tidak dapat diubah dari dalam wiki.\nSilakan minta ke seorang pengurus sistem jika Anda butuh mengizinkan penambahan-massal dari grup-grup lain.",
