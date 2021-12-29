@@ -5,7 +5,8 @@
 			"Chrumps",
 			"Rail",
 			"Railfail536",
-			"WTM"
+			"WTM",
+			"Woytecr"
 		]
 	},
 	"batchuserrights": "Wsadowe uprawnienia użytkowników",
@@ -15,7 +16,7 @@
 	"batchuserrights-single-progress-update": "Dodano {{PLURAL:$1| grupę|grupy|grupy}} do <strong>$2</strong>.",
 	"batchuserrights-add-groups": "Dodawanie {{PLURAL:$1|jednego użytkownika|$1 użytkowników}} do {{PLURAL:$2|następującej grupy|następujących grup}}: <strong>$3</strong>.",
 	"batchuserrights-userload-error": "Nie można wczytać {{GENDER:$1|użytkownika|użytkowniczki}} '''$1'''.",
-	"batchuserrights-no-groups": "Nie wybrano żadnych grup.\nWykonanie nie spowoduje żadnych zmian.\nPozostałą część strony będzie można uruchomić tylko po to, by dało się zobaczyć, czy wszystkie nazwy uzytkownikow mogą być załadowane.",
+	"batchuserrights-no-groups": "Nie wybrano żadnych grup.\nWykonanie nie spowoduje żadnych zmian.\nPozostałą część strony będzie można uruchomić tylko po to, by dało się zobaczyć, czy wszystkie nazwy użytkowników mogą być załadowane.",
 	"right-batchuserrights": "Dodawanie użytkownika lub kilku użytkowników do grupy lub do wielu grup w ramach jednej akcji",
 	"action-batchuserrights": "dodawania użytkownika lub kilku użytkowników do grupy lub do wielu grup w ramach jednej akcji"
 }
