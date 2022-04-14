@@ -2,8 +2,11 @@
 <ruleset>
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="MediaWiki.Files.ClassMatchesFilename.NotMatch" />
+		<exclude name="MediaWiki.Usage.ExtendClassUsage.FunctionConfigUsage" />
 		<exclude name="Squiz.Scope.MethodScope.Missing" />
 		<exclude name="Generic.Files.LineLength.TooLong" />
+		<exclude name="MediaWiki.Commenting.FunctionComment.UppercasePrimitiveArrayReturn" />
+		<exclude name="MediaWiki.Commenting.PropertyDocumentation.MissingDocumentationProtected" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php" />
