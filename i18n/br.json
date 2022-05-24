@@ -3,6 +3,7 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
+			"Huñvreüs",
 			"Macofe",
 			"Y-M D"
 		]
@@ -12,7 +13,7 @@
 	"batchuserrights-names": "Anvioù implijer da ouzhpennañ d'ar strollad-mañ (unan dre linenn) :",
 	"batchuserrights-single-progress-update": "{{PLURAL:$1|Strollad|Strolladoù}} ouzhpennet da <strong>$2</strong>.",
 	"batchuserrights-add-groups": "Ouzhpennañ {{PLURAL:$1|un implijer|$1 implijer}} d'ar {{PLURAL:$2|strollad|strolladoù}}-mañ : <strong>$3</strong>.",
-	"batchuserrights-userload-error": "Dibosupl eo kargañ an implijer '''$1'''.",
+	"batchuserrights-userload-error": "Dibosupl eo kargañ an implijer{{GENDER:$1||ez}} '''$1'''.",
 	"right-batchuserrights": "Ouzhpennañ un implijer pe meur a hini d'ar strollad pe da lies strollad en un oberiadenn hepken",
 	"action-batchuserrights": "ouzhpennañ un implijer pe meur a hini d'ar strollad pe da lies strollad en un oberiadenn hepken"
 }
