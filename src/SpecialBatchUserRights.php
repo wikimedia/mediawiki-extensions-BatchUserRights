@@ -19,6 +19,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserGroupManager;
 
 /**
  * A class to manage user levels rights.
@@ -29,11 +30,16 @@ use MediaWiki\MediaWikiServices;
 class SpecialBatchUserRights extends SpecialPage {
 	protected $isself = false;
 
+	/** @var UserGroupManager */
+	private $userGroupManager;
+
 	/**
-	 * Constructor -- set up the new (restricted) special page
+	 * @param UserGroupManager $userGroupManager
 	 */
-	public function __construct() {
+	public function __construct( UserGroupManager $userGroupManager ) {
 		parent::__construct( 'BatchUserRights', 'batchuserrights' );
+
+		$this->userGroupManager = $userGroupManager;
 	}
 
 	public function doesWrites() {
@@ -424,6 +430,6 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @return array array( 'add' => array( addablegroups ), 'remove' => array( removablegroups ) , 'add-self' => array( addablegroups to self), 'remove-self' => array( removable groups from self) )
 	 */
 	function changeableGroups() {
-		return $this->getUser()->changeableGroups();
+		return $this->userGroupManager->getGroupsChangeableBy( $this->getUser() );
 	}
 }
