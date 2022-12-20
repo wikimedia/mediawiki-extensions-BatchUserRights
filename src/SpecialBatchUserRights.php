@@ -341,6 +341,12 @@ class SpecialBatchUserRights extends SpecialPage {
 		$settable_col = '';
 		$unsettable_col = '';
 
+		if ( method_exists( Language::class, 'getGroupName' ) ) {
+			// MW 1.38+
+			$lang = $this->getLanguage();
+		} else {
+			$lang = null;
+		}
 		foreach ( $wgBatchUserRightsGrantableGroups as $group ) {
 			$set = false;
 			# Should the checkbox be disabled?
@@ -357,9 +363,15 @@ class SpecialBatchUserRights extends SpecialPage {
 
 			$attr = $disabled ? [ 'disabled' => 'disabled' ] : [];
 			$attr['title'] = $group;
+			if ( $lang !== null ) {
+				// MW 1.38+
+				$groupMemberName = $lang->getGroupMemberName( $group );
+			} else {
+				$groupMemberName = UserGroupMembership::getGroupMemberName( $group );
+			}
 			$text = $irreversible
-				? $this->msg( 'userrights-irreversible-marker', UserGroupMembership::getGroupMemberName( $group ) )->escaped()
-				: UserGroupMembership::getGroupMemberName( $group );
+				? $this->msg( 'userrights-irreversible-marker', $groupMemberName )->escaped()
+				: $groupMemberName;
 			$checkbox = Xml::checkLabel( $text, "wpGroup-$group",
 				"wpGroup-$group", $set, $attr );
 			$checkbox = $disabled ? Xml::tags( 'span', [ 'class' => 'mw-userrights-disabled' ], $checkbox ) : $checkbox;
