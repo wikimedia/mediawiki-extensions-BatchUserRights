@@ -7,11 +7,12 @@
 			"LNDDYL",
 			"Macofe",
 			"Shirayuki",
-			"Simon Shek"
+			"Simon Shek",
+			"捍粵者"
 		]
 	},
 	"batchuserrights": "分批處理的使用者權限",
-	"batchuserrights-desc": "允許一次將一個或多個用戶添加到一個組或多個組",
+	"batchuserrights-desc": "允許一次將一名或以上用戶加到一組或以上",
 	"batchuserrights-names": "新增至該組的使用者（每行一個）：",
 	"batchuserrights-intro": "本頁讓您能一次將數名使用者增加至一個使用者權限群組。\n出於安全原因，可供添加的使用者權限群組由擴展中設定，而且無法於維基內作出更改。\n如果您要批量添加其他使用者權限群組，請詢問系統管理員。",
 	"batchuserrights-single-progress-update": "已新增{{PLURAL:$1|群組}}至 <strong>$2</strong> 。",
