@@ -13,6 +13,7 @@
 	"batchuserrights-single-progress-update": "Pridėta {{PLURAL:$1| grupė | grupės}} į <strong>$2</strong> .",
 	"batchuserrights-add-groups": "{{PLURAL:$1|Pridedamas vienas vartotojas|Pridedami $1 vartotojai}} į {{PLURAL:$2|šią grupę|šias grupes}}: <strong>$3</strong>.",
 	"batchuserrights-userload-error": "Nepavyko įkelti {{GENDER:$1|naudotojo|naudotojos}} '''$1'''.",
+	"batchuserrights-no-groups": "Jūs nepasirinkote jokių grupių.\nTai nieko nepasieks.\nLikusią puslapio dalį bus leista paleisti tik tam, kad galėtumėte lengvai pamatyti, ar nepavyko įkelti kurio nors naudotojo vardo.",
 	"right-batchuserrights": "Pridėkite vieną ar daugiau vartotojų į grupę ar kelias grupes vienu veiksmu",
 	"action-batchuserrights": "Pridėkite vieną ar daugiau vartotojų į grupę ar kelias grupes vienu veiksmu"
 }
