@@ -194,7 +194,7 @@ class SpecialBatchUserRights extends SpecialPage {
 		if ( $user instanceof User ) {
 			$removegroup = [];
 			// hmmm
-			Hooks::run( 'UserRights', [ &$user, $addgroup, $removegroup ] );
+			$this->getHookContainer()->run( 'UserRights', [ &$user, $addgroup, $removegroup ] );
 		}
 
 		if ( $newGroups != $oldGroups ) {
@@ -347,6 +347,7 @@ class SpecialBatchUserRights extends SpecialPage {
 		} else {
 			$lang = null;
 		}
+		$hookContainer = $this->getHookContainer();
 		foreach ( $wgBatchUserRightsGrantableGroups as $group ) {
 			$set = false;
 			# Should the checkbox be disabled?
@@ -358,7 +359,7 @@ class SpecialBatchUserRights extends SpecialPage {
 
 			/* Wikia change begin - @author: Marooned */
 			/* Because of "return all" in changeableGroups() hook UserrightsChangeableGroups is not invoked - this hook is to fill this gap */
-			Hooks::run( 'UserRights::groupCheckboxes', [ $group, &$disabled, &$irreversible ] );
+			$hookContainer->run( 'UserRights::groupCheckboxes', [ $group, &$disabled, &$irreversible ] );
 			/* Wikia change end */
 
 			$attr = $disabled ? [ 'disabled' => 'disabled' ] : [];
