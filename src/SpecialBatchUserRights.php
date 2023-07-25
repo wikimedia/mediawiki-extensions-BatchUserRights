@@ -223,33 +223,17 @@ class SpecialBatchUserRights extends SpecialPage {
 	}
 
 	/**
-	 * Normalize the input username, which may be local or remote, and
-	 * return a user (or proxy) object for manipulating it.
+	 * Normalize the input username, and
+	 * return a user object for manipulating it.
 	 *
 	 * Side effects: error output for invalid access
 	 * @param string $username
-	 * @return User|UserRightsProxy|null
+	 * @return User|null
 	 */
 	function fetchUser( $username ) {
-		global $wgUserrightsInterwikiDelimiter;
 		$out = $this->getOutput();
 
-		$parts = explode( $wgUserrightsInterwikiDelimiter, $username );
-		if ( count( $parts ) < 2 ) {
-			$name = trim( $username );
-			$database = '';
-		} else {
-			list( $name, $database ) = array_map( 'trim', $parts );
-
-			if ( !$this->getUser()->isAllowed( 'userrights-interwiki' ) ) {
-				$out->addWikiMsg( 'userrights-no-interwiki' );
-				return null;
-			}
-			if ( !UserRightsProxy::validDatabase( $database ) ) {
-				$out->addWikiMsg( 'userrights-nodatabase', $database );
-				return null;
-			}
-		}
+		$name = trim( $username );
 
 		if ( $name == '' ) {
 			$out->addWikiMsg( 'nouserspecified' );
@@ -261,11 +245,7 @@ class SpecialBatchUserRights extends SpecialPage {
 			// We'll do a lookup for the name internally.
 			$id = intval( substr( $name, 1 ) );
 
-			if ( $database == '' ) {
-				$name = User::whoIs( $id );
-			} else {
-				$name = UserRightsProxy::whoIs( $database, $id );
-			}
+			$name = User::whoIs( $id );
 
 			if ( !$name ) {
 				$out->addWikiMsg( 'noname' );
@@ -273,11 +253,7 @@ class SpecialBatchUserRights extends SpecialPage {
 			}
 		}
 
-		if ( $database == '' ) {
-			$user = User::newFromName( $name );
-		} else {
-			$user = UserRightsProxy::newFromName( $database, $name );
-		}
+		$user = User::newFromName( $name );
 
 		if ( !$user || $user->isAnon() ) {
 			$out->addWikiMsg( 'nosuchusershort', $username );
