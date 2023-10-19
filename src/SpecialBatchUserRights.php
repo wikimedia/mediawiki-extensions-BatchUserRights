@@ -342,9 +342,9 @@ class SpecialBatchUserRights extends SpecialPage {
 			$attr['title'] = $group;
 			if ( $lang !== null ) {
 				// MW 1.38+
-				$groupMemberName = $lang->getGroupMemberName( $group );
+				$groupMemberName = $lang->getGroupMemberName( $group, '#' );
 			} else {
-				$groupMemberName = UserGroupMembership::getGroupMemberName( $group );
+				$groupMemberName = UserGroupMembership::getGroupMemberName( $group, '#' );
 			}
 			$text = $irreversible
 				? $this->msg( 'userrights-irreversible-marker', $groupMemberName )->escaped()
