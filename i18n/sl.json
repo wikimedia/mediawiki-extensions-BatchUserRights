@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
 	"batchuserrights": "Paketne uporabniške pravice",
@@ -10,7 +11,7 @@
 	"batchuserrights-intro": "Ta stran vam bo omogočila, da dodate skupino več uporabnikom hkrati.\nIz varnostnih razlogov je seznam skupin, ki jih je mogoče dodati, nastavljen v konfiguraciji razširitve in ga ni mogoče spreminjati v vikiju.\nProsimo, vprašajte skrbnika sistema, ali morate dovoliti paketno dodajanje drugih skupin.",
 	"batchuserrights-single-progress-update": "<strong>$2</strong> {{PLURAL:$1|dodana $1 skupina|dodani $1 skupini|dodane $1 skupine|dodanih $1 skupin}}",
 	"batchuserrights-add-groups": "Dodajanje {{PLURAL:$1|enega uporabnika|$1 uporabnikov}} {{PLURAL:$2|naslednji skupini|naslednjima skupinama|naslednjim skupinam}}: <strong>$3</strong>.",
-	"batchuserrights-userload-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} '''$1''' ni bilo mogoče naložiti.",
+	"batchuserrights-userload-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika/ce}} '''$1''' ni bilo mogoče naložiti.",
 	"batchuserrights-no-groups": "Izbrali niste nobene skupine.\nTo ne bo naredilo ničesar.\nPreostala stran se bo lahko izvedla samo zato, da boste zlahka videli, ali katerega od uporabniških imen ni bilo mogoče naložiti.",
 	"right-batchuserrights": "Dodajanje enega ali več uporabnikov v skupino ali več skupin z enim dejanjem",
 	"action-batchuserrights": "dodajanje enega ali več uporabnikov v skupino ali več skupin z enim dejanjem"
