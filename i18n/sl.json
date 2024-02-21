@@ -8,7 +8,7 @@
 	"batchuserrights": "Paketne uporabniške pravice",
 	"batchuserrights-desc": "Omogoča dodajanje enega ali več uporabnikov v skupino ali več skupin z enim dejanjem",
 	"batchuserrights-names": "Uporabniška imena, ki naj se jim doda ta skupina (eno na vrstico):",
-	"batchuserrights-intro": "Ta stran vam bo omogočila, da dodate skupino več uporabnikom hkrati.\nIz varnostnih razlogov je seznam skupin, ki jih je mogoče dodati, nastavljen v konfiguraciji razširitve in ga ni mogoče spreminjati v vikiju.\nProsimo, vprašajte skrbnika sistema, ali morate dovoliti paketno dodajanje drugih skupin.",
+	"batchuserrights-intro": "Ta stran vam bo omogočila, da dodate skupino več uporabnikom hkrati.\nIz varnostnih razlogov je seznam skupin, ki jih je mogoče dodati, nastavljen v konfiguraciji razširitve in ga ni mogoče spreminjati v vikiju.\nPosvetujte se s sistemskim administratorjem, ali morate dovoliti paketno dodajanje drugih skupin.",
 	"batchuserrights-single-progress-update": "<strong>$2</strong> {{PLURAL:$1|dodana $1 skupina|dodani $1 skupini|dodane $1 skupine|dodanih $1 skupin}}",
 	"batchuserrights-add-groups": "Dodajanje {{PLURAL:$1|enega uporabnika|$1 uporabnikov}} {{PLURAL:$2|naslednji skupini|naslednjima skupinama|naslednjim skupinam}}: <strong>$3</strong>.",
 	"batchuserrights-userload-error": "{{GENDER:$1|Uporabnika|Uporabnice|Uporabnika_ce}} '''$1''' ni bilo mogoče naložiti.",
