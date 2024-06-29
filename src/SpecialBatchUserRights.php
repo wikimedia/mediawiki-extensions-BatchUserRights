@@ -240,20 +240,22 @@ class SpecialBatchUserRights extends SpecialPage {
 			return false;
 		}
 
+		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		if ( $name[0] == '#' ) {
 			// Numeric ID can be specified...
 			// We'll do a lookup for the name internally.
 			$id = intval( substr( $name, 1 ) );
 
-			$name = User::whoIs( $id );
+			$user = $userFactory->newFromId( $id );
 
-			if ( !$name ) {
+			if ( !$user->loadFromDatabase() ) {
 				$out->addWikiMsg( 'noname' );
 				return null;
 			}
+			return $user;
 		}
 
-		$user = User::newFromName( $name );
+		$user = $userFactory->newFromName( $name );
 
 		if ( !$user || $user->isAnon() ) {
 			$out->addWikiMsg( 'nosuchusershort', $username );
