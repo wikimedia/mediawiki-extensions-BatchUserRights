@@ -291,7 +291,7 @@ class SpecialBatchUserRights extends SpecialPage {
 						Html::label( $this->msg( 'userrights-reason' )->text(), 'wpReason' ) .
 					'</td>
 					<td class="mw-input">' .
-						Xml::input( 'user-reason', 60, false, [ 'id' => 'wpReason', 'maxlength' => 255 ] ) .
+						Html::input( 'user-reason', '', 'text', [ 'id' => 'wpReason', 'size' => 60, 'maxlength' => 255 ] ) .
 					'</td>
 				</tr>
 				<tr>
