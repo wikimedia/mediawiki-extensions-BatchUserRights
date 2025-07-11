@@ -131,12 +131,17 @@ $specialPageAliases['tr'] = [
 	'BatchUserRights' => [ 'TopluKullanıcıHakları' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'BatchUserRights' => [ 'BatchUserRights' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'BatchUserRights' => [ '批处理用户权限' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'BatchUserRights' => [ '批次使用者權限' ],
 ];
