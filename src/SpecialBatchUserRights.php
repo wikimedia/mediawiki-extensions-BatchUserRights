@@ -282,7 +282,7 @@ class SpecialBatchUserRights extends SpecialPage {
 						Xml::label( $this->msg( 'batchuserrights-names' )->text(), 'wpUsernames' ) .
 					'</td>
 					<td class="mw-input">' .
-						Xml::textarea( 'wpUsernames', '' ) .
+						Html::textarea( 'wpUsernames', '', [ 'id' => 'wpUsernames' ] ) .
 					'</td>
 				</tr>
 				<tr>
@@ -296,7 +296,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				<tr>
 					<td></td>
 					<td class="mw-submit">' .
-						Xml::submitButton( $this->msg( 'saveusergroups' )->text(), [ 'name' => 'saveusergroups', 'accesskey' => 's' ] ) .
+						Html::submitButton( $this->msg( 'saveusergroups' )->text(), [ 'name' => 'saveusergroups', 'accesskey' => 's' ] ) .
 					'</td>
 				</tr>' .
 			Xml::closeElement( 'table' ) . "\n" .
@@ -341,7 +341,6 @@ class SpecialBatchUserRights extends SpecialPage {
 			/* Wikia change end */
 
 			$attr = $disabled ? [ 'disabled' => 'disabled' ] : [];
-			$attr['title'] = $group;
 			if ( $lang !== null ) {
 				// MW 1.38+
 				$groupMemberName = $lang->getGroupMemberName( $group, '#' );
@@ -351,8 +350,8 @@ class SpecialBatchUserRights extends SpecialPage {
 			$text = $irreversible
 				? $this->msg( 'userrights-irreversible-marker', $groupMemberName )->escaped()
 				: $groupMemberName;
-			$checkbox = Xml::checkLabel( $text, "wpGroup-$group",
-				"wpGroup-$group", $set, $attr );
+			$checkbox = Html::check( "wpGroup-$group", $set, [ 'id' => "wpGroup-$group", 'title' => $group ] + $attr ) .
+				"\u{00A0}" . Html::label( $text, "wpGroup-$group", [ 'title' => $group ] );
 			$checkbox = $disabled ? Xml::tags( 'span', [ 'class' => 'mw-userrights-disabled' ], $checkbox ) : $checkbox;
 
 			if ( $disabled ) {
