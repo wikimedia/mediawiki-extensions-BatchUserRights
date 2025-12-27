@@ -271,16 +271,16 @@ class SpecialBatchUserRights extends SpecialPage {
 	 */
 	protected function showEditUserGroupsForm() {
 		$this->getOutput()->addHTML(
-			Xml::openElement( 'form', [ 'method' => 'post', 'action' => $this->getPageTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ] ) .
+			Html::openElement( 'form', [ 'method' => 'post', 'action' => $this->getPageTitle()->getLocalURL(), 'name' => 'editGroup', 'id' => 'mw-userrights-form2' ] ) .
 			Html::hidden( 'wpEditToken', $this->getUser()->getEditToken() ) .
-			Xml::openElement( 'fieldset' ) .
-			Xml::element( 'legend', [], $this->msg( 'userrights-editusergroup' )->text() ) .
+			Html::openElement( 'fieldset' ) .
+			Html::element( 'legend', [], $this->msg( 'userrights-editusergroup' )->text() ) .
 			$this->msg( 'batchuserrights-intro' )->parseAsBlock() .
-			Xml::tags( 'p', null, $this->groupCheckboxes() ) .
-			Xml::openElement( 'table', [ 'border' => '0', 'id' => 'mw-userrights-table-outer' ] ) .
+			Html::rawElement( 'p', [], $this->groupCheckboxes() ) .
+			Html::openElement( 'table', [ 'border' => '0', 'id' => 'mw-userrights-table-outer' ] ) .
 				'<tr>
 					<td class="mw-label">' .
-						Xml::label( $this->msg( 'batchuserrights-names' )->text(), 'wpUsernames' ) .
+						Html::label( $this->msg( 'batchuserrights-names' )->text(), 'wpUsernames' ) .
 					'</td>
 					<td class="mw-input">' .
 						Html::textarea( 'wpUsernames', '', [ 'id' => 'wpUsernames' ] ) .
@@ -288,7 +288,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				</tr>
 				<tr>
 					<td class="mw-label">' .
-						Xml::label( $this->msg( 'userrights-reason' )->text(), 'wpReason' ) .
+						Html::label( $this->msg( 'userrights-reason' )->text(), 'wpReason' ) .
 					'</td>
 					<td class="mw-input">' .
 						Xml::input( 'user-reason', 60, false, [ 'id' => 'wpReason', 'maxlength' => 255 ] ) .
@@ -300,16 +300,16 @@ class SpecialBatchUserRights extends SpecialPage {
 						Html::submitButton( $this->msg( 'saveusergroups' )->text(), [ 'name' => 'saveusergroups', 'accesskey' => 's' ] ) .
 					'</td>
 				</tr>' .
-			Xml::closeElement( 'table' ) . "\n" .
-			Xml::closeElement( 'fieldset' ) .
-			Xml::closeElement( 'form' ) . "\n"
+			Html::closeElement( 'table' ) . "\n" .
+			Html::closeElement( 'fieldset' ) .
+			Html::closeElement( 'form' ) . "\n"
 		);
 	}
 
 	/**
 	 * Adds a table with checkboxes where you can select what groups to add/remove
 	 *
-	 * @return string XHTML table element with checkboxes
+	 * @return string HTML table element with checkboxes
 	 */
 	private function groupCheckboxes() {
 		global $wgBatchUserRightsGrantableGroups;
@@ -353,7 +353,7 @@ class SpecialBatchUserRights extends SpecialPage {
 				: $groupMemberName;
 			$checkbox = Html::check( "wpGroup-$group", $set, [ 'id' => "wpGroup-$group", 'title' => $group ] + $attr ) .
 				"\u{00A0}" . Html::label( $text, "wpGroup-$group", [ 'title' => $group ] );
-			$checkbox = $disabled ? Xml::tags( 'span', [ 'class' => 'mw-userrights-disabled' ], $checkbox ) : $checkbox;
+			$checkbox = $disabled ? Html::rawElement( 'span', [ 'class' => 'mw-userrights-disabled' ], $checkbox ) : $checkbox;
 
 			if ( $disabled ) {
 				$unsettable_col .= "$checkbox<br />\n";
@@ -363,14 +363,14 @@ class SpecialBatchUserRights extends SpecialPage {
 		}
 
 		if ( $column ) {
-			$ret .=	Xml::openElement( 'table', [ 'border' => '0', 'class' => 'mw-userrights-groups' ] ) .
+			$ret .=	Html::openElement( 'table', [ 'border' => '0', 'class' => 'mw-userrights-groups' ] ) .
 				'<tr>
 ';
 			if ( $settable_col !== '' ) {
-				$ret .= Xml::element( 'th', null, $this->msg( 'userrights-changeable-col' )->text() );
+				$ret .= Html::element( 'th', [], $this->msg( 'userrights-changeable-col' )->text() );
 			}
 			if ( $unsettable_col !== '' ) {
-				$ret .= Xml::element( 'th', null, $this->msg( 'userrights-unchangeable-col' )->text() );
+				$ret .= Html::element( 'th', [], $this->msg( 'userrights-unchangeable-col' )->text() );
 			}
 			$ret .= '</tr>
 				<tr>
@@ -389,7 +389,7 @@ class SpecialBatchUserRights extends SpecialPage {
 					</td>
 ";
 			}
-			$ret .= Xml::closeElement( 'tr' ) . Xml::closeElement( 'table' );
+			$ret .= Html::closeElement( 'tr' ) . Html::closeElement( 'table' );
 		}
 
 		return $ret;
