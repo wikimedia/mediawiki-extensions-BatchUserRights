@@ -38,9 +38,14 @@ class SpecialBatchUserRights extends SpecialPage {
 	 * @param UserGroupManager $userGroupManager
 	 */
 	public function __construct( UserGroupManager $userGroupManager ) {
-		parent::__construct( 'BatchUserRights', 'batchuserrights' );
+		parent::__construct( 'BatchUserRights' );
 
 		$this->userGroupManager = $userGroupManager;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'batchuserrights';
 	}
 
 	public function doesWrites() {
