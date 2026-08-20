@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"batchuserrights": "Xuquuqda isticmaalaha dufcadda",
+	"batchuserrights-desc": "Waxay oggolaanaysaa in hal ama in ka badan oo isticmaalayaal ah lagu daro hal ama in ka badan oo kooxo ah hal ficil",
+	"batchuserrights-names": "Magacyada isticmaalayaasha kooxdan lagu darayo (mid sadar kasta):",
+	"batchuserrights-intro": "Boggan wuxuu kuu oggolaanayaa inaad koox ku darto isticmaalayaal badan hal mar.\nSababo amni awgood, liiska kooxaha lagu dari karo waxaa lagu dejiyay qaabeynta kordhinta, mana laga beddeli karo gudaha wiki-ga.\nFadlan la xiriir maamulaha nidaamka haddii aad u baahan tahay in loo oggolaado ku-darista dufcad ahaan ee kooxo kale.",
+	"batchuserrights-single-progress-update": "Waxaa lagu daray {{PLURAL:$1|koox|kooxo}} <strong>$2</strong>.",
+	"batchuserrights-add-groups": "Waxaa {{PLURAL:$1|hal isticmaale|$1 isticmaale}} lagu darayaa {{PLURAL:$2|kooxda|kooxaha}} soo socda: <strong>$3</strong>.",
+	"batchuserrights-userload-error": "Lama soo dejin karin {{GENDER:$1|isticmaalaha}} '''$1'''.",
+	"batchuserrights-no-groups": "Ma dooran wax kooxo ah.\nTani waxba ma qaban doonto.\nQaybta inteeda kale ee bogga waa la oggolaan doonaa inay socoto si aad si fudud u arki karto haddii qaar ka mid ah magacyada isticmaalayaasha aan la soo dejin karin.",
+	"right-batchuserrights": "Hal ama in ka badan oo isticmaalayaal ah ku dar koox ama kooxo badan hal ficil",
+	"action-batchuserrights": "ku dar hal ama in ka badan oo isticmaalayaal ah koox ama kooxo badan hal ficil"
+}
