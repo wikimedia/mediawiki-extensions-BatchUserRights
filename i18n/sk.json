@@ -1,8 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sudo77(new)"
+			"Sudo77(new)",
+			"Wizzard"
 		]
 	},
-	"batchuserrights": "Dávkové pridelenie používateľských práv"
+	"batchuserrights": "Dávkové pridelenie používateľských práv",
+	"batchuserrights-desc": "Umožňuje pridať jedného alebo viacerých používateľov do jednej alebo viacerých skupín v rámci jednej akcie",
+	"batchuserrights-names": "Používateľské mená, ktoré sa majú pridať do tejto skupiny (jedno na riadok):",
+	"batchuserrights-intro": "Táto stránka vám umožní pridať skupinu viacerým používateľom naraz.\nZ bezpečnostných dôvodov je zoznam pridateľných skupín nastavený v konfigurácii rozšírenia a nedá sa zmeniť z wiki.\nAk potrebujete povoliť hromadné pridávanie ďalších skupín, požiadajte, prosím, správcu systému.",
+	"batchuserrights-single-progress-update": "{{PLURAL:$1|Skupina bola pridaná|Skupiny boli pridané}} používateľovi <strong>$2</strong>.",
+	"batchuserrights-add-groups": "{{PLURAL:$1|Jeden používateľ sa pridáva|$1 používatelia sa pridávajú|$1 používateľov sa pridáva}} do {{PLURAL:$2|tejto skupiny|týchto skupín}}: <strong>$3</strong>.",
+	"batchuserrights-userload-error": "Nepodarilo sa načítať {{GENDER:$1|používateľa|používateľku}} '''$1'''.",
+	"batchuserrights-no-groups": "Nevybrali ste žiadne skupiny.\nTakto sa nič nedosiahne.\nZvyšok stránky sa napriek tomu spracuje, aby ste ľahko videli, ktoré používateľské mená sa nepodarilo načítať.",
+	"right-batchuserrights": "Pridať jedného alebo viacerých používateľov do jednej alebo viacerých skupín v rámci jednej akcie",
+	"action-batchuserrights": "pridať jedného alebo viacerých používateľov do jednej alebo viacerých skupín v rámci jednej akcie"
 }
